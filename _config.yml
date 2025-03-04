@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "McPherson Lab"
 title_separator          : "-"
 name                     : &name "Jacob K McPherson"
-description              : &description "Pushing the boundaries of health and science"
+description              : &description "Health is wealth, knowledge is power, kindness is free"
 url                      : https://mcphersonlab.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mcphersonlab/mcphersonlab.github.io"
@@ -50,7 +50,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "jacobkmcpherson.bsky.app"
+  bluesky          : "jacobkmcpherson.bsky.social"
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username

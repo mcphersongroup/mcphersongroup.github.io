@@ -1,4 +1,3 @@
-
 ---
 title: "Teaching Emerald Cloud Labs"
 collection: teaching

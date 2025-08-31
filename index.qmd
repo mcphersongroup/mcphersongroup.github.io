@@ -1,7 +1,3 @@
----
-title: "McPherson Group"
----
-
 # Welcome to the McPherson Group
 
 The McPherson Group is a research laboratory focused on advancing knowledge through innovative research and collaboration.

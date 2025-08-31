@@ -17,20 +17,22 @@ We believe in:
 - **Innovation**: Developing new methods and approaches
 - **Excellence**: Maintaining the highest standards in our research
 
-## Lab Environment
 
-Our group fosters a collaborative and inclusive environment where researchers at all levels can thrive and contribute to meaningful scientific discoveries.
+<!-- This is a silent comment in markdown. It won't appear in output. -->
 
-## Location
+<!-- ## Lab Environment -->
 
-[University/Institution Name]  
-[Department]  
-[Address]
+<!-- Our group fosters a collaborative and inclusive environment where researchers at all levels can thrive and contribute to meaningful scientific discoveries. -->
+
+<!-- ## Location -->
+
+<!-- [University/Institution Name]  -->
+<!-- [Department]  -->
+<!-- [Address] -->
 
 ## Contact Information
 
-**Principal Investigator**: Dr. [Name]  
-**Email**: [email@institution.edu]  
-**Phone**: [phone number]
+**Principal Investigator**: Dr. Jacob K. McPherson
+**Email**: [jacobmcpherson@utexas.edu](mailto:jacobmcpherson@utexas.edu) [jkmcpherson@uh.edu](mailto:jkmcpherson@uh.edu) or [jacob@jacobkmcpherson.com](mailto:jacob@jacobkmcpherson.com)
 
-For prospective students or postdocs interested in joining the group, please reach out via email with your CV and research interests.
+For prospective students or postdocs interested in joining the group, please reach out via email with your CV and research interests at [jacobkmcpherson.com/join](https://www.jacobkmcpherson.com/join)

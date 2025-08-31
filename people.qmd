@@ -8,10 +8,11 @@ title: "People"
 
 ### Dr. [Principal Investigator Name]
 - **Position**: Principal Investigator
-- **Education**: Ph.D. in [Field], [University], [Year]
-- **Research Interests**: [Brief description of research interests]
-- **Email**: [email@institution.edu]
-- **ORCID**: [ORCID ID]
+- **Education**: Pharm.D., University of Houston College of Pharmacy, 2021
+- **Research Interests**: Pharmacy, Pharmacology, Infectious Diseases, Antimicrobial Resistance, Human Gut Microbiome
+- **Email**: [jacobmcpherson@utexas.edu]
+- **ORCID**: [ORCID 0000-0001-5486-4945](https://orcid.org/0000-0001-5486-4945)
+- **AUTHOR.LINK**: [https://author.link/JacobKMcPherson](https://author.link/JacobKMcPherson)
 
 ## Current Members
 

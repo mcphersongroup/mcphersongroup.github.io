@@ -8,8 +8,8 @@ title: "People"
 
 ### Dr. Jacob K. McPherson
 - **Position**: Principal Investigator
-- **Education**: Pharm.D., University of Houston College of Pharmacy, 2021
-- **Research Interests**: Pharmacy, Pharmacology, Infectious Diseases, Antimicrobial Resistance, Human Gut Microbiome
+- **Education**: Doctorate of Pharmacy (Pharm.D.), University of Houston College of Pharmacy, 2021
+- **Research Interests**: Infectious Diseases, Antimicrobial Resistance, Human Gut Microbiome
 - **Email**: [jacobmcpherson@utexas.edu](mailto:jacobmcpherson@utexas.edu)
 - **ORCID**: [ORCID 0000-0001-5486-4945](https://orcid.org/0000-0001-5486-4945)
 - **AUTHOR.LINK**: [https://author.link/JacobKMcPherson](https://author.link/JacobKMcPherson)

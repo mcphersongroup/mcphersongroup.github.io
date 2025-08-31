@@ -6,7 +6,7 @@ title: "People"
 
 ## Principal Investigator
 
-### Dr. Jacob K. McPherson
+### Jacob K. McPherson
 - **Position**: Principal Investigator
 - **Education**: Doctorate of Pharmacy (Pharm.D.), University of Houston College of Pharmacy, 2021
 - **Research Interests**: Infectious Diseases, Antimicrobial Resistance, Human Gut Microbiome

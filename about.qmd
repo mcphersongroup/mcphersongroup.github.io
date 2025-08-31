@@ -1,0 +1,36 @@
+---
+title: "About"
+---
+
+# About the McPherson Group
+
+## Our Mission
+
+The McPherson Group is dedicated to advancing scientific knowledge through rigorous research, open collaboration, and the development of innovative methodologies.
+
+## Research Philosophy
+
+We believe in:
+
+- **Open Science**: Making our research accessible and reproducible
+- **Collaboration**: Working across disciplines to tackle complex problems
+- **Innovation**: Developing new methods and approaches
+- **Excellence**: Maintaining the highest standards in our research
+
+## Lab Environment
+
+Our group fosters a collaborative and inclusive environment where researchers at all levels can thrive and contribute to meaningful scientific discoveries.
+
+## Location
+
+[University/Institution Name]  
+[Department]  
+[Address]
+
+## Contact Information
+
+**Principal Investigator**: Dr. [Name]  
+**Email**: [email@institution.edu]  
+**Phone**: [phone number]
+
+For prospective students or postdocs interested in joining the group, please reach out via email with your CV and research interests.

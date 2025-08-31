@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "McPherson Group"
+  description: "Research Group Website"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: people.qmd
+        text: People
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

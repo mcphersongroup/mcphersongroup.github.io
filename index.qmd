@@ -1,0 +1,24 @@
+---
+title: "McPherson Group"
+---
+
+# Welcome to the McPherson Group
+
+The McPherson Group is a research laboratory focused on advancing knowledge through innovative research and collaboration.
+
+## Research Focus
+
+Our group conducts cutting-edge research in:
+
+- Data science and computational methods
+- Statistical modeling and analysis
+- Interdisciplinary research collaborations
+- Open science and reproducible research
+
+## News & Updates
+
+Stay tuned for updates on our latest research findings, publications, and group activities.
+
+## Contact
+
+For inquiries about our research or potential collaborations, please visit our [About](about.qmd) page for contact information.

@@ -1,0 +1,31 @@
+---
+title: "Publications"
+---
+
+# Publications
+
+## Recent Publications
+
+### 2024
+
+1. Author, A., Author, B., & McPherson, X. (2024). *Title of recent publication*. Journal Name, Volume(Issue), pages. [DOI]
+
+2. McPherson, X., & Collaborator, Y. (2024). *Another publication title*. Conference Proceedings, pages. [DOI]
+
+### 2023
+
+1. Author, C., McPherson, X., et al. (2023). *Earlier publication*. Journal Name, Volume(Issue), pages. [DOI]
+
+## Preprints
+
+1. Author, A., & McPherson, X. (2024). *Preprint title*. bioRxiv. [DOI]
+
+## Selected Presentations
+
+- Conference presentation at [Conference Name] (2024)
+- Invited talk at [Institution/Meeting] (2024)
+- Poster presentation at [Conference Name] (2023)
+
+---
+
+*For a complete list of publications, see [Google Scholar](https://scholar.google.com) or [ORCID](https://orcid.org) profiles.*

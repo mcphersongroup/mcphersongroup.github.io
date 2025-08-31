@@ -51,3 +51,13 @@ rsconnect/
 # Quarto
 /.quarto/
 /_site/
+
+# GitHub Actions
+.github/workflows/temp/
+
+# Node modules (if any JS dependencies are added)
+node_modules/
+
+# Environment files
+.env
+.env.local

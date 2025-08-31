@@ -10,7 +10,7 @@ title: "People"
 - **Position**: Principal Investigator
 - **Education**: Doctorate of Pharmacy (Pharm.D.), University of Houston College of Pharmacy, 2021
 - **Research Interests**: Infectious Diseases, Antimicrobial Resistance, Human Gut Microbiome
-- **Email**: [jacobmcpherson@utexas.edu](mailto:jacobmcpherson@utexas.edu), [jkmcpherson@uh.edu](mailto:jkmcpherson@uh.edu), or (business) [jacob@jacobkmcpherson.com](mailto:jacob@jacobkmcpherson.com)
+- **Email**: [jacobmcpherson@utexas.edu](mailto:jacobmcpherson@utexas.edu), [jkmcpherson@uh.edu](mailto:jkmcpherson@uh.edu), or [jacob@jacobkmcpherson.com](mailto:jacob@jacobkmcpherson.com) (business) 
 - **ORCID**: [ORCID 0000-0001-5486-4945](https://orcid.org/0000-0001-5486-4945)
 - **AUTHOR.LINK**: [https://author.link/JacobKMcPherson](https://author.link/JacobKMcPherson)
 

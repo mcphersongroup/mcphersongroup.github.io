@@ -8,7 +8,7 @@ title: "People"
 
 ### Jacob K. McPherson
 - **Position**: Principal Investigator
-- **Profile**: [JacobKMcPherson.github.io](hhtps://jacobkmcpherson.github.io)
+- **Profile**: [JacobKMcPherson.github.io](https://jacobkmcpherson.github.io)
 - **Education**: Doctorate of Pharmacy (Pharm.D.), University of Houston College of Pharmacy, 2021
 - **Research Interests**: Infectious Diseases, Antimicrobial Resistance, Human Gut Microbiome
 - **Email**: &#9993; [jacobmcpherson@utexas.edu](mailto:jacobmcpherson@utexas.edu), &#9993; [jkmcpherson@uh.edu](mailto:jkmcpherson@uh.edu)

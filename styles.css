@@ -10,7 +10,7 @@
 
 /* Example: If using a navbar as header banner */
 .navbar {
-  background: linear-gradient(90deg, #ffffff 0%, #f5f6fa 50%, #e3f2fd 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #f5f6fa 50%, #003366 100%);
   color: #003366;
   border-bottom: 1px solid #e3f2fd;
 }

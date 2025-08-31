@@ -19,6 +19,11 @@ website:
         text: Publications
       - href: people.qmd
         text: People
+theme:
+  light:
+    navbar-bg: "#f8f9fa"   # very light gray background
+    navbar-fg: "#212529"   # dark gray for text/icons
+    navbar-hl: "#007bff"   # soft blue for highlight/accent
 
 format:
   html:

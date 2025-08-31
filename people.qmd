@@ -1,0 +1,53 @@
+---
+title: "People"
+---
+
+# Group Members
+
+## Principal Investigator
+
+### Dr. [Principal Investigator Name]
+- **Position**: Principal Investigator
+- **Education**: Ph.D. in [Field], [University], [Year]
+- **Research Interests**: [Brief description of research interests]
+- **Email**: [email@institution.edu]
+- **ORCID**: [ORCID ID]
+
+## Current Members
+
+### Graduate Students
+
+#### [Student Name 1]
+- **Degree Program**: Ph.D. in [Program]
+- **Research Focus**: [Brief description]
+- **Email**: [student1@institution.edu]
+
+#### [Student Name 2]
+- **Degree Program**: M.S. in [Program]
+- **Research Focus**: [Brief description]
+- **Email**: [student2@institution.edu]
+
+### Postdoctoral Researchers
+
+#### Dr. [Postdoc Name]
+- **Position**: Postdoctoral Research Associate
+- **Research Focus**: [Brief description]
+- **Email**: [postdoc@institution.edu]
+
+### Undergraduate Researchers
+
+#### [Undergraduate Name]
+- **Major**: [Major]
+- **Research Project**: [Brief description]
+
+## Alumni
+
+### Former Graduate Students
+- **Dr. [Alumnus Name]** (Ph.D. 2023) - Now at [Current Position, Institution]
+
+### Former Postdocs
+- **Dr. [Former Postdoc]** (2022-2023) - Now at [Current Position, Institution]
+
+## Join Our Group
+
+We welcome applications from motivated students and researchers. Please see our [About](about.qmd) page for contact information.

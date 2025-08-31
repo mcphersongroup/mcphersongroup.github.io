@@ -1,0 +1,35 @@
+---
+title: "Research"
+---
+
+# Research Areas
+
+## Current Projects
+
+### Project 1: [Project Title]
+Brief description of ongoing research project and its significance.
+
+### Project 2: [Project Title]
+Brief description of ongoing research project and its significance.
+
+## Research Methods
+
+Our group employs a variety of methodological approaches including:
+
+- Statistical modeling and inference
+- Computational methods
+- Data visualization
+- Experimental design
+- Meta-analysis
+
+## Collaborations
+
+We actively collaborate with researchers from various institutions and disciplines to address complex research questions.
+
+## Funding
+
+Our research is supported by grants from:
+
+- [Funding Agency 1]
+- [Funding Agency 2]
+- [Funding Agency 3]

@@ -1,0 +1,35 @@
+---
+title: "Data Science and Computational Methods"
+---
+
+# Data Science and Computational Methods
+
+![Data Science Research](images/data-science-research.svg){.img-fluid}
+
+## Overview
+
+Our research in data science and computational methods focuses on developing innovative approaches to analyze complex datasets and extract meaningful insights from pharmaceutical and biomedical data.
+
+## Current Projects
+
+### Advanced Analytics for Drug Discovery
+Developing machine learning algorithms to identify potential drug targets and predict compound efficacy.
+
+### Computational Pharmacology
+Using computational methods to model drug-receptor interactions and predict adverse drug reactions.
+
+## Methods and Tools
+
+- Machine Learning and Deep Learning
+- Natural Language Processing
+- Big Data Analytics
+- Cloud Computing Platforms
+- Statistical Software (R, Python, SAS)
+
+## Collaborations
+
+We collaborate with pharmaceutical companies, regulatory agencies, and academic institutions to advance computational approaches in drug development and healthcare.
+
+## Publications
+
+Recent work in this area includes publications on machine learning applications in pharmacovigilance and computational approaches to personalized medicine.

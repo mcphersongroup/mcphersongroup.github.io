@@ -1,5 +1,7 @@
 # Welcome to the McPherson Group
 
+![McPherson Group Research](images/home-hero.svg){.img-fluid}
+
 The McPherson Group is a research group focused on advancing knowledge through innovative research and collaboration.
 
 ## Research Focus

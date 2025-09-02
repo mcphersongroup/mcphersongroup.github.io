@@ -1,9 +1,0 @@
-<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="400" fill="#e3f2fd"/>
-  <rect x="50" y="50" width="700" height="300" fill="#ffffff" stroke="#003366" stroke-width="2" rx="10"/>
-  <text x="400" y="180" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#003366">McPherson Group</text>
-  <text x="400" y="220" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#666666">Research Excellence</text>
-  <circle cx="200" cy="120" r="30" fill="#003366" opacity="0.7"/>
-  <circle cx="600" cy="120" r="30" fill="#003366" opacity="0.7"/>
-  <path d="M300 280 Q400 250 500 280" stroke="#003366" stroke-width="3" fill="none"/>
-</svg>

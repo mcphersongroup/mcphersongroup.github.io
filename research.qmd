@@ -4,6 +4,20 @@ title: "Research"
 
 # Research Areas
 
+Our group conducts cutting-edge pharmacological research across four main areas:
+
+## [Data Science and Computational Methods](research-data-science.qmd)
+Advanced analytics, machine learning, and computational approaches for pharmaceutical research and drug discovery.
+
+## [Statistical Modeling and Analysis](research-statistical-modeling.qmd)
+Robust statistical methodologies for analyzing complex pharmaceutical and health data with emphasis on causal inference.
+
+## [Interdisciplinary Research Collaborations](research-interdisciplinary.qmd)
+Cross-disciplinary partnerships bringing together pharmacy, statistics, computer science, and clinical medicine expertise.
+
+## [Open Science and Reproducible Research](research-open-science.qmd)
+Advancing transparent, accessible, and verifiable research practices in pharmaceutical sciences.
+
 ## Current Projects
 
 ### Project 1: [Project Title]

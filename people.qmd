@@ -27,40 +27,64 @@ title: "People"
 
 ### Graduate Students
 
-![Graduate Student](images/placeholder-graduate.svg){.img-fluid width="150"}
-
+::: {.grid}
+::: {.g-col-6}
 #### \[Student Name 1\]
 
 -   **Degree Program**: Ph.D. in \[Program\]
 -   **Research Focus**: \[Brief description\]
 -   **Email**: \[student1\@institution.edu\]
+:::
 
+::: {.g-col-6}
 ![Graduate Student](images/placeholder-graduate.svg){.img-fluid width="150"}
+:::
+:::
 
+::: {.grid}
+::: {.g-col-6}
 #### \[Student Name 2\]
 
 -   **Degree Program**: M.S. in \[Program\]
 -   **Research Focus**: \[Brief description\]
 -   **Email**: \[student2\@institution.edu\]
+:::
+
+::: {.g-col-6}
+![Graduate Student](images/placeholder-graduate.svg){.img-fluid width="150"}
+:::
+:::
 
 ### Postdoctoral Researchers
 
-![Postdoctoral Researcher](images/placeholder-postdoc.svg){.img-fluid width="150"}
-
+::: {.grid}
+::: {.g-col-6}
 #### Dr. \[Postdoc Name\]
 
 -   **Position**: Postdoctoral Research Associate
 -   **Research Focus**: \[Brief description\]
 -   **Email**: \[postdoc\@institution.edu\]
+:::
+
+::: {.g-col-6}
+![Postdoctoral Researcher](images/placeholder-postdoc.svg){.img-fluid width="150"}
+:::
+:::
 
 ### Undergraduate Researchers
 
-![Undergraduate Researcher](images/placeholder-undergraduate.svg){.img-fluid width="150"}
-
+::: {.grid}
+::: {.g-col-6}
 #### \[Undergraduate Name\]
 
 -   **Major**: \[Major\]
 -   **Research Project**: \[Brief description\]
+:::
+
+::: {.g-col-6}
+![Undergraduate Researcher](images/placeholder-undergraduate.svg){.img-fluid width="150"}
+:::
+:::
 
 ## Alumni
 

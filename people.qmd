@@ -8,7 +8,8 @@ title: "People"
 
 ::: {.grid}
 ::: {.g-col-6}
-**Name:** Jacob K. McPherson
+#### \[Jacob K. McPherson\]
+
 -   **Position**: Principal Investigator
 -   **Profile**: [JacobKMcPherson.github.io](https://jacobkmcpherson.github.io)
 -   **Education**: Doctorate of Pharmacy (Pharm.D.), University of Houston College of Pharmacy, 2021

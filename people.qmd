@@ -12,7 +12,10 @@ title: "People"
 
 -   **Position**: Principal Investigator
 -   **Profile**: [JacobKMcPherson.github.io](https://jacobkmcpherson.github.io)
--   **Education**: Bachelor of Science, University of Texas at Austin, 2015; Doctorate of Pharmacy, University of Houston College of Pharmacy, 2021; Doctorate of Philosophy, Pharmacology, University of Houston College of Pharmacy, 2025
+-   **Education**: 
+  - University of Texas at Austin, 2015 (BS); 
+  - University of Houston College of Pharmacy, 2021 (PharmD)
+  - University of Houston College of Pharmacy, 2025 (PhD)
 -   **Email**: ✉ [jacobmcpherson\@utexas.edu](mailto:jacobmcpherson@utexas.edu)
 -   **ORCID**: [0000-0001-5486-4945](https://orcid.org/0000-0001-5486-4945)
 -   **Author.Link**: [author.link/JacobKMcPherson](https://author.link/JacobKMcPherson)

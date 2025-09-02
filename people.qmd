@@ -20,7 +20,7 @@ title: "People"
 :::
 
 ::: {.g-col-6}
-![Jacob K. McPherson](images/jacob-mcpherson.svg){.img-fluid width="200"}
+![](images/jacob-mcpherson.svg){.img-fluid width="200"}
 :::
 :::
 
@@ -38,7 +38,7 @@ title: "People"
 :::
 
 ::: {.g-col-6}
-![Graduate Student](images/placeholder-graduate.svg){.img-fluid width="150"}
+![](images/placeholder-graduate.svg){.img-fluid width="150"}
 :::
 :::
 
@@ -52,7 +52,7 @@ title: "People"
 :::
 
 ::: {.g-col-6}
-![Graduate Student](images/placeholder-graduate.svg){.img-fluid width="150"}
+![](images/placeholder-graduate.svg){.img-fluid width="150"}
 :::
 :::
 
@@ -68,7 +68,7 @@ title: "People"
 :::
 
 ::: {.g-col-6}
-![Postdoctoral Researcher](images/placeholder-postdoc.svg){.img-fluid width="150"}
+![](images/placeholder-postdoc.svg){.img-fluid width="150"}
 :::
 :::
 
@@ -83,7 +83,7 @@ title: "People"
 :::
 
 ::: {.g-col-6}
-![Undergraduate Researcher](images/placeholder-undergraduate.svg){.img-fluid width="150"}
+![](images/placeholder-undergraduate.svg){.img-fluid width="150"}
 :::
 :::
 

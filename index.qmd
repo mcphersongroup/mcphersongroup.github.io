@@ -1,10 +1,10 @@
 # Welcome to the McPherson Group
 
-The McPherson Group is a research laboratory focused on advancing knowledge through innovative research and collaboration.
+The McPherson Group is a research group focused on advancing knowledge through innovative research and collaboration.
 
 ## Research Focus
 
-Our group conducts cutting-edge research in:
+Our group conducts cutting-edge pharmacological research in:
 
 - Data science and computational methods
 - Statistical modeling and analysis

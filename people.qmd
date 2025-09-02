@@ -6,16 +6,22 @@ title: "People"
 
 ## Principal Investigator
 
-![Jacob K. McPherson](images/jacob-mcpherson.svg){.img-fluid width="200"}
+::: {.grid}
+::: {.g-col-6}
+**Name:** Jacob K. McPherson
+-   **Position**: Principal Investigator
+-   **Profile**: [JacobKMcPherson.github.io](https://jacobkmcpherson.github.io)
+-   **Education**: Doctorate of Pharmacy (Pharm.D.), University of Houston College of Pharmacy, 2021
+-   **Email**: ✉ [jacobmcpherson\@utexas.edu](mailto:jacobmcpherson@utexas.edu)
+-   **ORCID**: [0000-0001-5486-4945](https://orcid.org/0000-0001-5486-4945)
+-   **Author.Link**: [author.link/JacobKMcPherson](https://author.link/JacobKMcPherson)
+-   **Business Inquiries**: 🌎 [jacobkmcpherson.com](https://www.jacobkmcpherson.com)
+:::
 
-### Jacob K. McPherson
-- **Position**: Principal Investigator
-- **Profile**: [JacobKMcPherson.github.io](https://jacobkmcpherson.github.io)
-- **Education**: Doctorate of Pharmacy (Pharm.D.), University of Houston College of Pharmacy, 2021
-- **Email**: &#9993; [jacobmcpherson@utexas.edu](mailto:jacobmcpherson@utexas.edu)
-- **ORCID**: [0000-0001-5486-4945](https://orcid.org/0000-0001-5486-4945)
-- **Author.Link**: [author.link/JacobKMcPherson](https://author.link/JacobKMcPherson)
-- **Business Inquiries**: &#127758; [jacobkmcpherson.com](https://www.jaccobkmcpherson.com) &#9993; [jacob@jacobkmcpherson.com](mailto:jacob@jacobkmcpherson.com)
+::: {.g-col-6}
+![Jacob K. McPherson](images/jacob-mcpherson.svg){.img-fluid width="200"}
+:::
+:::
 
 ## Current Members
 
@@ -23,42 +29,48 @@ title: "People"
 
 ![Graduate Student](images/placeholder-graduate.svg){.img-fluid width="150"}
 
-#### [Student Name 1]
-- **Degree Program**: Ph.D. in [Program]
-- **Research Focus**: [Brief description]
-- **Email**: [student1@institution.edu]
+#### \[Student Name 1\]
+
+-   **Degree Program**: Ph.D. in \[Program\]
+-   **Research Focus**: \[Brief description\]
+-   **Email**: \[student1\@institution.edu\]
 
 ![Graduate Student](images/placeholder-graduate.svg){.img-fluid width="150"}
 
-#### [Student Name 2]
-- **Degree Program**: M.S. in [Program]
-- **Research Focus**: [Brief description]
-- **Email**: [student2@institution.edu]
+#### \[Student Name 2\]
+
+-   **Degree Program**: M.S. in \[Program\]
+-   **Research Focus**: \[Brief description\]
+-   **Email**: \[student2\@institution.edu\]
 
 ### Postdoctoral Researchers
 
 ![Postdoctoral Researcher](images/placeholder-postdoc.svg){.img-fluid width="150"}
 
-#### Dr. [Postdoc Name]
-- **Position**: Postdoctoral Research Associate
-- **Research Focus**: [Brief description]
-- **Email**: [postdoc@institution.edu]
+#### Dr. \[Postdoc Name\]
+
+-   **Position**: Postdoctoral Research Associate
+-   **Research Focus**: \[Brief description\]
+-   **Email**: \[postdoc\@institution.edu\]
 
 ### Undergraduate Researchers
 
 ![Undergraduate Researcher](images/placeholder-undergraduate.svg){.img-fluid width="150"}
 
-#### [Undergraduate Name]
-- **Major**: [Major]
-- **Research Project**: [Brief description]
+#### \[Undergraduate Name\]
+
+-   **Major**: \[Major\]
+-   **Research Project**: \[Brief description\]
 
 ## Alumni
 
 ### Former Graduate Students
-- **Dr. [Alumnus Name]** (Ph.D. 2023) - Now at [Current Position, Institution]
+
+-   **Dr. \[Alumnus Name\]** (Ph.D. 2023) - Now at \[Current Position, Institution\]
 
 ### Former Postdocs
-- **Dr. [Former Postdoc]** (2022-2023) - Now at [Current Position, Institution]
+
+-   **Dr. \[Former Postdoc\]** (2022-2023) - Now at \[Current Position, Institution\]
 
 ## Join Our Group
 

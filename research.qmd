@@ -2,7 +2,7 @@
 title: "Research"
 ---
 
-# Research Areas
+<!--- # Research Areas -->
 
 Our group conducts cutting-edge pharmacological research across four main areas:
 

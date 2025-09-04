@@ -2,7 +2,7 @@
 title: "Publications"
 ---
 
-# Publications
+<!-- # Publications -->
 
 ## Recent Publications
 

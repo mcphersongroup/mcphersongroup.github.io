@@ -1,4 +1,8 @@
-# Welcome to the McPherson Group
+---
+title: "Welcome"
+---
+
+<!--- # Welcome to the McPherson Group -->
 
 The McPherson Group is a research group focused on advancing knowledge through innovative research and collaboration.
 

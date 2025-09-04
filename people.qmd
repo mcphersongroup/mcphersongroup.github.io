@@ -5,7 +5,7 @@ title: "People"
 <!-- # Group Members -->
 
 ## Principal Investigator
-### \[Jacob K. McPherson\]
+### Jacob K. McPherson
 ::: {.grid}
 ::: {.g-col-6}
 -   **Position**: Principal Investigator

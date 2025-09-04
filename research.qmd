@@ -39,17 +39,17 @@ Dynamics and Host-Microbe Interactions
 
 ::: {.g-col-4}
 
-**Antimicrobial drug development**
+**Drug Development**
 
-Antibiotics, antifungals, and antivirals
+Antibiotics, probiotics, antifungals, and antivirals
 
 :::
 
 ::: {.g-col-4}
 
-**Probiotic drug development**
+** Cost-Effectiveness Analysis**
 
-Genetically engineered synbiotics (pre- + probiotics)
+
 
 :::
 

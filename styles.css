@@ -21,8 +21,14 @@
   color: #003366 !important;
 }
 
-.nav-link {
-  color: #003366 !important;
+/* Left-side nav links (dark navy) */
+.navbar-nav.me-auto .nav-link {
+  color: #003366 !important;  /* midnight blue */
+}
+
+/* Right-side nav links (white) */
+.navbar-nav.ms-auto .nav-link {
+  color: #ffffff !important;  /* white */
 }
 
 .lead {

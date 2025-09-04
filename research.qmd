@@ -39,17 +39,17 @@ Dynamics and Host-Microbe Interactions
 
 ::: {.g-col-4}
 
-**Column 2, Row 2 Content**
+**Antimicrobial drug development**
 
-placeholder content
+Antibiotics, antifungals, and antivirals
 
 :::
 
 ::: {.g-col-4}
 
-**Column 3, Row 2 Content**
+**Probiotic drug development**
 
-placeholder content
+Genetically engineered synbiotics (pre- + probiotics)
 
 :::
 

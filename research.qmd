@@ -4,37 +4,62 @@ title: "Research"
 
 <!--- # Research Areas -->
 
-Our group conducts cutting-edge pharmacological research across four main areas:
+Our group conducts pharmacological research across four main areas:
 
-## [Infectious Diseases Pharmacy Practice](research/infectiousdiseases.qmd)
+
+::: {.grid}
+
+::: {.g-col-4}
+[**Infectious Diseases *Pharmacy Practice* **](research/infectiousdiseases.qmd)
+
 Advanced analytics, machine learning, and computational approaches for pharmaceutical research and drug discovery.
 
-## [Antimicrobial Stewardship](research/antimicrobialstewardship.qmd)
+:::
+
+::: {.g-col-4}
+[**Antimicrobial Stewardship**](research/antimicrobialstewardship.qmd)
+
 Robust statistical methodologies for analyzing complex pharmaceutical and health data with emphasis on causal inference.
+:::
 
-## [Antimicrobial Resistance Epidemiology & Pharmacology](research/antimicrobialresistance.qmd)
-Cross-disciplinary partnerships bringing together pharmacy, statistics, computer science, and clinical medicine expertise.
+::: {.g-col-4}
+[*Antimicrobial Resistance Epidemiology & Pharmacology*](research/antimicrobialresistance.qmd)
+:::
 
-## [Human Gut Microbiome Dynamics and Host-Microbe Interactions](research/humangutmicrobiome.qmd)
-Advancing transparent, accessible, and verifiable research practices in pharmaceutical sciences.
+::: {.g-col-4}
+[**Human Gut Microbiome** Dynamics and Host-Microbe Interactions](research/humangutmicrobiome.qmd)
+:::
+
+::: {.g-col-4}
+**Column 2, Row 2 Content**
+:::
+
+::: {.g-col-4}
+**Column 3, Row 2 Content**
+:::
+
+:::
+
 
 ## Current Projects
 
-### Project 1: [Project Title]
+### Project 1: \[Project Title\]
+
 Brief description of ongoing research project and its significance.
 
-### Project 2: [Project Title]
+### Project 2: \[Project Title\]
+
 Brief description of ongoing research project and its significance.
 
 ## Research Methods
 
 Our group employs a variety of methodological approaches including:
 
-- Statistical modeling and inference
-- Computational methods
-- Data visualization
-- Experimental design
-- Meta-analysis
+-   Statistical modeling and inference
+-   Computational methods
+-   Data visualization
+-   Experimental design
+-   Meta-analysis
 
 ## Collaborations
 
@@ -44,6 +69,6 @@ We actively collaborate with researchers from various institutions and disciplin
 
 Our research is supported by grants from:
 
-- [Funding Agency 1]
-- [Funding Agency 2]
-- [Funding Agency 3]
+-   \[Funding Agency 1\]
+-   \[Funding Agency 2\]
+-   \[Funding Agency 3\]

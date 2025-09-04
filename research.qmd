@@ -12,28 +12,28 @@ Our group conducts pharmacological research across four main areas:
 ::: {.g-col-4}
 [**Infectious Diseases**](research/infectiousdiseases.qmd)
 
-*Pharmacy practice of pharmacokinetics / pharmacodynamics (PK/PD) to susceptible or resistant organisms*
+Pharmacy practice of pharmacokinetics / pharmacodynamics (PK/PD) to susceptible or resistant organisms
 
 :::
 
 ::: {.g-col-4}
 [**Antimicrobial Stewardship**](research/antimicrobialstewardship.qmd)
 
-*Pharmacy practice of antimicrobial stewardship and economic justification*
+Pharmacy practice of antimicrobial stewardship and economic justification
 
 :::
 
 ::: {.g-col-4}
 [**Antimicrobial Resistance**](research/antimicrobialresistance.qmd)
 
-*Spatiotemporal genomic epidemiology and pharmacology*
+Spatiotemporal genomic epidemiology and pharmacology
 
 :::
 
 ::: {.g-col-4}
 [**Human Gut Microbiome** ](research/humangutmicrobiome.qmd)
 
-*Dynamics and Host-Microbe Interactions*
+Dynamics and Host-Microbe Interactions
 
 :::
 

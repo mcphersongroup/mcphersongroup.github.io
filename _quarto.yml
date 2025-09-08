@@ -13,20 +13,18 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: research.qmd
+      - href: research/index.qmd
         text: Research
         menu:
-          - href: research-data-science.qmd
-            text: "Data Science & Computational Methods"
-          - href: research-statistical-modeling.qmd
+          - href: research/infectiousdiseases.qmd
+            text: "Infectious Diseases"
+          - href: research/humangutmicrobiome.qmd
+            text: "Human Gut Microbiome"
+          - href: research/antimicrobialresistance.qmd
+            text: "Antimicrobial Resistance"
+          - href: research/antimicrobialstewardship.qmd
             text: "Statistical Modeling & Analysis"
-          - href: research-interdisciplinary.qmd
-            text: "Interdisciplinary Collaborations"
-          - href: research-open-science.qmd
-            text: "Open Science & Reproducible Research"
-      - href: publications.qmd
-        text: Publications
-      - href: people.qmd
+      - href: people/index.qmd
         text: People
     right:
       - icon: book

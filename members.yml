@@ -1,0 +1,33 @@
+# Organization Members Configuration
+# This file defines the current members of the McPherson Group
+# whose posts should be aggregated into the organization repository
+
+members:
+  - username: JacobKMcPherson
+    name: "Jacob K. McPherson" 
+    role: "Principal Investigator"
+    profile_url: "https://jacobkmcpherson.github.io"
+    posts_path: "/research/posts"
+    active: true
+    
+  # Add additional members here as they join the organization
+  # - username: NewMemberUsername
+  #   name: "Full Name"
+  #   role: "Role/Position"
+  #   profile_url: "https://newmemberusername.github.io"
+  #   posts_path: "/research/posts"
+  #   active: true
+
+# Configuration for post synchronization
+sync_config:
+  # How often to check for new posts (in GitHub Actions cron format)
+  schedule: "0 6 * * *"  # Daily at 6 AM UTC
+  
+  # Maximum number of posts to sync per member
+  max_posts_per_member: 50
+  
+  # Whether to preserve original post dates
+  preserve_dates: true
+  
+  # Whether to add attribution footer to posts
+  add_attribution: true

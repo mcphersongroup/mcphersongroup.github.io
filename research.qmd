@@ -77,7 +77,7 @@ Our group employs a variety of methodological approaches including:
 
 ## External Resources
 
-
+### The Literature 
 ::: {.grid}
 ::: {.g-col-4}
 [**ConnectPapers** ](https://www.connectedpapers.com/)
@@ -102,28 +102,71 @@ Our group employs a variety of methodological approaches including:
 ::: {.g-col-4}
 [**Zotero**](https://www.zotero.org/)
 
+text
 :::
+
+### Experimentation
 
 ::: {.g-col-4}
 [**Springer Nature Experiments**](https://experiments.springernature.com/)
+
+text
 
 :::
 ::: {.g-col-4}
 [**Protocols.io**](https://www.protocols.io/)
 
+text
+
 :::
 ::: {.g-col-4}
 [**Emerald Cloud Labs**](https://www.emeraldcloudlab.com/)
 
-:::
-::: {.g-col-4}
-[**SciScure**](https://www.scisure.com/)
+text
 
 :::
+
+::: {.g-col-4}
+[**Thermo Fisher**](https://www.thermofisher.com/)
+
+text
+:::
+
+::: {.g-col-4}
+[**Qiagen**](https://www.qiagen.com/us)
+
+text
+
+:::
+::: {.g-col-4}
+[**Eppendorf**](https://www.eppendorf.com/)
+
+text
+:::
+
+### Data Management
 ::: {.g-col-4}
 [**REDCap**](https://project-redcap.org/)
 
+text
+
 :::
+
+::: {.g-col-4}
+[**SciScure**](https://www.scisure.com/)
+
+text
+
+:::
+::: {.g-col-4}
+[**AWS-Docker**](https://sib-swiss.github.io/AWS-docker/)
+
+Run [Docker](https://www.docker.com/) containerized [RStudio](https://posit.co/), [VS Code](https://code.visualstudio.com/), or [Jupyter Notebooks](https://jupyter.org/) on [AWS](https://aws.amazon.com/) EC2 instances, 
+by [GeertvanGeest](https://github.com/GeertvanGeest) of the [Swiss Institute of Bioinformatics](https://www.sib.swiss/)
+
+:::
+
+### Data Analysis
 ::: {.g-col-4}
 [**StatsAndR**](https://statsandr.com/) 
 
@@ -133,41 +176,58 @@ by [*Antoine Soetewey*](https://antoinesoetewey.com/)
 [**Biorender**](https://www.biorender.com/)
 
 :::
-::: {.g-col-4}
-[**AWS-Docker**](https://sib-swiss.github.io/AWS-docker/)
-Run [Docker](https://www.docker.com/) containerized [RStudio](https://posit.co/), [VS Code](https://code.visualstudio.com/), or [Jupyter Notebooks](https://jupyter.org/) on [AWS](https://aws.amazon.com/) EC2 instances, 
-by [GeertvanGeest](https://github.com/GeertvanGeest) of the [Swiss Institute of Bioinformatics](https://www.sib.swiss/)
-
-:::
 
 ::: {.g-col-4}
 [**Neurosnap AI**](https://neurosnap.ai/)
 
+text
+
 :::
 
 ::: {.g-col-4}
-[**UH Innovation**](https://www.uh.edu/innovation/)
+[**Tidyverse**](https://www.tidyverse.org/)
+
+text
 
 :::
-::: {.g-col-4}
-[**Copyright.com**](https://www.copyright.com/)
-:::
-::: {.g-col-4}
-[**Copyright.com**](https://www.copyright.gov/)
-:::
+
+### Peer Review
 
 ::: {.g-col-4}
 [**Springer Nature**](https://link.springernature.com/home/)
+
 [submissions and peer review]
 :::
 ::: {.g-col-4}
 [**Cell Press**](https://www.cell.com/multi-journal-submission)
+
 [multi-journal submission]
 :::
 ::: {.g-col-4}
 [**The Lancet**](https://www.thelancet.com/for-authors)
+
 [submissions and peer review]
 :::
+
+### Innovation
+::: {.g-col-4}
+[**UH Innovation**](https://www.uh.edu/innovation/)
+
+text
+
+:::
+::: {.g-col-4}
+[**Copyright.com**](https://www.copyright.com/)
+
+text
+:::
+::: {.g-col-4}
+[**Copyright.com**](https://www.copyright.gov/)
+
+text
+:::
+
+### Houston, Texas
 
 ::: {.g-col-4}
 [**Texas Medical Center**](https://www.tmc.edu/)
@@ -175,6 +235,8 @@ by [GeertvanGeest](https://github.com/GeertvanGeest) of the [Swiss Institute of 
 :::
 ::: {.g-col-4}
 [**Gulf Coast Consortia**](https://www.gulfcoastconsortia.org/)
+
+text
 
 :::
 

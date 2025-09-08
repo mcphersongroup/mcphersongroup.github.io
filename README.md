@@ -8,9 +8,12 @@ This repository contains the source code for the McPherson Group research websit
 
 - `index.qmd` - Homepage
 - `about.qmd` - About the group
-- `research.qmd` - Research areas and projects
+- `research/index.qmd` - Research areas and projects
+- `research/posts/` - Research posts (aggregated from member profiles)
 - `publications.qmd` - Publications and presentations
-- `people.qmd` - Group members and alumni
+- `people/index.qmd` - Group members and alumni
+- `members.yml` - Organization member configuration for post synchronization
+- `sync_member_posts.py` - Script for syncing member posts
 - `_quarto.yml` - Quarto configuration
 - `styles.css` - Custom CSS styling
 
@@ -27,6 +30,16 @@ To work with this website locally:
 ## Deployment
 
 The website is automatically deployed to GitHub Pages using GitHub Actions when changes are pushed to the main branch. The workflow is defined in `.github/workflows/quarto-publish.yml`.
+
+### Member Post Synchronization
+
+The website automatically aggregates research posts from organization members' individual GitHub profiles. This is handled by:
+
+- `.github/workflows/sync-member-posts.yml` - Runs daily to sync new posts
+- `sync_member_posts.py` - Python script that performs the synchronization
+- `members.yml` - Configuration defining active members
+
+See [MEMBER_SYNC_DOCS.md](MEMBER_SYNC_DOCS.md) for detailed documentation.
 
 ## Customization
 

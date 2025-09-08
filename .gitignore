@@ -56,6 +56,7 @@ rsconnect/
 
 # GitHub Actions
 .github/workflows/temp/
+*.deb
 
 # Node modules (if any JS dependencies are added)
 node_modules/

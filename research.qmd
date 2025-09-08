@@ -104,9 +104,10 @@ Our group employs a variety of methodological approaches including:
 
 text
 :::
+:::
 
 ### Experimentation
-
+::: {.grid}
 ::: {.g-col-4}
 [**Springer Nature Experiments**](https://experiments.springernature.com/)
 
@@ -143,8 +144,9 @@ text
 
 text
 :::
-
+:::
 ### Data Management
+::: {.grid}
 ::: {.g-col-4}
 [**REDCap**](https://project-redcap.org/)
 
@@ -165,8 +167,9 @@ Run [Docker](https://www.docker.com/) containerized [RStudio](https://posit.co/)
 by [GeertvanGeest](https://github.com/GeertvanGeest) of the [Swiss Institute of Bioinformatics](https://www.sib.swiss/)
 
 :::
-
+:::
 ### Data Analysis
+::: {.grid}
 ::: {.g-col-4}
 [**StatsAndR**](https://statsandr.com/) 
 
@@ -190,9 +193,9 @@ text
 text
 
 :::
-
+:::
 ### Peer Review
-
+::: {.grid}
 ::: {.g-col-4}
 [**Springer Nature**](https://link.springernature.com/home/)
 
@@ -208,8 +211,9 @@ text
 
 [submissions and peer review]
 :::
-
+:::
 ### Innovation
+::: {.grid}
 ::: {.g-col-4}
 [**UH Innovation**](https://www.uh.edu/innovation/)
 
@@ -226,9 +230,9 @@ text
 
 text
 :::
-
+:::
 ### Houston, Texas
-
+::: {.grid}
 ::: {.g-col-4}
 [**Texas Medical Center**](https://www.tmc.edu/)
 

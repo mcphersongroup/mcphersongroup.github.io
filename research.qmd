@@ -10,28 +10,28 @@ Our group conducts pharmacological research across four main areas:
 ::: {.grid}
 
 ::: {.g-col-4}
-###[**Infectious Diseases**](research/infectiousdiseases.qmd)
+[**Infectious Diseases**](research/infectiousdiseases.qmd)
 
 Pharmacy practice of pharmacokinetics / pharmacodynamics (PK/PD) to susceptible or resistant organisms
 
 :::
 
 ::: {.g-col-4}
-###[**Antimicrobial Stewardship**](research/antimicrobialstewardship.qmd)
+[**Antimicrobial Stewardship**](research/antimicrobialstewardship.qmd)
 
 Pharmacy practice of antimicrobial stewardship and economic justification
 
 :::
 
 ::: {.g-col-4}
-###[**Antimicrobial Resistance**](research/antimicrobialresistance.qmd)
+[**Antimicrobial Resistance**](research/antimicrobialresistance.qmd)
 
 Spatiotemporal genomic epidemiology and pharmacology
 
 :::
 
 ::: {.g-col-4}
-###[**Human Gut Microbiome** ](research/humangutmicrobiome.qmd)
+[**Human Gut Microbiome** ](research/humangutmicrobiome.qmd)
 
 Dynamics and Host-Microbe Interactions
 
@@ -39,7 +39,7 @@ Dynamics and Host-Microbe Interactions
 
 ::: {.g-col-4}
 
-###**Drug Development**
+**Drug Development**
 
 Antibiotics, probiotics, antifungals, and antivirals
 
@@ -80,65 +80,102 @@ Our group employs a variety of methodological approaches including:
 
 ::: {.grid}
 ::: {.g-col-4}
-####[**ConnectPapers** ](https://www.connectedpapers.com/)
+[**ConnectPapers** ](https://www.connectedpapers.com/)
 
 :::
 ::: {.g-col-4}
-####[**OpenRead**](https://www.openread.academy/)
+[**OpenRead**](https://www.openread.academy/)
 
 :::
 ::: {.g-col-4}
-####[**Nature Navigator**](https://navigator.nature.com/)
+[**Nature Navigator**](https://navigator.nature.com/)
 
 :::
 ::: {.g-col-4}
-####[**OverLeaf](https://www.overleaf.com/)
+[**OverLeaf**](https://www.overleaf.com/)
 
 :::
 ::: {.g-col-4}
-####[**Favorite Journals**](https://pubmed.ncbi.nlm.nih.gov/?term=%27SEARCH-TERM%27%20AND%20(%221476-4687%22%5Bta%5D%20OR%20%222058-5276%22%5Bta%5D%20OR%20%221740-1534%22%5Bta%5D%20OR%20%221474-1784%22%5Bta%5D%20OR%20%221548-7105%22%5Bta%5D%20OR%20%221533-4406%22%5Bta%5D%20OR%20%221474-547X%22%5Bta%5D%20OR%20%221538-3598%22%5Bta%5D%20OR%20%221097-4172%22%5Bta%5D%20OR%20%221934-6069%22%5Bta%5D%20OR%20%221095-9203%22%5Bta%5D%20OR%20%221537-6591%22%5Bta%5D%20OR%20%221474-4457%22%5Bta%5D%20OR%20%222666-5247%22%5Bta%5D%20OR%20%221098-6596%22%5Bta%5D%20OR%20%221095-8274%22%5Bta%5D%20OR%20%221946-6242%22%5Bta%5D%20OR%20%221529-2916%22%5Bta%5D%20OR%20%221474-1741%22%5Bta%5D%20OR%20%221759-5053%22%5Bta%5D%20OR%20%221535-2900%22%5Bta%5D%20OR%20%221546-170X%22%5Bta%5D%20OR%20%221545-9985%22%5Bta%5D%20OR%20%221476-5381%22%5Bta%5D%20OR%20%221476-4679%22%5Bta%5D%20OR%20%221755-4349%22%5Bta%5D%20OR%20%222522-5839%22%5Bta%5D%20OR%20%222522-5812%22%5Bta%5D%20OR%20%221750-2799%22%5Bta%5D%20OR%20%222056-676X%22%5Bta%5D%20OR%20%222662-8449%22%5Bta%5D%20OR%20%221521-0081%22%5Bta%5D%20OR%20%221521-0103%22%5Bta%5D%20OR%20%221553-7374%22%5Bta%5D%20OR%20%222470-9468%22%5Bta%5D%20OR%20%221362-4962%22%5Bta%5D%20OR%20%221474-760X%22%5Bta%5D%20OR%20%221471-0064%22%5Bta%5D%20OR%20%221367-4811%22%5Bta%5D%20OR%20%221520-5126%22%5Bta%5D%20OR%20%221549-9626%22%5Bta%5D%20OR%20%221549-960X%22%5Bta%5D%20OR%20%222662-8457%22%5Bta%5D%20OR%20%221546-1696%22%5Bta%5D%20OR%20%221546-1718%22%5Bta%5D%20OR%20%221471-0080%22%5Bta%5D%20OR%20%221474-1776%22%5Bta%5D%20OR%20%221473-3099%22%5Bta%5D%20OR%20%221756-1833%22%5Bta%5D%20OR%20%221520-6890%22%5Bta%5D%20OR%20%221545-3278%22%5Bta%5D%20OR%20%221545-3251%22%5Bta%5D%20OR%20%221545-4509%22%5Bta%5D%20OR%20%221522-1601%22%5Bta%5D%20OR%20%221522-1210%22%5Bta%5D%20OR%20%221522-1563%22%5Bta%5D%20OR%20%221522-1555%22%5Bta%5D%20OR%20%221522-1539%22%5Bta%5D%20OR%20%221522-1547%22%5Bta%5D%20OR%20%221522-1466%22%5Bta%5D%20OR%20%221531-2267%22%5Bta%5D%20OR%20%221758-0463%22%5Bta%5D))
+[**Favorite Journals**](https://pubmed.ncbi.nlm.nih.gov/?term=%27SEARCH-TERM%27%20AND%20(%221476-4687%22%5Bta%5D%20OR%20%222058-5276%22%5Bta%5D%20OR%20%221740-1534%22%5Bta%5D%20OR%20%221474-1784%22%5Bta%5D%20OR%20%221548-7105%22%5Bta%5D%20OR%20%221533-4406%22%5Bta%5D%20OR%20%221474-547X%22%5Bta%5D%20OR%20%221538-3598%22%5Bta%5D%20OR%20%221097-4172%22%5Bta%5D%20OR%20%221934-6069%22%5Bta%5D%20OR%20%221095-9203%22%5Bta%5D%20OR%20%221537-6591%22%5Bta%5D%20OR%20%221474-4457%22%5Bta%5D%20OR%20%222666-5247%22%5Bta%5D%20OR%20%221098-6596%22%5Bta%5D%20OR%20%221095-8274%22%5Bta%5D%20OR%20%221946-6242%22%5Bta%5D%20OR%20%221529-2916%22%5Bta%5D%20OR%20%221474-1741%22%5Bta%5D%20OR%20%221759-5053%22%5Bta%5D%20OR%20%221535-2900%22%5Bta%5D%20OR%20%221546-170X%22%5Bta%5D%20OR%20%221545-9985%22%5Bta%5D%20OR%20%221476-5381%22%5Bta%5D%20OR%20%221476-4679%22%5Bta%5D%20OR%20%221755-4349%22%5Bta%5D%20OR%20%222522-5839%22%5Bta%5D%20OR%20%222522-5812%22%5Bta%5D%20OR%20%221750-2799%22%5Bta%5D%20OR%20%222056-676X%22%5Bta%5D%20OR%20%222662-8449%22%5Bta%5D%20OR%20%221521-0081%22%5Bta%5D%20OR%20%221521-0103%22%5Bta%5D%20OR%20%221553-7374%22%5Bta%5D%20OR%20%222470-9468%22%5Bta%5D%20OR%20%221362-4962%22%5Bta%5D%20OR%20%221474-760X%22%5Bta%5D%20OR%20%221471-0064%22%5Bta%5D%20OR%20%221367-4811%22%5Bta%5D%20OR%20%221520-5126%22%5Bta%5D%20OR%20%221549-9626%22%5Bta%5D%20OR%20%221549-960X%22%5Bta%5D%20OR%20%222662-8457%22%5Bta%5D%20OR%20%221546-1696%22%5Bta%5D%20OR%20%221546-1718%22%5Bta%5D%20OR%20%221471-0080%22%5Bta%5D%20OR%20%221474-1776%22%5Bta%5D%20OR%20%221473-3099%22%5Bta%5D%20OR%20%221756-1833%22%5Bta%5D%20OR%20%221520-6890%22%5Bta%5D%20OR%20%221545-3278%22%5Bta%5D%20OR%20%221545-3251%22%5Bta%5D%20OR%20%221545-4509%22%5Bta%5D%20OR%20%221522-1601%22%5Bta%5D%20OR%20%221522-1210%22%5Bta%5D%20OR%20%221522-1563%22%5Bta%5D%20OR%20%221522-1555%22%5Bta%5D%20OR%20%221522-1539%22%5Bta%5D%20OR%20%221522-1547%22%5Bta%5D%20OR%20%221522-1466%22%5Bta%5D%20OR%20%221531-2267%22%5Bta%5D%20OR%20%221758-0463%22%5Bta%5D))
 
 :::
 ::: {.g-col-4}
-####[**Zotero**](https://www.zotero.org/)
+[**Zotero**](https://www.zotero.org/)
+
+:::
+
+::: {.g-col-4}
+[**Springer Nature Experiments**](https://experiments.springernature.com/)
 
 :::
 ::: {.g-col-4}
-####[**StatsAndR**](https://statsandr.com/) 
+[**Protocols.io**](https://www.protocols.io/)
+
+:::
+::: {.g-col-4}
+[**Emerald Cloud Labs**](https://www.emeraldcloudlab.com/)
+
+:::
+::: {.g-col-4}
+[**SciScure**](https://www.scisure.com/)
+
+:::
+::: {.g-col-4}
+[**REDCap**](https://project-redcap.org/)
+
+:::
+::: {.g-col-4}
+[**StatsAndR**](https://statsandr.com/) 
 
 by [*Antoine Soetewey*](https://antoinesoetewey.com/)
 :::
 ::: {.g-col-4}
-####[**Biorender**](https://www.biorender.com/)
+[**Biorender**](https://www.biorender.com/)
 
 :::
 ::: {.g-col-4}
-####[**Emerald Cloud Labs**](https://www.emeraldcloudlab.com/)
-
-:::
-::: {.g-col-4}
-####[**SciScure**](https://www.scisure.com/)
-
-:::
-::: {.g-col-4}
-####[**REDCap**](https://project-redcap.org/)
-
-:::
-::: {.g-col-4}
-####[**AWS-Docker**](https://sib-swiss.github.io/AWS-docker/)
+[**AWS-Docker**](https://sib-swiss.github.io/AWS-docker/)
 Run [Docker](https://www.docker.com/) containerized [RStudio](https://posit.co/), [VS Code](https://code.visualstudio.com/), or [Jupyter Notebooks](https://jupyter.org/) on [AWS](https://aws.amazon.com/) EC2 instances, 
 by [GeertvanGeest](https://github.com/GeertvanGeest) of the [Swiss Institute of Bioinformatics](https://www.sib.swiss/)
 
 :::
+
 ::: {.g-col-4}
-####[**Neurosnap AI**](https://neurosnap.ai/)
+[**Neurosnap AI**](https://neurosnap.ai/)
+
+:::
+
+::: {.g-col-4}
+[**UH Innovation**](https://www.uh.edu/innovation/)
 
 :::
 ::: {.g-col-4}
-####[**Copyright.com**](https://www.copyright.com/)
+[**Copyright.com**](https://www.copyright.com/)
 :::
 ::: {.g-col-4}
-####[**Copyright.com**](https://www.copyright.com/)
+[**Copyright.com**](https://www.copyright.gov/)
+:::
+
+::: {.g-col-4}
+[**Springer Nature**](https://link.springernature.com/home/)
+[submissions and peer review]
+:::
+::: {.g-col-4}
+[**Cell Press**](https://www.cell.com/multi-journal-submission)
+[multi-journal submission]
+:::
+::: {.g-col-4}
+[**The Lancet**](https://www.thelancet.com/for-authors)
+[submissions and peer review]
+:::
+
+::: {.g-col-4}
+[**Texas Medical Center**](https://www.tmc.edu/)
+
+:::
+::: {.g-col-4}
+[**Gulf Coast Consortia**](https://www.gulfcoastconsortia.org/)
+
 :::
 
 :::

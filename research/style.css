@@ -6,3 +6,12 @@
   border-radius: 8px;
   text-align: center;
 }
+
+.quarto-listing-category-title {
+  display: none; /* hides the default "Categories" label */
+}
+
+.my-custom-cat-title::before {
+  content: "Research Areas"; /* replace with your label */
+  font-weight: bold;
+}

@@ -5,8 +5,8 @@ listing:
   sort: "date desc"
   type: default
   categories: true
-  sort-ui: false
-  filter-ui: false
+  sort-ui: true
+  filter-ui: true
 page-layout: full
 title-block-banner: false
 css: styles.css
@@ -32,54 +32,6 @@ css: styles.css
 :::
 :::
 
-## Current Members
-
-### Graduate Students
-
-![Graduate Student](images/placeholder-graduate.svg){.img-fluid width="150"}
-
-#### \[Student Name 1\]
-
--   **Degree Program**: Ph.D. in \[Program\]
--   **Research Focus**: \[Brief description\]
--   **Email**: \[student1\@institution.edu\]
-
-![Graduate Student](images/placeholder-graduate.svg){.img-fluid width="150"}
-
-#### \[Student Name 2\]
-
--   **Degree Program**: M.S. in \[Program\]
--   **Research Focus**: \[Brief description\]
--   **Email**: \[student2\@institution.edu\]
-
-### Postdoctoral Researchers
-
-![Postdoctoral Researcher](images/placeholder-postdoc.svg){.img-fluid width="150"}
-
-#### Dr. \[Postdoc Name\]
-
--   **Position**: Postdoctoral Research Associate
--   **Research Focus**: \[Brief description\]
--   **Email**: \[postdoc\@institution.edu\]
-
-### Undergraduate Researchers
-
-![Undergraduate Researcher](images/placeholder-undergraduate.svg){.img-fluid width="150"}
-
-#### \[Undergraduate Name\]
-
--   **Major**: \[Major\]
--   **Research Project**: \[Brief description\]
-
-## Alumni
-
-### Former Graduate Students
-
--   **Dr. \[Alumnus Name\]** (Ph.D. 2023) - Now at \[Current Position, Institution\]
-
-### Former Postdocs
-
--   **Dr. \[Former Postdoc\]** (2022-2023) - Now at \[Current Position, Institution\]
 
 ## Join Our Group
 

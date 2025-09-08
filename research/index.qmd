@@ -12,7 +12,7 @@ title-block-banner: false
 css: styles.css
 ---
 
-<!--- # Research Areas -->
+# Research Areas
 
 Our group conducts pharmacological research across four main areas:
 
@@ -64,27 +64,4 @@ Antibiotics, probiotics, antifungals, and antivirals
 
 :::
 
-
-## Current Projects
-
-### Project 1: \[Project Title\]
-
-Brief description of ongoing research project and its significance.
-
-### Project 2: \[Project Title\]
-
-Brief description of ongoing research project and its significance.
-
-
-
-## Collaborations
-
-We actively collaborate with researchers from various institutions and disciplines to address complex research questions.
-
-## Funding
-
-Our research is supported by grants from:
-
--   \[Funding Agency 1\]
--   \[Funding Agency 2\]
--   \[Funding Agency 3\]
+# Research Publications

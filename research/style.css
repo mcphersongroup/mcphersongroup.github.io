@@ -1,0 +1,8 @@
+/* Make title block text white on a dark background */
+.title.neg {
+  background-color: #003366; /* dark navy (adjust as you like) */
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}

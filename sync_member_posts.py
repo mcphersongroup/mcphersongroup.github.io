@@ -105,11 +105,26 @@ class MemberPostSync:
         try:
             repo_name = f"{username}.github.io"
             
-            # For demonstration, we know there's a test-post.qmd in JacobKMcPherson's repo
-            # In a real implementation, this would need a better discovery mechanism
-            known_posts = ['test-post.qmd']  # This could be expanded or made dynamic
+            # First try to discover posts by checking if we can get the directory listing
+            # via the GitHub API, which might work even if individual file access doesn't
+            try:
+                api_url = f"https://api.github.com/repos/{username}/{repo_name}/contents/{posts_path}"
+                response = self._safe_request(api_url)
+                if response and response.status_code == 200:
+                    # We can get the directory listing via API
+                    api_response = response.json()
+                    qmd_files = [item['name'] for item in api_response if item['type'] == 'file' and item['name'].endswith('.qmd')]
+                    logger.info(f"Discovered {len(qmd_files)} .qmd files via API listing: {qmd_files}")
+                else:
+                    # Fallback to known files (could be expanded to check common patterns)
+                    logger.info("Using fallback file discovery")
+                    qmd_files = ['test-post.qmd', 'index.qmd']  # Common post filenames
+                    
+            except Exception as e:
+                logger.warning(f"Error during post discovery: {e}")
+                qmd_files = ['test-post.qmd', 'index.qmd']  # Safe fallback
             
-            for post_filename in known_posts:
+            for post_filename in qmd_files:
                 try:
                     raw_url = f"https://raw.githubusercontent.com/{username}/{repo_name}/main/{posts_path}/{post_filename}"
                     logger.debug(f"Trying raw URL: {raw_url}")
@@ -117,6 +132,12 @@ class MemberPostSync:
                     response = self._safe_request(raw_url)
                     if response and response.status_code == 200:
                         content = response.text
+                        
+                        # Skip files that are not actual posts (like README.md converted to qmd)
+                        if post_filename.lower() in ['readme.qmd', 'index.qmd'] and len(content.strip()) < 100:
+                            logger.debug(f"Skipping {post_filename} - appears to be a directory index")
+                            continue
+                            
                         post_data = self._parse_qmd_content(content, post_filename, member)
                         if post_data:
                             post_data['source_url'] = f"https://github.com/{username}/{repo_name}/blob/main/{posts_path}/{post_filename}"
@@ -124,7 +145,7 @@ class MemberPostSync:
                             posts.append(post_data)
                             logger.info(f"Successfully fetched {post_filename} via raw GitHub")
                     else:
-                        logger.debug(f"Could not fetch {post_filename} via raw GitHub")
+                        logger.debug(f"Could not fetch {post_filename} via raw GitHub (status: {response.status_code if response else 'no response'})")
                         
                 except Exception as e:
                     logger.warning(f"Error fetching {post_filename} via raw GitHub: {e}")
@@ -325,21 +346,46 @@ class MemberPostSync:
             posts = posts[:max_posts]
         
         # Create local post files
+        created_count = 0
+        updated_count = 0
+        skipped_count = 0
+        
         for post in posts:
             try:
                 local_path, content = self._create_local_post(post, member)
                 
                 if self.dry_run:
-                    logger.info(f"[DRY RUN] Would create: {local_path}")
+                    logger.info(f"[DRY RUN] Would create/update: {local_path}")
                     logger.debug(f"[DRY RUN] Content preview:\n{content[:200]}...")
                 else:
+                    # Check if file already exists
+                    if local_path.exists():
+                        # Read existing content to compare
+                        with open(local_path, 'r', encoding='utf-8') as f:
+                            existing_content = f.read()
+                        
+                        # Simple comparison - you could add more sophisticated comparison
+                        if existing_content.strip() == content.strip():
+                            logger.debug(f"No changes detected for {local_path}")
+                            skipped_count += 1
+                            continue
+                        else:
+                            logger.info(f"Updating existing post: {local_path}")
+                            updated_count += 1
+                    else:
+                        logger.info(f"Creating new post: {local_path}")
+                        created_count += 1
+                    
+                    # Write the file
                     with open(local_path, 'w', encoding='utf-8') as f:
                         f.write(content)
-                    logger.info(f"Created post: {local_path}")
-                    
+                        
             except Exception as e:
-                logger.error(f"Error creating post {post.get('filename', 'unknown')}: {e}")
+                logger.error(f"Error processing post {post.get('filename', 'unknown')}: {e}")
                 continue
+        
+        if not self.dry_run:
+            logger.info(f"Sync completed for {username}: {created_count} created, {updated_count} updated, {skipped_count} skipped")
 
 def main():
     parser = argparse.ArgumentParser(description='Sync member posts to organization repository')

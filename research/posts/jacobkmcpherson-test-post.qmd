@@ -7,7 +7,7 @@ date: '2025-09-08'
 source:
   github_path: research/posts/test-post.qmd
   member: Jacob K. McPherson
-  original_url: https://github.com/JacobKMcPherson/JacobKMcPherson.github.io/blob/main/research/posts/test-post.qmd
+  original_url: https://github.com/JacobKMcPherson/jacobkmcpherson.github.io/blob/main/research/posts/test-post.qmd
   username: JacobKMcPherson
 title: Welcome to My Blog
 ---

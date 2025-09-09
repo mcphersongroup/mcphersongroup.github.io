@@ -14,7 +14,7 @@ Create a *free* account in
 
 2. [**Author.Link**](https://author.link/JacobKMcPherson)
 
-  - (Additionally) link your *free* research socials: Google Scholar, ResearchGate, SCOPUS
+  - Link your *free* research socials: [Google Scholar](https://scholar.google.com/), [ResearchGate](https://www.researchgate.net/), [SCOPUS](https://www.scopus.com/)
 
 3. [**GitHub**](https://github.com)
 
@@ -22,7 +22,7 @@ Create a *free* account in
 
   - Place your research blog posts in the folder '*research/posts*'
 
-  - Message me to join the Github Organization '**mcphersongroup**' for firewall permissions to automatically import your .qmd posts in '*research/posts/*' to the group page
+  - Message me to join the Github Organization '**mcphersongroup**' for permissions to automatically import your .qmd posts in '*research/posts/*' to the group page
 
 4. [**OverLeaf**](https://www.overleaf.com/)
 

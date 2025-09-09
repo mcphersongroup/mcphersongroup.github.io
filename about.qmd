@@ -36,6 +36,6 @@ We believe in:
 
 **Email**: &#9993; [jacobmcpherson@utexas.edu](mailto:jacobmcpherson@utexas.edu)
 
-**Business Inquiries**: &#127758; [jacobkmcpherson.com](https://www.jacobkmcpherson.com), &#9993; [jacob@jacobkmcpherson.com](mailto:jacob@jacobkmcpherson.com)
+**Business Inquiries**: &#127758; [jacobkmcpherson.com](https://www.jacobkmcpherson.com)
 
 For joining the group, please use the above link [join](people/join.qmd)

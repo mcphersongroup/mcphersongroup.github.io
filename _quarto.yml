@@ -27,9 +27,6 @@ website:
       - href: people/index.qmd
         text: People
     right:
-      - icon: building
-        href: https://jacobkmcpherson.com/
-        aria-label: Business
       - icon: book
         href: https://author.link/JacobKMcPherson
         aria-label: Author.Link
@@ -39,7 +36,7 @@ website:
       - icon: envelope
         href: mailto:jacobmcpherson@utexas.edu
         aria-label: Email
-      - icon: globe
+      - icon: globe-americas-fill
         href: https://jacobkmcpherson.com
         aria-label: Website
       - icon: linkedin

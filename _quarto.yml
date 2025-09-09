@@ -26,7 +26,12 @@ website:
             text: "Statistical Modeling & Analysis"
       - href: people/index.qmd
         text: People
+      - href: people/join.qmd
+        icon: person-plus
     right:
+      - icon: person-plus
+        href: people/join.qmd
+        text: ""
       - icon: book
         href: https://author.link/JacobKMcPherson
         aria-label: Author.Link

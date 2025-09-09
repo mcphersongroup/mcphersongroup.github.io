@@ -140,7 +140,7 @@ A cloud computing, no-code solution for heavy-duty computational biology
 
 :::
 ::: {.g-col-4}
-[**Copyright.com**](https://www.copyright.gov/)
+[**Copyright.gov**](https://www.copyright.gov/)
 
 :::
 :::

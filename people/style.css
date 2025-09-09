@@ -6,3 +6,6 @@
   border-radius: 8px;
   text-align: center;
 }
+.quarto-title-block {
+  display: none;
+}

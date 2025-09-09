@@ -38,4 +38,4 @@ We believe in:
 
 **Business Inquiries**: &#127758; [jacobkmcpherson.com](https://www.jacobkmcpherson.com), &#9993; [jacob@jacobkmcpherson.com](mailto:jacob@jacobkmcpherson.com)
 
-For prospective students or postdocs interested in joining the group, please reach out via email with your CV and research interests at [jacobkmcpherson.com/join](https://www.jacobkmcpherson.com/join)
+For joining the group, please use the above link [join](people/join.qmd)

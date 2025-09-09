@@ -36,9 +36,9 @@ website:
       - icon: envelope
         href: mailto:jacobmcpherson@utexas.edu
         aria-label: Email
-      - icon: globe-americas-fill
+      - icon: building-fill-gear
         href: https://jacobkmcpherson.com
-        aria-label: Website
+        aria-label: Business
       - icon: linkedin
         href: https://linkedin.com/in/jacobkmcpherson/
         aria-label: LinkedIn

@@ -20,7 +20,15 @@
   font-weight: bold;
   color: #003366 !important;
 }
-
+/* Make navbar right side icons (white) visible on mobile devices */
+@media (max-width: 768px) {
+  .navbar .nav-link,
+  .navbar .navbar-brand,
+  .navbar .navbar-toggler-icon,
+  .navbar .bi {
+    color: #003366 !important;
+  }
+}
 /* Left-side nav links (dark navy) */
 .navbar-nav.me-auto .nav-link {
   color: #003366 !important;  /* midnight blue */

@@ -35,4 +35,4 @@ css: styles.css
 
 ## Join Our Group
 
-We welcome applications from motivated students and researchers. Please see our [About](about.qmd) page for contact information.
+We welcome applications from motivated students and researchers. Please see our [Join](people/join.qmd) page for more information.

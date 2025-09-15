@@ -12,8 +12,10 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
+        icon: info-circle
         text: About
       - href: research/index.qmd
+        icon: graph-up
         text: Research
         menu:
           - href: research/infectiousdiseases.qmd
@@ -25,6 +27,7 @@ website:
           - href: research/antimicrobialstewardship.qmd
             text: "Statistical Modeling & Analysis"
       - href: people/index.qmd
+        icon: people
         text: People
       - href: people/join.qmd
         icon: person-plus

@@ -50,6 +50,11 @@ website:
       - icon: house-gear
         href: https://github.com/McPhersonGroup
         aria-label: GitHub
+  page-footer:
+    left: "© 2025 Jacob K. McPherson"
+    right: 
+      - text: "License"
+        href: LICENSE.html
 
 format:
   html:

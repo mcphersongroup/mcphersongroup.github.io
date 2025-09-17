@@ -7,7 +7,7 @@ categories:
 - antimicrobial-resistance
 - human-gut-microbiome
 - member-publication
-date: '2025-09-17T20:06:28.099628'
+date: '2025-09-17T20:11:57.995514'
 image: featured.jpg
 issue: issue
 journ: Journal
@@ -18,7 +18,7 @@ source:
   directory: 20250917_test
   github_path: publications/20250917_test/index.qmd
   member: Jacob K. McPherson
-  original_url: https://github.com/JacobKMcPherson/JacobKMcPherson.github.io/blob/main/publications/20250917_test/index.qmd
+  original_url: https://github.com/JacobKMcPherson/jacobkmcpherson.github.io/blob/main/publications/20250917_test/index.qmd
   username: JacobKMcPherson
 title: This is a test post
 url_preprint: null

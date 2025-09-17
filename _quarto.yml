@@ -37,11 +37,8 @@ website:
         text: Join
         aria-label: Join
     right:
-      - icon: book
-        href: https://author.link/JacobKMcPherson
-        aria-label: Author.Link
       - icon: calendar-date
-        href: https://jacobkmcpherson.com/schedule
+        href: https://jacobkmcpherson.com/services
         aria-label: Calendar
       - icon: envelope
         href: mailto:jacobmcpherson@utexas.edu
@@ -49,7 +46,7 @@ website:
       - icon: building
         href: https://jacobkmcpherson.com
         aria-label: Business
-      - icon: house-gear
+      - icon: github
         href: https://github.com/McPhersonGroup
         aria-label: GitHub
   page-footer:

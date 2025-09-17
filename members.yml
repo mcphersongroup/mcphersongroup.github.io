@@ -16,6 +16,7 @@ members:
   #   role: "Role/Position"
   #   profile_url: "https://newmemberusername.github.io"
   #   posts_path: "/research/posts"
+  #   destination_path: "posts"  # Optional: custom destination within publications/
   #   active: true
 
 # Configuration for post synchronization
@@ -31,3 +32,19 @@ sync_config:
   
   # Whether to add attribution footer to posts
   add_attribution: true
+  
+  # Category-based destination mapping
+  category_mapping:
+    "economic-analysis": "papers"
+    "publication": "papers"
+    "research-paper": "papers"
+    "report": "reports"
+    "working-paper": "papers"
+  
+  # Type-based destination mapping
+  type_mapping:
+    "paper": "papers"
+    "publication": "papers"
+    "report": "reports" 
+    "post": "posts"
+    "blog": "posts"

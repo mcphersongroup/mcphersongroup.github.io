@@ -1,38 +1,106 @@
 ---
-title: "People"
+title: "Meet the Group"
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: true
-  filter-ui: true
+  - id: pi
+    include: 
+      people_group: "pi"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    type: grid
+    fields: [title, subtitle, image, education]
+  - id: researcher
+    include: 
+      people_group: "researcher"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    sort: last
+    type: grid
+    fields: [title, subtitle, image, education]
+  - id: postdoc
+    include: 
+      people_group: "postdoc"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    sort: last    
+    type: grid
+    fields: [title, subtitle, image, education]
+  - id: gradstudent
+    include: 
+      people_group: "gradstudent"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    sort: last
+    type: grid
+    fields: [title, subtitle, image, education]
+  - id: post-bac
+    include: 
+      people_group: "post-bac"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    sort: last
+    type: grid
+    fields: [title, subtitle, image, education]
+  - id: alumni
+    include: 
+      people_group: "alumni"
+    exclude:
+      external: true
+    template: ../_ejs/alumni-box.ejs
+    sort: last
+    type: grid
+    fields: [title, subtitle, image, education, altsubtitle, alteducation]
 page-layout: full
-title-block-banner: false
-css: styles.css
 ---
 
-<!-- # Group Members -->
 
 ## Principal Investigator
-### Jacob K. McPherson
-::: {.grid}
-::: {.g-col-6}
--   **Position**: Principal Investigator
--   **Profile**: [JacobKMcPherson.github.io](https://jacobkmcpherson.github.io)
--   **Education**: B.S. (Biological Sciences), University of Texas at Austin; Pharm.D., University of Houston College of Pharmacy
--   **Email**: ✉ [jacobmcpherson\@utexas.edu](mailto:jacobmcpherson@utexas.edu)
--   **ORCID**: [0000-0001-5486-4945](https://orcid.org/0000-0001-5486-4945)
--   **Author.Link**: [author.link/JacobKMcPherson](https://author.link/JacobKMcPherson)
--   **Business Inquiries**: 🌎 [jacobkmcpherson.com](https://www.jacobkmcpherson.com)
-:::
 
-::: {.g-col-6}
-![](https://jacobkmcpherson.github.io/profile.svg){.img-fluid width="200"}
-:::
+
+::: {#pi}
 :::
 
 
-## Join Our Group
+:::{.sand-background}
+## Research Scientists
 
-We welcome applications from motivated students and researchers. Please see our [Join](people/join.qmd) page for more information.
+
+
+::: {#researcher}
+:::
+
+:::
+
+## Postdoctoral Fellows
+
+::: {#postdoc}
+:::
+
+:::{.sand-background}
+## Graduate Students
+
+
+
+::: {#gradstudent}
+:::
+
+:::
+
+## Post Baccalaureate Researchers
+
+::: {#post-bac}
+:::
+
+:::{.sand-background}
+## Alumni
+
+
+
+::: {#alumni}
+:::
+
+:::

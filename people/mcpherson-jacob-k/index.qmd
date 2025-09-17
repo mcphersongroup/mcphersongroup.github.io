@@ -1,0 +1,103 @@
+---
+title: &TITLE Jacob K. McPherson
+last: McPherson
+first: Jacob
+middle-i-with-period: K.
+people_group: "pi"
+email: "jacobmcpherson@utexas.edu"
+education:
+  - Pharm.D. | University of Houston College of Pharmacy | 2021 <br> B.S. Biological Sciences | University of Texas at Austin | 2015 <br>
+subtitle: "Postdoctoral Fellow, University of Houston college of Pharmacy"
+description: ""
+project: "dmref"
+affiliation: University of Houston
+image: https://raw.githubusercontent.com/JacobKMcPherson/jacobkmcpherson.github.io/refs/heads/main/profile.svg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: https://raw.githubusercontent.com/JacobKMcPherson/jacobkmcpherson.github.io/refs/heads/main/profile.svg
+  links:
+      - icon: vector-pen
+        href: https://author.link/JacobKMcPherson/
+        aria-label: Author.Link
+      - icon: mortoarboard
+        href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en
+        aria-label: Google Scholar
+      - icon: calendar-date
+        href: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0i34EJk2PjecumNnIJUbUlp9-YRCWhFhryFMquALSTcBgC4iHdbNo3w9a7hUQkIdgcPcMLAmgN
+        aria-label: Calendar
+      - icon: envelope
+        href: mailto:jacobmcpherson@utexas.edu
+        aria-label: Email
+      - icon: people
+        href: https://mcphersongroup.github.io/
+        aria-label: Research Group
+      - icon: building
+        href: https://jacobkmcpherson.com
+        aria-label: Business
+      - icon: linkedin
+        href: https://linkedin.com/in/jacobkmcpherson/
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/JacobKMcPherson/
+        aria-label: GitHub
+      - icon: bluesky
+        href: https://bsky.app/profile/jacobkmcpherson.bsky.social
+        aria-label: BlueSky
+      - icon: twitter
+        href: https://x.com/JacobKMcPherson/
+        aria-label: Twitter
+      - icon: facebook
+        href: https://facebook.com/jacobkmcpherson/
+        aria-label: Facebook
+      - icon: instagram
+        href: https://instagram.com/jkmcpherson_25/
+        aria-label: Instagram
+      - icon: threads
+        href: https://www.threads.com/@jkmcpherson_25
+        aria-label: Threads
+      - icon: youtube
+        href: https://youtube.com/@jacobkmcpherson
+        aria-label: YouTube
+      - icon: spotify
+        href: https://open.spotify.com/user/1241595878
+        aria-label: Spotify
+      - icon: medium
+        href: https://jacobkmcpherson.medium.com/
+        aria-label: Medium
+      - icon: substack
+        href: https://jacobkmcpherson.substack.com/
+        aria-label: Substack
+---
+
+<hr>
+
+
+:::{#about}
+
+Jacob K. McPherson is a pharmacist-pharmacologist. 
+
+## Education
+{{< meta education >}}
+
+<br>
+
+:::
+## Group Publications
+
+:::{#pubs}
+:::

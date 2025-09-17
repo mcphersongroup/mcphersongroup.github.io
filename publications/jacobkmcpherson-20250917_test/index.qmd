@@ -1,13 +1,12 @@
 ---
 author:
-- Names in quotes
-- Separate by commas
+- Jacob K. McPherson
 categories:
 - infectious-diseases
 - antimicrobial-resistance
 - human-gut-microbiome
 - member-publication
-date: '2025-09-17T20:11:57.995514'
+date: '2025-09-17T20:19:03.498699'
 image: featured.jpg
 issue: issue
 journ: Journal

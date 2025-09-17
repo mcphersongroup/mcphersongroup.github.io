@@ -7,7 +7,7 @@ members:
     name: "Jacob K. McPherson" 
     role: "Principal Investigator"
     profile_url: "https://jacobkmcpherson.github.io"
-    posts_path: "/research/posts"
+    publications_path: "/publications"
     active: true
     
   # Add additional members here as they join the organization
@@ -15,7 +15,7 @@ members:
   #   name: "Full Name"
   #   role: "Role/Position"
   #   profile_url: "https://newmemberusername.github.io"
-  #   posts_path: "/research/posts"
+  #   publications_path: "/publications"
   #   destination_path: "posts"  # Optional: custom destination within publications/
   #   active: true
 

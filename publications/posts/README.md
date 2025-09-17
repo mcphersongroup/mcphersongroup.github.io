@@ -1,11 +1,7 @@
-# Research Posts in Publications Directory
+# Legacy Posts Directory
 
-This directory contains research posts aggregated from organization members' individual GitHub profiles.
+This directory previously contained research posts aggregated from organization members' individual GitHub profiles.
 
-Posts are automatically synced from member profiles at `USERNAME.github.io/research/posts` based on the member list defined in `members.yml`.
+The sync system has been updated to sync publications from `USERNAME.github.io/publications` directly to the main `publications/` directory as individual publication folders containing `index.qmd` and associated image files.
 
-The posts are placed in the publications folder to consolidate all research outputs in one location.
-
-## Structure
-
-Each post maintains its original metadata and content while adding attribution to the original author and source.
+This provides better organization and preserves the original publication structure including featured images.

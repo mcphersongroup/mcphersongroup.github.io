@@ -268,9 +268,12 @@ class MemberPostSync:
                     # Parse YAML frontmatter
                     frontmatter = yaml.safe_load(yaml_content)
                     
+                    # Handle author field - preserve original format in original_frontmatter
+                    author_value = frontmatter.get('author', member['name'])
+                    
                     return {
                         'title': frontmatter.get('title', filename.replace('.qmd', '').title()),
-                        'author': frontmatter.get('author', member['name']),
+                        'author': author_value,
                         'date': frontmatter.get('date', datetime.now().isoformat()),
                         'categories': frontmatter.get('categories', []),
                         'content': markdown_content,
@@ -281,7 +284,7 @@ class MemberPostSync:
             # If no frontmatter, treat as plain markdown
             return {
                 'title': filename.replace('.qmd', '').replace('-', ' ').title(),
-                'author': member['name'],
+                'author': [member['name']],
                 'date': datetime.now().isoformat(),
                 'categories': ['research'],
                 'content': content,
@@ -339,9 +342,16 @@ class MemberPostSync:
         original_fm = publication.get('original_frontmatter', {})
         
         # Create YAML frontmatter for Quarto
+        author_value = publication.get('author', member['name'])
+        # Ensure author is always a list
+        if isinstance(author_value, str):
+            author_value = [author_value]
+        elif not isinstance(author_value, list):
+            author_value = [str(author_value)]
+        
         frontmatter = {
             'title': publication.get('title', 'Untitled Publication'),
-            'author': publication.get('author', member['name']),
+            'author': author_value,
             'date': publication.get('date', datetime.now().isoformat()),
             'categories': publication.get('categories', ['research', 'member-publication'])
         }

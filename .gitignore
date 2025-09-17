@@ -64,3 +64,4 @@ node_modules/
 # Environment files
 .env
 .env.local
+__pycache__/

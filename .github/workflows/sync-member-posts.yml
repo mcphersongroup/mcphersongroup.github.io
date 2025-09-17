@@ -63,7 +63,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add research/posts/
+          git add publications/
           git commit -m "Sync member posts - $(date -u +%Y%m%d-%H%M%S)"
           git push
         env:
@@ -80,8 +80,8 @@ jobs:
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Current member posts:" >> $GITHUB_STEP_SUMMARY
-          if [ -d "research/posts" ]; then
-            find research/posts -name "*.qmd" | sort | while read -r file; do
+          if [ -d "publications" ]; then
+            find publications -name "*-*.qmd" | grep -v "_template" | sort | while read -r file; do
               echo "- $file" >> $GITHUB_STEP_SUMMARY
             done
           fi

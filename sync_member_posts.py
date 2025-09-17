@@ -41,7 +41,7 @@ class MemberPostSync:
         
         # Load configuration
         self.config = self._load_config()
-        self.posts_dir = Path("research/posts")
+        self.posts_dir = Path("publications")
         
     def _load_config(self) -> Dict:
         """Load the members configuration from YAML file."""

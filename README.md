@@ -9,8 +9,7 @@ This repository contains the source code for the McPherson Group research websit
 - `index.qmd` - Homepage
 - `about.qmd` - About the group
 - `research/index.qmd` - Research areas and projects
-- `research/posts/` - Research posts (aggregated from member profiles)
-- `publications.qmd` - Publications and presentations
+- `publications/` - Publications and research posts (aggregated from member profiles)
 - `people/index.qmd` - Group members and alumni
 - `members.yml` - Organization member configuration for post synchronization
 - `sync_member_posts.py` - Script for syncing member posts

@@ -1,4 +1,4 @@
-# Research Posts Directory
+# Research Posts in Publications Directory
 
 This directory contains research posts aggregated from organization members' individual GitHub profiles.
 

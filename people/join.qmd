@@ -18,7 +18,7 @@ Create a *free* account in
 
   - Place your research blog posts in the folder '*research/posts*'
 
-  - Message me to join the Github Organization '**mcphersongroup**' for permissions to automatically import your .qmd posts in '*research/posts/*' to the group page
+  - Message me to join the Github Organization '**mcphersongroup**' for permissions to automatically import your .qmd posts in '*research/posts/*' to the group publications page
 
 3. [**Author.Link**](https://author.link/JacobKMcPherson)
 

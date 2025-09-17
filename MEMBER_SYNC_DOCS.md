@@ -4,14 +4,14 @@ This repository includes an automated system to aggregate research posts from or
 
 ## Overview
 
-The system monitors the GitHub profiles of McPherson Group members and automatically syncs their research posts from `USERNAME.github.io/research/posts` to the organization repository at `mcphersongroup.github.io/research/posts`.
+The system monitors the GitHub profiles of McPherson Group members and automatically syncs their research posts from `USERNAME.github.io/research/posts` to the organization repository at `mcphersongroup.github.io/publications/posts`.
 
 ## Files
 
 - `members.yml` - Configuration file defining active organization members
 - `sync_member_posts.py` - Python script that performs the synchronization
 - `.github/workflows/sync-member-posts.yml` - GitHub Actions workflow for automation
-- `research/posts/` - Directory containing synced member posts
+- `publications/posts/` - Directory containing synced member posts and publications
 
 ## How It Works
 
@@ -36,7 +36,7 @@ The sync script:
 1. Reads the member list from `members.yml`
 2. For each active member, checks their GitHub repository at `USERNAME.github.io/research/posts`
 3. Fetches any `.qmd` (Quarto markdown) files
-4. Creates local copies in `research/posts/` with:
+4. Creates local copies in `publications/posts/` with:
    - Original authorship and metadata preserved
    - Added attribution linking back to the source
    - Prefixed filename to avoid conflicts (`username-originalname.qmd`)

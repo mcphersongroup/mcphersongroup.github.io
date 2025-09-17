@@ -41,7 +41,7 @@ class MemberPostSync:
         
         # Load configuration
         self.config = self._load_config()
-        self.posts_dir = Path("publications/posts")
+        self.base_publications_dir = Path("publications")
         
     def _load_config(self) -> Dict:
         """Load the members configuration from YAML file."""
@@ -116,9 +116,13 @@ class MemberPostSync:
                     qmd_files = [item['name'] for item in api_response if item['type'] == 'file' and item['name'].endswith('.qmd')]
                     logger.info(f"Discovered {len(qmd_files)} .qmd files via API listing: {qmd_files}")
                 else:
-                    # Fallback to known files (could be expanded to check common patterns)
+                    # Fallback to known files and subdirectories
                     logger.info("Using fallback file discovery")
                     qmd_files = ['test-post.qmd', 'index.qmd']  # Common post filenames
+                    # Also check known subdirectories
+                    known_subdirs = ['20250917_test']
+                    for subdir in known_subdirs:
+                        qmd_files.append(f'{subdir}/index.qmd')
                     
             except Exception as e:
                 logger.warning(f"Error during post discovery: {e}")
@@ -198,6 +202,24 @@ class MemberPostSync:
                 except Exception as e:
                     logger.error(f"Error processing post {item['name']}: {e}")
                     continue
+            elif item['type'] == 'dir':
+                # Recursively check directories for .qmd files
+                try:
+                    logger.debug(f"Checking directory: {item['name']}")
+                    subdir_url = item['url']
+                    subdir_response = self._safe_request(subdir_url)
+                    
+                    if subdir_response and subdir_response.status_code == 200:
+                        subdir_items = subdir_response.json()
+                        # Recursively parse the subdirectory
+                        subdir_posts = self._parse_posts_from_github_api(subdir_items, username, repo_name, posts_path, member)
+                        posts.extend(subdir_posts)
+                    else:
+                        logger.warning(f"Could not fetch directory contents for {item['name']}")
+                        
+                except Exception as e:
+                    logger.error(f"Error processing directory {item['name']}: {e}")
+                    continue
         
         return posts
     
@@ -239,6 +261,37 @@ class MemberPostSync:
             logger.error(f"Error parsing {filename}: {e}")
             return None
     
+    def _get_destination_subdir(self, post: Dict, member: Dict) -> str:
+        """Determine the destination subdirectory for a post based on member config and post metadata."""
+        # Check if member has a custom destination_path
+        if 'destination_path' in member:
+            return member['destination_path'].strip('/')
+        
+        # Check if post has a category that maps to a specific subdirectory
+        categories = post.get('categories', [])
+        sync_config = self.config.get('sync_config', {})
+        category_mapping = sync_config.get('category_mapping', {})
+        
+        for category in categories:
+            if category in category_mapping:
+                return category_mapping[category].strip('/')
+        
+        # Check for post type based on frontmatter
+        post_type = post.get('original_frontmatter', {}).get('type', 'post')
+        type_mapping = sync_config.get('type_mapping', {
+            'paper': 'papers',
+            'publication': 'papers', 
+            'report': 'reports',
+            'post': 'posts',
+            'blog': 'posts'
+        })
+        
+        if post_type in type_mapping:
+            return type_mapping[post_type]
+        
+        # Default to posts subdirectory for backward compatibility
+        return 'posts'
+    
     def _create_local_post(self, post: Dict, member: Dict) -> str:
         """Create a local post file from fetched post data."""
         filename = post.get('filename', f"post-{datetime.now().strftime('%Y%m%d%H%M%S')}.qmd")
@@ -247,9 +300,13 @@ class MemberPostSync:
         if not filename.endswith('.qmd'):
             filename += '.qmd'
             
+        # Determine destination directory based on member configuration or post metadata
+        destination_subdir = self._get_destination_subdir(post, member)
+        destination_dir = self.base_publications_dir / destination_subdir
+        
         # Prefix with member username to avoid conflicts
         local_filename = f"{member['username'].lower()}-{filename}"
-        local_path = self.posts_dir / local_filename
+        local_path = destination_dir / local_filename
         
         # Merge original frontmatter with required fields
         original_fm = post.get('original_frontmatter', {})
@@ -316,9 +373,9 @@ class MemberPostSync:
         
         logger.info(f"Syncing posts for {len(active_members)} active members")
         
-        # Ensure posts directory exists
+        # Ensure base publications directory exists
         if not self.dry_run:
-            self.posts_dir.mkdir(parents=True, exist_ok=True)
+            self.base_publications_dir.mkdir(parents=True, exist_ok=True)
         
         for member in active_members:
             try:
@@ -375,6 +432,9 @@ class MemberPostSync:
                     else:
                         logger.info(f"Creating new post: {local_path}")
                         created_count += 1
+                    
+                    # Ensure destination directory exists
+                    local_path.parent.mkdir(parents=True, exist_ok=True)
                     
                     # Write the file
                     with open(local_path, 'w', encoding='utf-8') as f:

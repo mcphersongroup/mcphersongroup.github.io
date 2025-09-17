@@ -1,4 +1,4 @@
-name: Sync Member Posts
+name: Sync Member Publications
 
 on:
   # Run daily at 6 AM UTC
@@ -42,7 +42,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml requests
       
-      - name: Run member post synchronization
+      - name: Run member publication synchronization
         run: |
           python sync_member_posts.py --verbose
         env:
@@ -64,24 +64,24 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add publications/
-          git commit -m "Sync member posts - $(date -u +%Y%m%d-%H%M%S)"
+          git commit -m "Sync member publications - $(date -u +%Y%m%d-%H%M%S)"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Create summary
         run: |
-          echo "## Member Post Sync Summary" >> $GITHUB_STEP_SUMMARY
+          echo "## Member Publication Sync Summary" >> $GITHUB_STEP_SUMMARY
           echo "Synchronization completed at $(date -u)" >> $GITHUB_STEP_SUMMARY
           if [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
             echo "✅ Changes detected and committed to repository" >> $GITHUB_STEP_SUMMARY
           else
-            echo "ℹ️ No new posts found" >> $GITHUB_STEP_SUMMARY
+            echo "ℹ️ No new publications found" >> $GITHUB_STEP_SUMMARY
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Current member posts:" >> $GITHUB_STEP_SUMMARY
+          echo "### Current member publications:" >> $GITHUB_STEP_SUMMARY
           if [ -d "publications" ]; then
-            find publications -name "*.qmd" -path "*/posts/*" -o -name "*.qmd" -path "*/papers/*" -o -name "*.qmd" -path "*/reports/*" | grep -v "_template" | sort | while read -r file; do
-              echo "- $file" >> $GITHUB_STEP_SUMMARY
+            find publications -type d -name "*-*" | grep -v "_template" | sort | while read -r dir; do
+              echo "- $dir" >> $GITHUB_STEP_SUMMARY
             done
           fi

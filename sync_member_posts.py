@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Member Post Synchronization Script
+Member Publication Synchronization Script
 
-This script fetches research posts from organization members' individual GitHub profiles
+This script fetches research publications from organization members' individual GitHub profiles
 and syncs them to the main organization repository.
 
 Usage:
@@ -58,107 +58,106 @@ class MemberPostSync:
             sys.exit(1)
     
     def _get_posts_from_member_site(self, member: Dict) -> List[Dict]:
-        """Fetch posts from a member's GitHub profile repository via GitHub API."""
+        """Fetch publications from a member's GitHub profile repository via GitHub API."""
         username = member['username']
-        posts_path = member.get('posts_path', '/research/posts').strip('/')
+        publications_path = member.get('publications_path', '/publications').strip('/')
         
-        logger.info(f"Fetching posts for {username} from GitHub API")
+        logger.info(f"Fetching publications for {username} from GitHub API")
         
         posts = []
         try:
-            # Use GitHub API to get posts from the member's repository
+            # Use GitHub API to get publications from the member's repository
             repo_name = f"{username}.github.io"
-            api_url = f"https://api.github.com/repos/{username}/{repo_name}/contents/{posts_path}"
+            api_url = f"https://api.github.com/repos/{username}/{repo_name}/contents/{publications_path}"
             
             logger.debug(f"API URL: {api_url}")
             response = self._safe_request(api_url)
             
             if response and response.status_code == 200:
-                posts = self._parse_posts_from_github_api(response.json(), username, repo_name, posts_path, member)
+                posts = self._parse_posts_from_github_api(response.json(), username, repo_name, publications_path, member)
             elif response:
                 logger.warning(f"GitHub API returned status {response.status_code} for {username}/{repo_name}")
                 if response.status_code == 404:
-                    logger.info(f"Posts directory not found for {username} - this is normal if they don't have posts yet")
+                    logger.info(f"Publications directory not found for {username} - this is normal if they don't have publications yet")
                 elif response.status_code == 403:
                     logger.warning(f"Access denied to GitHub API. Response: {response.text}")
                     # Try using raw GitHub content instead
                     logger.info("Falling back to raw GitHub content fetch")
-                    posts = self._get_posts_via_raw_github(username, posts_path, member)
+                    posts = self._get_posts_via_raw_github(username, publications_path, member)
                 else:
                     logger.warning(f"Response: {response.text}")
             else:
                 logger.warning(f"Could not fetch posts for {username}")
                 # Try fallback even if no response
                 logger.info("Trying raw GitHub content fallback")
-                posts = self._get_posts_via_raw_github(username, posts_path, member)
+                posts = self._get_posts_via_raw_github(username, publications_path, member)
                 
         except Exception as e:
-            logger.error(f"Error fetching posts for {username}: {e}")
+            logger.error(f"Error fetching publications for {username}: {e}")
             
-        logger.info(f"Found {len(posts)} posts for {username}")
+        logger.info(f"Found {len(posts)} publications for {username}")
         return posts
     
-    def _get_posts_via_raw_github(self, username: str, posts_path: str, member: Dict) -> List[Dict]:
+    def _get_posts_via_raw_github(self, username: str, publications_path: str, member: Dict) -> List[Dict]:
         """Alternative method using raw GitHub URLs when API access is limited."""
-        posts = []
+        publications = []
         
         try:
             repo_name = f"{username}.github.io"
             
-            # First try to discover posts by checking if we can get the directory listing
-            # via the GitHub API, which might work even if individual file access doesn't
-            try:
-                api_url = f"https://api.github.com/repos/{username}/{repo_name}/contents/{posts_path}"
-                response = self._safe_request(api_url)
-                if response and response.status_code == 200:
-                    # We can get the directory listing via API
-                    api_response = response.json()
-                    qmd_files = [item['name'] for item in api_response if item['type'] == 'file' and item['name'].endswith('.qmd')]
-                    logger.info(f"Discovered {len(qmd_files)} .qmd files via API listing: {qmd_files}")
-                else:
-                    # Fallback to known files and subdirectories
-                    logger.info("Using fallback file discovery")
-                    qmd_files = ['test-post.qmd', 'index.qmd']  # Common post filenames
-                    # Also check known subdirectories
-                    known_subdirs = ['20250917_test']
-                    for subdir in known_subdirs:
-                        qmd_files.append(f'{subdir}/index.qmd')
-                    
-            except Exception as e:
-                logger.warning(f"Error during post discovery: {e}")
-                qmd_files = ['test-post.qmd', 'index.qmd']  # Safe fallback
+            # Try to discover publication directories using known examples
+            # For fallback, we'll try known directories that we've seen in the member's repo
+            known_directories = ['20250917_test']  # Add more as needed
             
-            for post_filename in qmd_files:
+            for dir_name in known_directories:
                 try:
-                    raw_url = f"https://raw.githubusercontent.com/{username}/{repo_name}/main/{posts_path}/{post_filename}"
-                    logger.debug(f"Trying raw URL: {raw_url}")
+                    # Try to fetch index.qmd from this directory
+                    index_url = f"https://raw.githubusercontent.com/{username}/{repo_name}/main/{publications_path}/{dir_name}/index.qmd"
+                    logger.debug(f"Trying publication URL: {index_url}")
                     
-                    response = self._safe_request(raw_url)
+                    response = self._safe_request(index_url)
                     if response and response.status_code == 200:
                         content = response.text
                         
-                        # Skip files that are not actual posts (like README.md converted to qmd)
-                        if post_filename.lower() in ['readme.qmd', 'index.qmd'] and len(content.strip()) < 100:
-                            logger.debug(f"Skipping {post_filename} - appears to be a directory index")
-                            continue
+                        # Parse the publication content
+                        publication_data = self._parse_qmd_content(content, 'index.qmd', member)
+                        if publication_data:
+                            publication_data['directory_name'] = dir_name
+                            publication_data['source_url'] = f"https://github.com/{username}/{repo_name}/blob/main/{publications_path}/{dir_name}/index.qmd"
+                            publication_data['github_path'] = f"{publications_path}/{dir_name}/index.qmd"
+                            publication_data['image_files'] = []
                             
-                        post_data = self._parse_qmd_content(content, post_filename, member)
-                        if post_data:
-                            post_data['source_url'] = f"https://github.com/{username}/{repo_name}/blob/main/{posts_path}/{post_filename}"
-                            post_data['github_path'] = f"{posts_path}/{post_filename}"
-                            posts.append(post_data)
-                            logger.info(f"Successfully fetched {post_filename} via raw GitHub")
+                            # Try to find associated image files
+                            image_extensions = ['jpg', 'jpeg', 'png', 'gif', 'svg']
+                            for ext in image_extensions:
+                                img_filename = f"featured.{ext}"
+                                img_url = f"https://raw.githubusercontent.com/{username}/{repo_name}/main/{publications_path}/{dir_name}/{img_filename}"
+                                
+                                # Check if the image exists
+                                img_response = self._safe_request(img_url)
+                                if img_response and img_response.status_code == 200:
+                                    image_info = {
+                                        'name': img_filename,
+                                        'download_url': img_url,
+                                        'github_path': f"{publications_path}/{dir_name}/{img_filename}"
+                                    }
+                                    publication_data['image_files'].append(image_info)
+                                    logger.debug(f"Found image file: {img_filename}")
+                                    break  # Only need one featured image
+                            
+                            publications.append(publication_data)
+                            logger.info(f"Successfully fetched publication {dir_name} via raw GitHub")
                     else:
-                        logger.debug(f"Could not fetch {post_filename} via raw GitHub (status: {response.status_code if response else 'no response'})")
+                        logger.debug(f"Could not fetch {dir_name}/index.qmd via raw GitHub (status: {response.status_code if response else 'no response'})")
                         
                 except Exception as e:
-                    logger.warning(f"Error fetching {post_filename} via raw GitHub: {e}")
+                    logger.warning(f"Error fetching publication {dir_name} via raw GitHub: {e}")
                     continue
                     
         except Exception as e:
             logger.error(f"Error in raw GitHub fallback: {e}")
             
-        return posts
+        return publications
     
     def _safe_request(self, url: str) -> Optional[requests.Response]:
         """Make a safe HTTP request with error handling."""
@@ -169,51 +168,43 @@ class MemberPostSync:
             logger.warning(f"Request failed for {url}: {e}")
             return None
     
-    def _parse_posts_from_github_api(self, api_response: List[Dict], username: str, repo_name: str, posts_path: str, member: Dict) -> List[Dict]:
-        """Parse posts from GitHub API response."""
-        posts = []
+    def _parse_posts_from_github_api(self, api_response: List[Dict], username: str, repo_name: str, publications_path: str, member: Dict) -> List[Dict]:
+        """Parse publication directories from GitHub API response."""
+        publications = []
         
         logger.info(f"Parsing {len(api_response)} items from {username}'s GitHub repository")
         
         for item in api_response:
-            if item['type'] == 'file' and item['name'].endswith('.qmd'):
+            if item['type'] == 'dir' and not item['name'].startswith('_'):
+                # This is a publication directory - check if it contains index.qmd
                 try:
-                    # Fetch the actual file content
-                    content_url = item['url']
-                    content_response = self._safe_request(content_url)
-                    
-                    if content_response and content_response.status_code == 200:
-                        content_data = content_response.json()
-                        
-                        # Decode the base64 content
-                        content_b64 = content_data.get('content', '')
-                        content_decoded = base64.b64decode(content_b64).decode('utf-8')
-                        
-                        # Parse the post metadata and content
-                        post_data = self._parse_qmd_content(content_decoded, item['name'], member)
-                        if post_data:
-                            post_data['source_url'] = item['html_url']
-                            post_data['github_path'] = item['path']
-                            posts.append(post_data)
-                            
-                    else:
-                        logger.warning(f"Could not fetch content for {item['name']}")
-                        
-                except Exception as e:
-                    logger.error(f"Error processing post {item['name']}: {e}")
-                    continue
-            elif item['type'] == 'dir':
-                # Recursively check directories for .qmd files
-                try:
-                    logger.debug(f"Checking directory: {item['name']}")
+                    logger.debug(f"Checking publication directory: {item['name']}")
                     subdir_url = item['url']
                     subdir_response = self._safe_request(subdir_url)
                     
                     if subdir_response and subdir_response.status_code == 200:
                         subdir_items = subdir_response.json()
-                        # Recursively parse the subdirectory
-                        subdir_posts = self._parse_posts_from_github_api(subdir_items, username, repo_name, posts_path, member)
-                        posts.extend(subdir_posts)
+                        
+                        # Look for index.qmd in this directory
+                        index_qmd = None
+                        image_files = []
+                        
+                        for subitem in subdir_items:
+                            if subitem['type'] == 'file':
+                                if subitem['name'] == 'index.qmd':
+                                    index_qmd = subitem
+                                elif subitem['name'].lower().startswith('featured.') and subitem['name'].lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.svg')):
+                                    image_files.append(subitem)
+                        
+                        if index_qmd:
+                            # This directory contains a publication - process it
+                            publication_data = self._process_publication_directory(
+                                item['name'], index_qmd, image_files, username, repo_name, publications_path, member
+                            )
+                            if publication_data:
+                                publications.append(publication_data)
+                        else:
+                            logger.debug(f"Directory {item['name']} does not contain index.qmd, skipping")
                     else:
                         logger.warning(f"Could not fetch directory contents for {item['name']}")
                         
@@ -221,7 +212,48 @@ class MemberPostSync:
                     logger.error(f"Error processing directory {item['name']}: {e}")
                     continue
         
-        return posts
+        return publications
+    
+    def _process_publication_directory(self, dir_name: str, index_qmd: Dict, image_files: List[Dict], 
+                                     username: str, repo_name: str, publications_path: str, member: Dict) -> Optional[Dict]:
+        """Process a publication directory containing index.qmd and associated files."""
+        try:
+            # Fetch the index.qmd content
+            content_response = self._safe_request(index_qmd['url'])
+            
+            if not content_response or content_response.status_code != 200:
+                logger.warning(f"Could not fetch index.qmd for directory {dir_name}")
+                return None
+                
+            content_data = content_response.json()
+            content_b64 = content_data.get('content', '')
+            content_decoded = base64.b64decode(content_b64).decode('utf-8')
+            
+            # Parse the publication metadata and content
+            publication_data = self._parse_qmd_content(content_decoded, 'index.qmd', member)
+            if not publication_data:
+                return None
+            
+            # Add directory-specific information
+            publication_data['directory_name'] = dir_name
+            publication_data['source_url'] = index_qmd['html_url']
+            publication_data['github_path'] = index_qmd['path']
+            publication_data['image_files'] = []
+            
+            # Process associated image files
+            for img_file in image_files:
+                image_info = {
+                    'name': img_file['name'],
+                    'download_url': img_file['download_url'],
+                    'github_path': img_file['path']
+                }
+                publication_data['image_files'].append(image_info)
+            
+            return publication_data
+            
+        except Exception as e:
+            logger.error(f"Error processing publication directory {dir_name}: {e}")
+            return None
     
     def _parse_qmd_content(self, content: str, filename: str, member: Dict) -> Optional[Dict]:
         """Parse a Quarto markdown file content."""
@@ -292,43 +324,39 @@ class MemberPostSync:
         # Default to posts subdirectory for backward compatibility
         return 'posts'
     
-    def _create_local_post(self, post: Dict, member: Dict) -> str:
-        """Create a local post file from fetched post data."""
-        filename = post.get('filename', f"post-{datetime.now().strftime('%Y%m%d%H%M%S')}.qmd")
+    def _create_local_post(self, publication: Dict, member: Dict) -> Tuple[Path, str, List[Tuple[Path, str]]]:
+        """Create a local publication directory from fetched publication data."""
+        directory_name = publication.get('directory_name', f"publication-{datetime.now().strftime('%Y%m%d%H%M%S')}")
         
-        # Ensure filename has .qmd extension
-        if not filename.endswith('.qmd'):
-            filename += '.qmd'
-            
-        # Determine destination directory based on member configuration or post metadata
-        destination_subdir = self._get_destination_subdir(post, member)
-        destination_dir = self.base_publications_dir / destination_subdir
+        # Create directory path - use the original directory name prefixed with username
+        local_dir_name = f"{member['username'].lower()}-{directory_name}"
+        destination_dir = self.base_publications_dir / local_dir_name
         
-        # Prefix with member username to avoid conflicts
-        local_filename = f"{member['username'].lower()}-{filename}"
-        local_path = destination_dir / local_filename
+        # Create the index.qmd path
+        index_path = destination_dir / 'index.qmd'
         
         # Merge original frontmatter with required fields
-        original_fm = post.get('original_frontmatter', {})
+        original_fm = publication.get('original_frontmatter', {})
         
         # Create YAML frontmatter for Quarto
         frontmatter = {
-            'title': post.get('title', 'Untitled Post'),
-            'author': post.get('author', member['name']),
-            'date': post.get('date', datetime.now().isoformat()),
-            'categories': post.get('categories', ['research', 'member-post'])
+            'title': publication.get('title', 'Untitled Publication'),
+            'author': publication.get('author', member['name']),
+            'date': publication.get('date', datetime.now().isoformat()),
+            'categories': publication.get('categories', ['research', 'member-publication'])
         }
         
-        # Ensure member-post category is present
-        if 'member-post' not in frontmatter['categories']:
-            frontmatter['categories'].append('member-post')
+        # Ensure member-publication category is present
+        if 'member-publication' not in frontmatter['categories']:
+            frontmatter['categories'].append('member-publication')
         
         # Add source metadata
         frontmatter['source'] = {
             'member': member['name'],
             'username': member['username'],
-            'original_url': post.get('source_url', member['profile_url']),
-            'github_path': post.get('github_path', '')
+            'original_url': publication.get('source_url', member['profile_url']),
+            'github_path': publication.get('github_path', ''),
+            'directory': directory_name
         }
         
         # Preserve additional original frontmatter
@@ -344,22 +372,50 @@ class MemberPostSync:
                     frontmatter['categories'].append(cat)
         
         # Get content
-        content = post.get('content', '')
+        content = publication.get('content', '')
         
         # Add attribution if configured
         sync_config = self.config.get('sync_config', {})
         if sync_config.get('add_attribution', True):
-            attribution = f"\n\n---\n\n*This post was originally published by [{member['name']}]({member['profile_url']}) and automatically synced to the McPherson Group website.*"
+            attribution = f"\n\n---\n\n*This publication was originally published by [{member['name']}]({member['profile_url']}) and automatically synced to the McPherson Group website.*"
             content += attribution
         
         # Create the full post content
         yaml_header = yaml.dump(frontmatter, default_flow_style=False, allow_unicode=True)
         full_content = f"---\n{yaml_header}---\n\n{content}"
         
-        return local_path, full_content
+        # Prepare image files for download
+        image_downloads = []
+        for img_info in publication.get('image_files', []):
+            img_local_path = destination_dir / img_info['name']
+            img_download_url = img_info['download_url']
+            image_downloads.append((img_local_path, img_download_url))
+        
+        return index_path, full_content, image_downloads
+    
+    def _download_image_file(self, local_path: Path, download_url: str) -> bool:
+        """Download an image file from GitHub."""
+        try:
+            response = self._safe_request(download_url)
+            if response and response.status_code == 200:
+                # Ensure parent directory exists
+                local_path.parent.mkdir(parents=True, exist_ok=True)
+                
+                # Write the image file
+                with open(local_path, 'wb') as f:
+                    f.write(response.content)
+                
+                logger.debug(f"Downloaded image file: {local_path}")
+                return True
+            else:
+                logger.warning(f"Failed to download image from {download_url}")
+                return False
+        except Exception as e:
+            logger.error(f"Error downloading image file {download_url}: {e}")
+            return False
     
     def sync_member_posts(self, member_username: Optional[str] = None) -> None:
-        """Sync posts for all members or a specific member."""
+        """Sync publications for all members or a specific member."""
         members = self.config.get('members', [])
         
         if member_username:
@@ -371,7 +427,7 @@ class MemberPostSync:
         # Only sync active members
         active_members = [m for m in members if m.get('active', True)]
         
-        logger.info(f"Syncing posts for {len(active_members)} active members")
+        logger.info(f"Syncing publications for {len(active_members)} active members")
         
         # Ensure base publications directory exists
         if not self.dry_run:
@@ -381,78 +437,86 @@ class MemberPostSync:
             try:
                 self._sync_member_posts(member)
             except Exception as e:
-                logger.error(f"Error syncing posts for {member['username']}: {e}")
+                logger.error(f"Error syncing publications for {member['username']}: {e}")
                 continue
     
     def _sync_member_posts(self, member: Dict) -> None:
-        """Sync posts for a single member."""
+        """Sync publications for a single member."""
         username = member['username']
-        logger.info(f"Syncing posts for {username}")
+        logger.info(f"Syncing publications for {username}")
         
-        # Fetch posts from member's site
-        posts = self._get_posts_from_member_site(member)
+        # Fetch publications from member's site
+        publications = self._get_posts_from_member_site(member)
         
-        if not posts:
-            logger.info(f"No posts found for {username}")
+        if not publications:
+            logger.info(f"No publications found for {username}")
             return
         
-        # Limit posts if configured
+        # Limit publications if configured
         max_posts = self.config.get('sync_config', {}).get('max_posts_per_member', 50)
-        if len(posts) > max_posts:
-            logger.info(f"Limiting to {max_posts} most recent posts for {username}")
-            posts = posts[:max_posts]
+        if len(publications) > max_posts:
+            logger.info(f"Limiting to {max_posts} most recent publications for {username}")
+            publications = publications[:max_posts]
         
-        # Create local post files
+        # Create local publication directories
         created_count = 0
         updated_count = 0
         skipped_count = 0
         
-        for post in posts:
+        for publication in publications:
             try:
-                local_path, content = self._create_local_post(post, member)
+                index_path, content, image_downloads = self._create_local_post(publication, member)
                 
                 if self.dry_run:
-                    logger.info(f"[DRY RUN] Would create/update: {local_path}")
+                    logger.info(f"[DRY RUN] Would create/update publication directory: {index_path.parent}")
+                    logger.info(f"[DRY RUN] Would create index.qmd: {index_path}")
+                    for img_path, img_url in image_downloads:
+                        logger.info(f"[DRY RUN] Would download image: {img_path}")
                     logger.debug(f"[DRY RUN] Content preview:\n{content[:200]}...")
                 else:
-                    # Check if file already exists
-                    if local_path.exists():
+                    # Check if index.qmd already exists
+                    if index_path.exists():
                         # Read existing content to compare
-                        with open(local_path, 'r', encoding='utf-8') as f:
+                        with open(index_path, 'r', encoding='utf-8') as f:
                             existing_content = f.read()
                         
                         # Simple comparison - you could add more sophisticated comparison
                         if existing_content.strip() == content.strip():
-                            logger.debug(f"No changes detected for {local_path}")
+                            logger.debug(f"No changes detected for {index_path}")
                             skipped_count += 1
                             continue
                         else:
-                            logger.info(f"Updating existing post: {local_path}")
+                            logger.info(f"Updating existing publication: {index_path.parent}")
                             updated_count += 1
                     else:
-                        logger.info(f"Creating new post: {local_path}")
+                        logger.info(f"Creating new publication: {index_path.parent}")
                         created_count += 1
                     
                     # Ensure destination directory exists
-                    local_path.parent.mkdir(parents=True, exist_ok=True)
+                    index_path.parent.mkdir(parents=True, exist_ok=True)
                     
-                    # Write the file
-                    with open(local_path, 'w', encoding='utf-8') as f:
+                    # Write the index.qmd file
+                    with open(index_path, 'w', encoding='utf-8') as f:
                         f.write(content)
+                    
+                    # Download image files
+                    for img_path, img_url in image_downloads:
+                        if not self._download_image_file(img_path, img_url):
+                            logger.warning(f"Failed to download image: {img_path}")
                         
             except Exception as e:
-                logger.error(f"Error processing post {post.get('filename', 'unknown')}: {e}")
+                logger.error(f"Error processing publication {publication.get('directory_name', 'unknown')}: {e}")
                 continue
         
         if not self.dry_run:
             logger.info(f"Sync completed for {username}: {created_count} created, {updated_count} updated, {skipped_count} skipped")
 
 def main():
-    parser = argparse.ArgumentParser(description='Sync member posts to organization repository')
+    parser = argparse.ArgumentParser(description='Sync member publications to organization repository')
     parser.add_argument('--dry-run', action='store_true', 
                        help='Show what would be done without making changes')
     parser.add_argument('--member', type=str, 
-                       help='Sync posts for a specific member only')
+                       help='Sync publications for a specific member only')
     parser.add_argument('--config', type=str, default='members.yml',
                        help='Path to members configuration file')
     parser.add_argument('--verbose', '-v', action='store_true',
@@ -472,7 +536,7 @@ def main():
     if args.dry_run:
         logger.info("Dry run completed. Use --verbose for more details.")
     else:
-        logger.info("Post synchronization completed.")
+        logger.info("Publication synchronization completed.")
 
 if __name__ == '__main__':
     main()

@@ -1,0 +1,33 @@
+---
+author:
+- Names in quotes
+- Separate by commas
+categories:
+- infectious-diseases
+- antimicrobial-resistance
+- human-gut-microbiome
+- member-publication
+date: '2025-09-17T20:06:28.099628'
+image: featured.jpg
+issue: issue
+journ: Journal
+page: page
+pub_number: null
+publication: Journal, **issue**, _page_ (2024)
+source:
+  directory: 20250917_test
+  github_path: publications/20250917_test/index.qmd
+  member: Jacob K. McPherson
+  original_url: https://github.com/JacobKMcPherson/JacobKMcPherson.github.io/blob/main/publications/20250917_test/index.qmd
+  username: JacobKMcPherson
+title: This is a test post
+url_preprint: null
+url_source: null
+year: 2025
+---
+
+
+
+---
+
+*This publication was originally published by [Jacob K. McPherson](https://jacobkmcpherson.github.io) and automatically synced to the McPherson Group website.*

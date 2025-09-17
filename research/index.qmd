@@ -1,67 +1,40 @@
 ---
-title: "Research"
+title: Research Areas
 listing:
-  contents: ../publications/posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: true
-  filter-ui: true
+  id: research
+  type: grid
 page-layout: full
-title-block-banner: false
-css: styles.css
 ---
+<!-- <style> -->
+<!--   body { -->
+<!--   background-image: url('images/chalkboard_sm.jpg'); -->
+<!--   background-size: cover; -->
+<!--   background-repeat: no-repeat; -->
+<!-- } -->
 
+<!-- </style> -->
+
+
+<!--
 # Research Areas
 
-Our group conducts pharmacological research across four main areas:
+Our group conducts pharmacological research across three main areas:
 
 
 ::: {.grid}
 
 ::: {.g-col-4}
-[**Infectious Diseases**](research/infectiousdiseases.qmd)
-
-Pharmacy practice of pharmacokinetics / pharmacodynamics (PK/PD) to susceptible or resistant organisms
-
+[**Infectious Diseases**](research/infectious-diseases/index.qmd)
 :::
 
 ::: {.g-col-4}
-[**Antimicrobial Stewardship**](research/antimicrobialstewardship.qmd)
-
-Pharmacy practice of antimicrobial stewardship and economic justification
-
+[**Antimicrobial Resistance**](research/antimicrobial-resistance/index.qmd)
 :::
 
 ::: {.g-col-4}
-[**Antimicrobial Resistance**](research/antimicrobialresistance.qmd)
-
-Spatiotemporal genomic epidemiology and pharmacology
-
-:::
-
-::: {.g-col-4}
-[**Human Gut Microbiome** ](research/humangutmicrobiome.qmd)
-
-Dynamics and Host-Microbe Interactions
-
-:::
-
-::: {.g-col-4}
-
-[**Drug Development**](research/drugdevelopment.qmd)
-
-Antibiotics, probiotics, antifungals, and antivirals
-
-:::
-
-::: {.g-col-4}
-
-[**Economic Analysis**](research/economicanalysis.qmd)
-
-
+[**Human Gut Microbiome** ](research/human-gut-microbiome/index.qmd)
 :::
 
 :::
 
-# Research Publications
+# Research Publications -->

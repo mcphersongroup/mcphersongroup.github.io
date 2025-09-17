@@ -27,6 +27,8 @@ website:
             text: "Antimicrobial Resistance"
           - href: research/antimicrobialstewardship.qmd
             text: "Statistical Modeling & Analysis"
+      - href: publications/index.qmd
+        icon: mortarboard
       - href: people/index.qmd
         icon: people
         text: People

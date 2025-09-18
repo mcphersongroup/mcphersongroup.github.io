@@ -4,6 +4,13 @@ project:
 
 website:
   title: "McPherson Group"
+  favicon: images/favicon.ico 
+  logo:
+    image: images/favicon.svg
+    alt: "Home"
+    href: index.qmd
+    width: 32
+    height: 32
   description: "Research Group Website"
   navbar:
     background: primary

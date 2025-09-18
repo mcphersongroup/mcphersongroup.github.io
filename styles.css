@@ -12,10 +12,6 @@
   display: none;
 }
 
-.listing-box-education {
-  font-size: 10px; 
-}
-
 /* Example: If using a navbar as header banner */
 .navbar {
   background: linear-gradient(90deg, #ffffff 0%, #f5f6fa 50%, #003366 100%);

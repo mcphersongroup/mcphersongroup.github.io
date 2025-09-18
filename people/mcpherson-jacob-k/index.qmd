@@ -9,7 +9,6 @@ education:
   - Ph.D. Pharmacology | University of Houston | 2025 <br> Pharm.D. | University of Houston | 2021 <br> B.S. Biological Sciences | University of Texas at Austin | 2015 <br>
 subtitle: "Clinician-Scientist"
 description: ""
-project: ""
 affiliation: University of Houston
 image: https://raw.githubusercontent.com/JacobKMcPherson/jacobkmcpherson.github.io/refs/heads/main/profile.svg
 listing:
@@ -68,12 +67,6 @@ about:
 :::{#about}
 ## Education
 {{< meta education >}}
-
-<br>
-
-
-## Project(s)
-{{< meta project >}}
 
 <br>
 

@@ -4,8 +4,8 @@ project:
 
 website:
   title: "McPherson Group"
-  favicon: images/favicon.ico 
-  logo: images/favicon.svg
+  favicon: images/logo.ico
+  logo: images/logo.png
   description: "Research Group Website"
   navbar:
     background: primary

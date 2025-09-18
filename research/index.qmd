@@ -5,36 +5,34 @@ listing:
   type: grid
 page-layout: full
 ---
-<!-- <style> -->
-<!--   body { -->
-<!--   background-image: url('images/chalkboard_sm.jpg'); -->
-<!--   background-size: cover; -->
-<!--   background-repeat: no-repeat; -->
-<!-- } -->
-
-<!-- </style> -->
 
 
-<!--
-# Research Areas
+## Research Areas
 
-Our group conducts pharmacological research across three main areas:
+```{listing}
+contents: area*/
+type: grid
+```
 
+## Research Resources
 
-::: {.grid}
+### Literaure
 
-::: {.g-col-4}
-[**Infectious Diseases**](research/infectious-diseases/index.qmd)
-:::
+```{listing}
+contents: resource/lit*/
+type: grid
+```
 
-::: {.g-col-4}
-[**Antimicrobial Resistance**](research/antimicrobial-resistance/index.qmd)
-:::
+### Experimentation
 
-::: {.g-col-4}
-[**Human Gut Microbiome** ](research/human-gut-microbiome/index.qmd)
-:::
+```{listing}
+contents: resource/exp*/
+type: grid
+```
 
-:::
+### Data Management & Analysis
 
-# Research Publications -->
+```{listing}
+contents: resource/data*/
+type: grid
+```

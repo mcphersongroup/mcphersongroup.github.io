@@ -1,38 +1,40 @@
 ---
 title: Research Areas
-#listing:
-#  id: research
-#  type: grid
+listing:
+  - id: research-areas
+    contents: area/*/index.qmd
+    type: grid
+  - id: literature
+    contents: resource/lit/*/index.qmd
+    type: grid
+  - id: experimentation  
+    contents: resource/exp/*/index.qmd
+    type: grid
+  - id: data-analysis
+    contents: resource/data/*/index.qmd
+    type: grid
 page-layout: full
 ---
 
 
 ## Research Areas
 
-```{listing}
-contents: area/*
-type: grid
-```
+::: {#research-areas}
+:::
 
 ## Research Resources
 
-### Literaure
+### Literature
 
-```{listing}
-contents: resource/lit/*
-type: grid
-```
+::: {#literature}
+:::
 
 ### Experimentation
 
-```{listing}
-contents: resource/exp/*
-type: grid
-```
+::: {#experimentation}
+:::
 
 ### Data Management & Analysis
 
-```{listing}
-contents: resource/data/*
-type: grid
-```
+::: {#data-analysis}
+:::

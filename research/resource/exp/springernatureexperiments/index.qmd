@@ -1,6 +1,6 @@
 ---
-title: Antimicrobial Resistance
-alias: &ALIAS antimicrobial-resistance
+title: Springer Nature Experiments
+alias: &ALIAS springernatureexperiments
 image: featured.jpg
 listing:
   id: pubs

@@ -1,6 +1,6 @@
 ---
-title: Economic Analysis
-alias: &ALIAS economic-analysis
+title: Qiagen
+alias: &ALIAS qiagen
 image: featured.jpg
 listing:
   id: pubs

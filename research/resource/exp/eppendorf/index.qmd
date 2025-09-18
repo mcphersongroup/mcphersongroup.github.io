@@ -1,6 +1,6 @@
 ---
-title: Human Gut Microbiome
-alias: &ALIAS human-gut-microbiome
+title: Eppendorf
+alias: &ALIAS eppendorf
 image: featured.jpg
 listing:
   id: pubs

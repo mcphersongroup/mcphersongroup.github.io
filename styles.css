@@ -11,7 +11,17 @@
 .quarto-title-block {
   display: none;
 }
-
+.listing-box-title {
+  font-size: 12px; 
+  font: bold;
+}
+.listing-box-subtitle {
+  font-size: 11px; 
+}
+.listing-box-education {
+  font-size: 10px; 
+  font: italic;
+}
 /* Example: If using a navbar as header banner */
 .navbar {
   background: linear-gradient(90deg, #ffffff 0%, #f5f6fa 50%, #003366 100%);

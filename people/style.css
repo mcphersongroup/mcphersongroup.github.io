@@ -11,6 +11,13 @@
   display: none;
 }
 
+.listing-box-title {
+  font-size: 12px; 
+  font: bold;
+}
+.listing-box-subtitle {
+  font-size: 11px; 
+}
 .listing-box-education {
   font-size: 10px; 
   font: italic;

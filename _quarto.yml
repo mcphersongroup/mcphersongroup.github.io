@@ -9,7 +9,7 @@ website:
   navbar:
     background: primary
     search: true
-    logo: images/logo.svg
+    #logo: images/logo.svg
     left:
       - href: index.qmd
         icon: house

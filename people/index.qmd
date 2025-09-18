@@ -57,14 +57,37 @@ listing:
 page-layout: full
 ---
 
-
-## Current Members
-::: {#pi} {#researcher} {#postdoc} {#gradstudent} {#post-bac}
+## Principal Investigator
+::: {#pi}
 :::
 
-:::{.sand-background} 
+
+:::{.sand-background}
+## Research Scientists
+::: {#researcher}
+:::
+
+
+:::
+## Postdoctoral Fellows
+::: {#postdoc}
+:::
+
+
+:::{.sand-background}
+## Graduate Students
+::: {#gradstudent}
+:::
+
+:::
+## Post Baccalaureate Researchers
+::: {#post-bac}
+:::
+
+:::{.sand-background}
 ## Alumni
 ::: {#alumni}
-
 :::
 
+
+:::

@@ -1,8 +1,8 @@
 ---
 title: Research Areas
-listing:
-  id: research
-  type: grid
+#listing:
+#  id: research
+#  type: grid
 page-layout: full
 ---
 
@@ -10,7 +10,7 @@ page-layout: full
 ## Research Areas
 
 ```{listing}
-contents: area*/
+contents: area/*
 type: grid
 ```
 
@@ -19,20 +19,20 @@ type: grid
 ### Literaure
 
 ```{listing}
-contents: resource/lit*/
+contents: resource/lit/*
 type: grid
 ```
 
 ### Experimentation
 
 ```{listing}
-contents: resource/exp*/
+contents: resource/exp/*
 type: grid
 ```
 
 ### Data Management & Analysis
 
 ```{listing}
-contents: resource/data*/
+contents: resource/data/*
 type: grid
 ```

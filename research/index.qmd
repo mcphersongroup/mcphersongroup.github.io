@@ -10,7 +10,7 @@ page-layout: full
 ## Research Areas
 
 ```{listing}
-contents: area/*
+contents: area/*/index.qmd
 type: grid
 ```
 
@@ -19,20 +19,20 @@ type: grid
 ### Literaure
 
 ```{listing}
-contents: resource/lit/*
+contents: resource/lit/*/index.qmd
 type: grid
 ```
 
 ### Experimentation
 
 ```{listing}
-contents: resource/exp/*
+contents: resource/exp/*/index.qmd
 type: grid
 ```
 
 ### Data Management & Analysis
 
 ```{listing}
-contents: resource/data/*
+contents: resource/data/*/index.qmd
 type: grid
 ```

@@ -6,7 +6,7 @@ middle-i-with-period: K.
 people_group: "pi"
 email: "jacobmcpherson@utexas.edu"
 education:
-  - Pharm.D. | University of Houston College of Pharmacy | 2021 <br> B.S. Biological Sciences | University of Texas at Austin | 2015 <br>
+  - Ph.D. Pharmacology | University of Houston | 2025 <br> Pharm.D. | University of Houston | 2021 <br> B.S. Biological Sciences | University of Texas at Austin | 2015 <br>
 subtitle: "Clinician-Scientist"
 description: ""
 project: ""

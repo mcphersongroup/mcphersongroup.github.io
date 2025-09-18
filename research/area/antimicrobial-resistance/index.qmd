@@ -1,5 +1,5 @@
 ---
-title: Antimicrobial Resistance
+title: Antimicrobial Resistance 🦠
 alias: &ALIAS antimicrobial-resistance
 image: featured.jpg
 listing:

@@ -1,5 +1,5 @@
 ---
-title: Drug Development
+title: Drug Development💊
 alias: &ALIAS drug-development
 image: featured.jpg
 listing:

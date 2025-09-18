@@ -1,5 +1,5 @@
 ---
-title: Artificial Intelligence
+title: Artificial Intelligence 🤖
 alias: &ALIAS artificial-intelligence
 image: featured.jpg
 listing:

@@ -1,5 +1,5 @@
 ---
-title: Human Gut Microbiome
+title: Human Gut Microbiome 🦠
 alias: &ALIAS human-gut-microbiome
 image: featured.jpg
 listing:

@@ -4,7 +4,7 @@ project:
 
 website:
   title: "McPherson Group"
-  favicon: images/logo.ico
+  #favicon: images/logo.ico
   description: "Research Group Website"
   navbar:
     background: primary

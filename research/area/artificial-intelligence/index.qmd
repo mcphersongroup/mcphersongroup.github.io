@@ -1,6 +1,6 @@
 ---
-title: Antimicrobial Stewardship
-alias: &ALIAS antimicrobial-stewardship
+title: Artificial Intelligence
+alias: &ALIAS artificial-intelligence
 image: featured.jpg
 listing:
   id: pubs

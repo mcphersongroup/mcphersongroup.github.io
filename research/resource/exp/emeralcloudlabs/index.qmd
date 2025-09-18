@@ -1,6 +1,6 @@
 ---
-title: Antimicrobial Resistance
-alias: &ALIAS antimicrobial-resistance
+title: Emerald Cloud Labs
+alias: &ALIAS emeralcloudlabs
 image: featured.jpg
 listing:
   id: pubs

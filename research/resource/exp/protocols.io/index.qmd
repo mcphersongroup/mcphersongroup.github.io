@@ -1,6 +1,6 @@
 ---
-title: Antimicrobial Stewardship
-alias: &ALIAS antimicrobial-stewardship
+title: Protocols.io
+alias: &ALIAS protocols.io
 image: featured.jpg
 listing:
   id: pubs

@@ -4,12 +4,12 @@ project:
 
 website:
   title: "McPherson Group"
-  #favicon: images/logo.ico
+  favicon: logo.ico
   description: "Research Group Website"
   navbar:
     background: primary
     search: true
-    #logo: images/logo.svg
+    logo: logo.svg
     left:
       - href: index.qmd
         icon: house

@@ -34,8 +34,8 @@ We believe in:
 
 **Principal Investigator**: Jacob K. McPherson
 
-:fa-envelope: **Email**: [jacobmcpherson@utexas.edu](mailto:jacobmcpherson@utexas.edu)
+**Email**: [jacobmcpherson@utexas.edu](mailto:jacobmcpherson@utexas.edu)
 
-:fa-briefcase: **Business Inquiries**: [jacobkmcpherson.com](https://www.jacobkmcpherson.com)
+**Business Inquiries**: [jacobkmcpherson.com](https://www.jacobkmcpherson.com)
 
 For joining the group, please use the above link [join](people/join.qmd)

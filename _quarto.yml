@@ -52,7 +52,7 @@ website:
         href: https://github.com/McPhersonGroup
         aria-label: GitHub
   page-footer:
-    left: "© 2025 Jacob K. McPherson"
+    left: "Copyright © 2025 Jacob K. McPherson - All Rights Reserved"
     right: 
       - text: "License"
         href: LICENSE.html

@@ -2,7 +2,7 @@
 title: "Publications"
 listing:
   - id: pubs
-    template: ../_ejs/publications.ejs
+    #template: ../_ejs/publications.ejs
     contents: ../publications/**/*.qmd
     sort: "pub_number desc"
     page-size: 30
@@ -10,6 +10,8 @@ listing:
     fields: [image, pub_number, title, publication, author,url_source]
 page-layout: full
 ---
+
+Welcome to the Group publications! Please take a look around. 
 
 <hr>
 

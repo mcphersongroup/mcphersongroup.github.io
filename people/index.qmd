@@ -91,3 +91,59 @@ page-layout: full
 
 
 :::
+
+## Group Locations
+
+```{=html}
+<!-- Leaflet CSS and JS from CDN -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+      crossorigin="" />
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
+        crossorigin=""></script>
+
+<!-- Map container with enhanced styling -->
+<div id="people-map" style="height: 400px; width: 100%; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 1px solid #ddd;"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if Leaflet is loaded
+    if (typeof L !== 'undefined') {
+        try {
+            // Initialize the map centered on Austin, TX (UT location)
+            var map = L.map('people-map').setView([30.2849, -97.7341], 10);
+
+            // Add Stamen Watercolor tile layer
+            L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
+                attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                subdomains: 'abcd',
+                minZoom: 1,
+                maxZoom: 16
+            }).addTo(map);
+
+            // Add a marker for the University of Texas at Austin
+            var marker = L.marker([30.2849, -97.7341]).addTo(map);
+            marker.bindPopup("<strong>McPherson Group</strong><br/>University of Texas at Austin<br/>Austin, TX");
+
+            console.log('Map initialized successfully');
+        } catch (error) {
+            console.error('Error initializing map:', error);
+            // Fallback: show a simple text message
+            document.getElementById('people-map').innerHTML = 
+                '<div style="display: flex; align-items: center; justify-content: center; height: 100%; background-color: #f8f9fa; color: #6c757d; text-align: center; padding: 20px;">' +
+                '<div><strong>McPherson Group</strong><br/>University of Texas at Austin<br/>Austin, TX<br/><em>Interactive map loading...</em></div>' +
+                '</div>';
+        }
+    } else {
+        console.error('Leaflet library not loaded');
+        // Fallback: show location info
+        document.getElementById('people-map').innerHTML = 
+            '<div style="display: flex; align-items: center; justify-content: center; height: 100%; background-color: #f8f9fa; color: #6c757d; text-align: center; padding: 20px;">' +
+            '<div><strong>McPherson Group</strong><br/>University of Texas at Austin<br/>Austin, TX<br/><em>Map functionality requires network access</em></div>' +
+            '</div>';
+    }
+});
+</script>
+```

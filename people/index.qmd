@@ -115,13 +115,46 @@ document.addEventListener('DOMContentLoaded', function() {
             // Initialize the map centered on Austin, TX (UT location)
             var map = L.map('people-map').setView([30.2849, -97.7341], 10);
 
-            // Add Stamen Watercolor tile layer
-            L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
-                attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-                subdomains: 'abcd',
-                minZoom: 1,
-                maxZoom: 16
-            }).addTo(map);
+            // Add tiles - trying modern working alternatives to deprecated Stamen Fastly
+            // Option 1: Try Stamen Watercolor via current provider
+            var tileLayer;
+            
+            // Try multiple providers in order of preference
+            try {
+                // First try: Stamen Watercolor via Stadia Maps (may require API key)
+                tileLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg', {
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    minZoom: 1,
+                    maxZoom: 16
+                });
+                
+                // Handle tile loading errors with fallbacks
+                var fallbackTriggered = false;
+                tileLayer.on('tileerror', function(e) {
+                    if (!fallbackTriggered) {
+                        fallbackTriggered = true;
+                        console.warn('Stamen tiles unavailable, using alternative watercolor-style tiles');
+                        map.removeLayer(tileLayer);
+                        
+                        // Fallback: Use CartoDB Positron (clean alternative)
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>',
+                            subdomains: 'abcd',
+                            maxZoom: 20
+                        }).addTo(map);
+                    }
+                });
+                
+                tileLayer.addTo(map);
+                
+            } catch (error) {
+                console.warn('Error setting up Stamen tiles, using standard tiles:', error);
+                // Final fallback to reliable OpenStreetMap
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                    maxZoom: 19
+                }).addTo(map);
+            }
 
             // Add a marker for the University of Texas at Austin
             var marker = L.marker([30.2849, -97.7341]).addTo(map);

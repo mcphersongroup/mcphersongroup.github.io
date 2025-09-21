@@ -12,7 +12,7 @@ Create a *free* account in
 
 1. [**ORCID**](https://orcid.org); use to sign-in to: [**OverLeaf**](https://www.overleaf.com/)
 
-2. [**GitHub**](https://github.com); use to sign-in to [RStudio Cloud](https://posit.cloud)
+2. [**GitHub**](https://github.com); use to sign-in to [**RStudio Cloud**](https://posit.cloud)
 
   - Create a quarto-rendered github-pages profile at repo named '*CHANGETOYOURUSERNAME.github.io*', similar to [mine](https://github.com/JacobKMcPherson/jacobkmcpherson.github.io)
 

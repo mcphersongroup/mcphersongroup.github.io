@@ -74,15 +74,6 @@ img {
   height: auto;
 }
 
-/* Welcome banner styling for homepage */
-.quarto-title + p img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 2rem 0;
-}
-
 /* Footer styling */
 .footer {
   margin-top: 3rem;

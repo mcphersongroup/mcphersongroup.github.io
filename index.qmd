@@ -3,8 +3,7 @@ title: "Welcome"
 ---
 
 
-::: hero-banner
+
 # Welcome to the McPherson Research Group!
  
 Advancing knowledge through innovative approaches to biomedical data
-:::

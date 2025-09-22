@@ -40,7 +40,7 @@ website:
         aria-label: Join
     right:
       - icon: calendar-date
-        href: https://jacobkmcpherson.com/services
+        href: https://jacobkmcpherson.com/appointments
         aria-label: Calendar
       - icon: envelope
         href: mailto:jacobmcpherson@utexas.edu

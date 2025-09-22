@@ -2,4 +2,9 @@
 title: "Welcome"
 ---
 
-![Welcome to the McPherson Group](welcome-banner.png)
+
+::: hero-banner
+# Welcome to the Workshop!
+ 
+Advancing knowledge through innovative approaches to biomedical data
+:::

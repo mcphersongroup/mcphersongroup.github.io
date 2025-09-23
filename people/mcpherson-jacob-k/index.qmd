@@ -13,7 +13,7 @@ affiliation: University of Houston
 image: https://raw.githubusercontent.com/JacobKMcPherson/jacobkmcpherson.github.io/refs/heads/main/profile.svg
 listing:
   id: pubs
-  template: ../../_ejs/publications-people.ejs 
+  #template: ../../_ejs/publications-people.ejs 
   contents: 
     - "../../../publications/**/*.qmd"
     - "!../../../publications/_template/"

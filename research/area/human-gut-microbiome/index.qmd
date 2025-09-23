@@ -6,8 +6,8 @@ listing:
   id: pubs
   #template: ../../../_ejs/publications-people.ejs 
   contents: 
+    - "!../../../publications/_template/"
     - "../../../publications/**/*.qmd"
-  #  - "!../../../publications/_template/"
   sort: "pub_number desc"
   # sort-ui: true
   # filter-ui: true

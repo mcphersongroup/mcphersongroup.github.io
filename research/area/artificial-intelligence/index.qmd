@@ -7,10 +7,10 @@ listing:
   #template: ../../../_ejs/publications-people.ejs 
   contents: 
     - "../../../publications/**/*.qmd"
-    - "!../../../publications/_template/"
+  #  - "!../../../publications/_template/"
   sort: "pub_number desc"
   # sort-ui: true
-  filter-ui: true
+  # filter-ui: true
   include:
     categories: *ALIAS
   fields: [publication, title, categories, image, date, author]

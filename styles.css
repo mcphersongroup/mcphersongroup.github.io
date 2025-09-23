@@ -8,6 +8,14 @@
   border-bottom: 1px solid #e3f2fd;
 }
 
+.content {
+  margin-top: 1rem;
+  max-width: 1200px;   /* increase as needed, default is often 800px or 960px */
+  width: 85%;          /* or 100%, or a fixed px value */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .quarto-title-block {
   display: none;
 }

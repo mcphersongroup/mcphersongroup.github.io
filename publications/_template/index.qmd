@@ -3,9 +3,12 @@ title: ""
 author: ["Names in quotes", "Separate by commas"]
 publication: "Journal, **issue**, _page_ (2024)"
 # categories: 
-#   - "fast_electron_nano-spectroscopy"
-#   - "nanophotonics-quantum_optics"
-#   - "photothermal_spectroscopy_and_microscopy"
+#- infectious-diseases
+#- antimicrobial-resistance
+#- human-gut-microbiome
+#- member-publication
+#- artificial-intelligence
+#- economic-analysis
 url_source: 
 url_preprint: 
 journ: "Journal"

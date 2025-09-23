@@ -4,6 +4,7 @@ listing:
   - id: research-areas
     contents: area/*/index.qmd
     type: grid
+    fields: [author, year]
   - id: literature
     contents: resource/lit/*/index.qmd
     type: grid

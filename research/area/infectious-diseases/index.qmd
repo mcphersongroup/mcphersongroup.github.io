@@ -11,8 +11,6 @@ listing:
   sort: "pub_number desc"
   # sort-ui: true
   # filter-ui: true
-  include:
-    categories: *ALIAS
   fields: [publication, title, categories, image, date, author]
 
 ---

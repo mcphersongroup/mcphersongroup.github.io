@@ -6,4 +6,4 @@ title: "Welcome"
 
 # Welcome to the McPherson Research Group!
  
-Advancing knowledge through innovative approaches to biomedical data
+Advancing human knowledge through innovative approaches to publicly available data

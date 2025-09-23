@@ -9,7 +9,7 @@ listing:
     # sort-ui: true
     # filter-ui: true
     include:
-      categories: *ALIAS
+        categories: *ALIAS
     fields: [image, pub_number, title, publication, author,url_source]
 page-layout: full
 ---

@@ -7,9 +7,9 @@ listing:
     sort: "pub_number desc"
     page-size: 30
     # sort-ui: true
-    # filter-ui: true
-    #include:
-    #    categories: *ALIAS
+    filter-ui: true
+    include:
+        categories: *ALIAS
     fields: [image, pub_number, title, publication, author,url_source]
 page-layout: full
 ---

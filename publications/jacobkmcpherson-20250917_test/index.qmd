@@ -6,7 +6,7 @@ categories:
 - antimicrobial-resistance
 - human-gut-microbiome
 - member-publication
-date: '2025-10-01T06:19:59.827232'
+date: '2025-10-02T06:19:29.422524'
 image: featured.jpg
 issue: issue
 journ: Journal

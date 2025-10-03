@@ -31,7 +31,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install jupyter nbformat
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install jupyter nbformat; fi
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2

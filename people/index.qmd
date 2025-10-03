@@ -92,3 +92,47 @@ jupyter: python3
 
 
 :::
+
+## Group Member Locations
+
+```{python}
+#| echo: false
+#| warning: false
+
+from ipyleaflet import Map, Marker, AwesomeIcon
+from ipywidgets import HTML
+
+# Create a map centered on Texas (between Houston and Austin)
+m = Map(center=(30.0, -96.5), zoom=6)
+
+# Example locations - these can be updated with actual member locations
+locations = [
+    {
+        "name": "Jacob K. McPherson",
+        "role": "Principal Investigator",
+        "lat": 29.7174,
+        "lon": -95.4018,
+        "city": "Houston, TX"
+    }
+]
+
+# Add markers for each location
+for loc in locations:
+    icon = AwesomeIcon(
+        name='user',
+        marker_color='blue',
+        icon_color='white'
+    )
+    marker = Marker(
+        location=(loc["lat"], loc["lon"]),
+        draggable=False,
+        title=f"{loc['name']} - {loc['role']}",
+        icon=icon
+    )
+    marker.popup = HTML(
+        value=f"<b>{loc['name']}</b><br>{loc['role']}<br>{loc['city']}"
+    )
+    m.add_layer(marker)
+
+m
+```

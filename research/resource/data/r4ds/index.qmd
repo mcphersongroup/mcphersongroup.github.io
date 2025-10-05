@@ -17,7 +17,7 @@ listing:
 
 ---
 
-![R for Data Science Learning Resource](featured.jpg)
+![R for Data Science Learning Resource](featured.png)
 
 ## Overview
 

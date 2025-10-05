@@ -17,7 +17,7 @@ listing:
 
 ---
 
-![Scisure Research Data Management](featured.jpg)
+![Scisure Research Data Management](featured.png)
 
 ## Overview
 

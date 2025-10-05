@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![The Lancet Medical Journals](featured.jpg)
+
+## Overview
+
+The Lancet is one of the world's oldest and most prestigious medical journals, founded in 1823. The Lancet family of journals publishes high-quality original research, reviews, and commentary on medicine, global health, and public health, with a strong focus on work that has the potential to change clinical practice or thinking about disease.
+
+## Key Features
+
+- **Flagship Journal**: The Lancet, one of the most cited and influential medical journals
+- **Specialty Journals**: The Lancet Infectious Diseases, The Lancet Global Health, and more
+- **Global Health Focus**: Emphasis on healthcare equity and global health challenges
+- **Rapid Publication**: Fast-track review for important clinical findings
+- **Multimedia**: Podcasts, videos, and interactive content
+- **Commentaries**: Expert perspectives on current health issues
+
+## Use Cases in Research
+
+- Accessing cutting-edge clinical research
+- Following public health trends and policy discussions
+- Publishing clinical trials and systematic reviews
+- Reading expert commentaries on medical topics
+- Tracking infectious disease outbreaks and responses
+- Understanding global health disparities and solutions
+
+## Getting Started
+
+Visit [thelancet.com](https://www.thelancet.com) to browse content and access articles through your institutional subscription.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

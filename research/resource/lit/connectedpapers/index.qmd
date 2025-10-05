@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Connected Papers Literature Discovery](featured.jpg)
+
+## Overview
+
+Connected Papers is a visual tool for exploring the academic literature landscape. It creates an interactive graph showing papers related to a seed paper, helping researchers discover relevant work and understand the research field structure.
+
+## Key Features
+
+- **Visual Graph Interface**: See relationships between papers in an intuitive network diagram
+- **Citation Analysis**: Identify seminal works and derivative papers
+- **Prior and Derivative Works**: Distinguish between papers that came before and after your seed paper
+- **Similarity Algorithm**: Papers positioned based on bibliographic coupling and co-citation
+- **Time Navigation**: View how research has evolved over time
+- **Export Capabilities**: Save graphs and lists for future reference
+
+## Use Cases in Research
+
+- Conducting comprehensive literature reviews
+- Discovering relevant papers you might have missed
+- Understanding the evolution of a research topic
+- Identifying key papers and influential authors in a field
+- Finding review papers and foundational studies
+- Exploring new research directions and related topics
+
+## Getting Started
+
+Visit [connectedpapers.com](https://www.connectedpapers.com) and enter a paper DOI or search for a paper to generate its connection graph.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

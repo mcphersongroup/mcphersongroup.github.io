@@ -16,10 +16,37 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![AWS and Docker for Research Computing](featured.jpg)
+
+## Overview
+
+Amazon Web Services (AWS) and Docker provide powerful cloud computing and containerization technologies for research. Together, they enable scalable, reproducible computational workflows that can run anywhere from a laptop to massive cloud infrastructure.
+
+## Key Features
+
+- **Scalable Computing**: Access to virtually unlimited computing resources on AWS
+- **Containerization**: Package applications with all dependencies using Docker
+- **Reproducibility**: Ensure consistent environments across different systems
+- **Cost Efficiency**: Pay only for resources used, scale up or down as needed
+- **Multiple Services**: EC2, S3, Lambda, ECS, and more for diverse research needs
+- **Version Control**: Track and share containerized workflows
+
+## Use Cases in Research
+
+- Running computationally intensive analyses (genomics, simulations, ML)
+- Creating reproducible research environments
+- Sharing analysis pipelines with collaborators
+- Processing large datasets that exceed local computing capacity
+- Deploying web applications for data visualization or collection
+- Archiving data and results in cloud storage
+
+## Getting Started
+
+- AWS: Visit [aws.amazon.com](https://aws.amazon.com) to create an account and explore services
+- Docker: Download from [docker.com](https://www.docker.com) and follow tutorials to learn containerization
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

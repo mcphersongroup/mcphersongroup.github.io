@@ -16,10 +16,37 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Protocols.io Research Methods Platform](featured.jpg)
+
+## Overview
+
+Protocols.io is an open-access repository for science methods that enables researchers to share, discover, and discuss detailed experimental protocols. It provides a collaborative platform for protocol development with version control, making methods more reproducible and accessible.
+
+## Key Features
+
+- **Step-by-Step Protocols**: Detailed experimental procedures with materials, equipment, and timing
+- **Version Control**: Track changes and improvements to protocols over time
+- **Collaborative Editing**: Work with team members to develop and refine protocols
+- **Protocol Collections**: Organize related protocols into workflows
+- **Rich Media Support**: Include images, videos, and interactive elements
+- **DOI Assignment**: Make protocols citable with unique identifiers
+- **Integration**: Connect protocols to publications and data repositories
+
+## Use Cases in Research
+
+- Sharing detailed experimental methods with collaborators
+- Publishing reproducible protocols alongside papers
+- Finding validated protocols for specific techniques
+- Documenting and standardizing lab procedures
+- Training new lab members with consistent methods
+- Ensuring method reproducibility across studies
+
+## Getting Started
+
+Visit [protocols.io](https://www.protocols.io) to browse public protocols or create an account to share your own methods.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

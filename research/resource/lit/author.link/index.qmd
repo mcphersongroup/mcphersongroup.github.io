@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Author.Link Research Networking](featured.jpg)
+
+## Overview
+
+Author.Link is a platform designed to help researchers create comprehensive academic profiles, showcase their work, and connect with collaborators. It aggregates publication data from multiple sources to create a unified view of a researcher's scholarly output and impact.
+
+## Key Features
+
+- **Unified Profile**: Aggregate publications from multiple databases and sources
+- **Impact Metrics**: Track citations, h-index, and other scholarly metrics
+- **Collaboration Network**: Visualize co-author networks and research connections
+- **Publication Management**: Claim and organize your scholarly works
+- **Profile Customization**: Create a professional research profile with bio and expertise
+- **Discovery Tools**: Help others find your work and expertise
+
+## Use Cases in Research
+
+- Creating a comprehensive academic CV and online presence
+- Tracking research impact and citations across databases
+- Finding potential collaborators with complementary expertise
+- Managing your publication record in one place
+- Increasing visibility of your research
+- Monitoring co-author networks and collaboration patterns
+
+## Getting Started
+
+Visit [author.link](https://author.link) to create your research profile and start connecting with the academic community.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Scisure Research Data Management](featured.jpg)
+
+## Overview
+
+Scisure is a research data management platform designed to help laboratories organize, track, and manage their experimental data, samples, and workflows. It provides tools for ensuring data quality, regulatory compliance, and efficient collaboration.
+
+## Key Features
+
+- **Sample Management**: Track samples throughout their lifecycle
+- **Inventory Control**: Manage reagents, materials, and equipment
+- **Workflow Automation**: Standardize and automate lab processes
+- **Data Integrity**: Ensure compliance with data governance standards
+- **Collaboration Tools**: Share data and protocols with team members
+- **Audit Trails**: Complete traceability for regulatory compliance
+
+## Use Cases in Research
+
+- Managing complex sample collections
+- Tracking reagent inventory and expiration dates
+- Standardizing laboratory workflows
+- Ensuring GLP/GMP compliance
+- Facilitating data sharing within research teams
+- Maintaining audit trails for regulatory inspections
+
+## Getting Started
+
+Visit [scisure.com](https://www.scisure.com) to learn about the platform and request a demonstration.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

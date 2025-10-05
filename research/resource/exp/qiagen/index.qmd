@@ -1,5 +1,5 @@
 ---
-title: Qiagen
+title: QIAGEN
 alias: &ALIAS qiagen
 image: featured.png
 listing:
@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![QIAGEN Sample and Assay Technologies](featured.jpg)
+
+## Overview
+
+QIAGEN is a leading global provider of sample and assay technologies for molecular diagnostics, applied testing, academic and pharmaceutical research. Their products enable researchers to extract, purify, and analyze nucleic acids and proteins from biological samples.
+
+## Key Features
+
+- **Sample Preparation**: Industry-leading kits for DNA, RNA, and protein extraction
+- **Assay Technologies**: PCR, sequencing, and genotyping solutions
+- **Bioinformatics**: Analysis software for genomic and pathway data
+- **Automation**: Robotic systems for high-throughput sample processing
+- **Quality Control**: Validated protocols and quality-tested reagents
+- **Technical Support**: Comprehensive resources and expert assistance
+
+## Use Cases in Research
+
+- Nucleic acid extraction and purification
+- Next-generation sequencing library preparation
+- Gene expression analysis and qPCR
+- Epigenetics research and methylation analysis
+- Pathogen detection and identification
+- Biomarker discovery and validation
+
+## Getting Started
+
+Visit [qiagen.com](https://www.qiagen.com) to explore products, access technical resources, and find application-specific protocols.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

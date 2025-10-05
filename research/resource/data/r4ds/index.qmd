@@ -1,5 +1,5 @@
 ---
-title: R4DS
+title: R for Data Science (R4DS)
 alias: &ALIAS r4ds
 image: featured.png
 listing:
@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![R for Data Science Learning Resource](featured.jpg)
+
+## Overview
+
+R for Data Science (R4DS) is a comprehensive, freely available book by Hadley Wickham and Garrett Grolemund that teaches data science using R and the tidyverse collection of packages. It's an essential resource for learning modern data analysis workflows in R.
+
+## Key Features
+
+- **Free Online Book**: Complete text available at r4ds.had.co.nz
+- **Tidyverse Focus**: Learn modern R using tidyverse packages
+- **Hands-On Examples**: Practical code examples throughout
+- **Complete Workflow**: Covers import, tidy, transform, visualize, and model
+- **Community**: Active online learning community and resources
+- **Updated Content**: Regular updates with new editions
+
+## Use Cases in Research
+
+- Learning R programming for data analysis
+- Mastering data wrangling and transformation
+- Creating publication-quality visualizations with ggplot2
+- Understanding tidy data principles
+- Building reproducible analysis workflows
+- Teaching data science concepts to students
+
+## Getting Started
+
+Visit [r4ds.had.co.nz](https://r4ds.had.co.nz) to read the book online for free, or purchase a physical copy.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

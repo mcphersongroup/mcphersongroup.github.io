@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infectious Diseases Research Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .banner {
+            width: 100%;
+            max-width: 1200px;
+            height: 400px;
+            background: linear-gradient(135deg, #003366 0%, #004080 50%, #003366 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        .pathogens-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .pathogen {
+            position: absolute;
+            opacity: 0.6;
+            animation: float 7s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-30px) rotate(180deg);
+            }
+        }
+        
+        .virus {
+            width: 80px;
+            height: 80px;
+            position: relative;
+        }
+        
+        .virus-core {
+            width: 50px;
+            height: 50px;
+            background: radial-gradient(circle at 30% 30%, #ff6b9d, #e85d7a);
+            border-radius: 50%;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+        
+        .virus-spike {
+            width: 15px;
+            height: 15px;
+            background: radial-gradient(circle at 30% 30%, #ff8fa3, #ff6b9d);
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .virus-spike:nth-child(2) { top: 0; left: 32px; }
+        .virus-spike:nth-child(3) { top: 10px; right: 5px; }
+        .virus-spike:nth-child(4) { bottom: 10px; right: 5px; }
+        .virus-spike:nth-child(5) { bottom: 0; left: 32px; }
+        .virus-spike:nth-child(6) { bottom: 10px; left: 5px; }
+        .virus-spike:nth-child(7) { top: 10px; left: 5px; }
+        
+        .bacteria {
+            background: radial-gradient(circle at 30% 30%, #b197fc, #7950f2);
+            border-radius: 50%;
+            filter: blur(1px);
+        }
+        
+        .pathogen-1 {
+            top: 20%;
+            left: 15%;
+            animation-delay: 0s;
+        }
+        
+        .pathogen-2 {
+            top: 55%;
+            left: 12%;
+            animation-delay: 1.5s;
+        }
+        
+        .pathogen-3 {
+            width: 70px;
+            height: 70px;
+            top: 75%;
+            left: 20%;
+            animation-delay: 2.5s;
+        }
+        
+        .pathogen-4 {
+            width: 65px;
+            height: 65px;
+            top: 30%;
+            right: 18%;
+            animation-delay: 1s;
+        }
+        
+        .pathogen-5 {
+            top: 65%;
+            right: 15%;
+            animation-delay: 0.5s;
+        }
+        
+        .shield-icon {
+            position: absolute;
+            top: 50%;
+            right: 12%;
+            transform: translateY(-50%);
+            width: 120px;
+            height: 140px;
+            opacity: 0.25;
+        }
+        
+        .shield-path {
+            fill: none;
+            stroke: #4dabf7;
+            stroke-width: 3;
+            stroke-dasharray: 600;
+            stroke-dashoffset: 600;
+            animation: drawShield 3s ease-in-out forwards infinite;
+        }
+        
+        @keyframes drawShield {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        
+        .content {
+            position: relative;
+            z-index: 10;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #a8dadc;
+            font-weight: 300;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            color: #ff6b9d;
+            font-weight: 600;
+        }
+        
+        .microbe-icon {
+            position: absolute;
+            top: 50%;
+            right: 8%;
+            transform: translateY(-50%);
+            font-size: 150px;
+            opacity: 0.15;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="pathogens-container">
+            <div class="pathogen virus pathogen-1">
+                <div class="virus-core"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+            </div>
+            
+            <div class="pathogen virus pathogen-2">
+                <div class="virus-core"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+            </div>
+            
+            <div class="pathogen bacteria pathogen-3"></div>
+            <div class="pathogen bacteria pathogen-4"></div>
+            
+            <div class="pathogen virus pathogen-5">
+                <div class="virus-core"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+                <div class="virus-spike"></div>
+            </div>
+        </div>
+        
+        <svg class="shield-icon" viewBox="0 0 120 140">
+            <path class="shield-path" d="M60,5 L110,30 L110,70 Q110,110 60,135 Q10,110 10,70 L10,30 Z"/>
+            <path class="shield-path" d="M40,60 L55,75 L85,45" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="animation-delay: 1s;"/>
+        </svg>
+        
+        <div class="microbe-icon">🦠</div>
+        
+        <div class="content">
+            <h1 class="title">Infectious Diseases</h1>
+            <p class="subtitle">Investigating <span class="highlight">pathogen dynamics</span> and developing strategies to combat infectious threats</p>
+        </div>
+    </div>
+</body>
+</html>

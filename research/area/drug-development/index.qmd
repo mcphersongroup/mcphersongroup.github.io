@@ -16,7 +16,10 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+```{=html}
+<iframe src="drug_dev_research_banner.html" width="100%" height="450px" frameborder="0" style="border-radius: 20px; margin-bottom: 2rem;"></iframe>
+```
 
 ## Drug Development-Related Publications
 

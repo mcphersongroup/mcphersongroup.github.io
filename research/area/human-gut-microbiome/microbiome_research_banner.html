@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Gut Microbiome Research Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .banner {
+            width: 100%;
+            max-width: 1200px;
+            height: 400px;
+            background: linear-gradient(135deg, #003366 0%, #004080 50%, #003366 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        .microbes-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .microbe {
+            position: absolute;
+            opacity: 0.6;
+            animation: float 6s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-25px) scale(1.1);
+            }
+        }
+        
+        .microbe-1 {
+            width: 70px;
+            height: 70px;
+            background: radial-gradient(circle at 30% 30%, #b197fc, #7950f2);
+            top: 15%;
+            left: 12%;
+            animation-delay: 0s;
+            border-radius: 50%;
+            filter: blur(1px);
+        }
+        
+        .microbe-2 {
+            width: 90px;
+            height: 35px;
+            background: linear-gradient(135deg, #51cf66, #37b24d);
+            top: 50%;
+            left: 18%;
+            animation-delay: 1s;
+            border-radius: 50%;
+            filter: blur(0.8px);
+        }
+        
+        .microbe-3 {
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle at 30% 30%, #ff6b9d, #e85d7a);
+            top: 75%;
+            left: 15%;
+            animation-delay: 2s;
+            border-radius: 50%;
+            filter: blur(1px);
+        }
+        
+        .microbe-4 {
+            width: 100px;
+            height: 40px;
+            background: linear-gradient(135deg, #4dabf7, #1971c2);
+            top: 25%;
+            right: 15%;
+            animation-delay: 0.5s;
+            border-radius: 50%;
+            filter: blur(0.8px);
+        }
+        
+        .microbe-5 {
+            width: 75px;
+            height: 75px;
+            background: radial-gradient(circle at 30% 30%, #ffd43b, #fab005);
+            top: 60%;
+            right: 12%;
+            animation-delay: 1.5s;
+            border-radius: 50%;
+            filter: blur(1px);
+        }
+        
+        .microbe-6 {
+            width: 65px;
+            height: 65px;
+            background: radial-gradient(circle at 30% 30%, #c0a8ff, #9775fa);
+            top: 40%;
+            left: 45%;
+            animation-delay: 2.5s;
+            border-radius: 50%;
+            filter: blur(1px);
+        }
+        
+        .dna-helix {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 200px;
+            opacity: 0.3;
+        }
+        
+        .helix-strand {
+            fill: none;
+            stroke: #4dabf7;
+            stroke-width: 2;
+            stroke-dasharray: 400;
+            stroke-dashoffset: 400;
+            animation: drawHelix 3s ease-in-out forwards infinite;
+        }
+        
+        @keyframes drawHelix {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        
+        .content {
+            position: relative;
+            z-index: 10;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .title {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #a8dadc;
+            font-weight: 300;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            color: #51cf66;
+            font-weight: 600;
+        }
+        
+        .microbe-icon {
+            position: absolute;
+            top: 50%;
+            right: 8%;
+            transform: translateY(-50%);
+            font-size: 150px;
+            opacity: 0.15;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="microbes-container">
+            <div class="microbe microbe-1"></div>
+            <div class="microbe microbe-2"></div>
+            <div class="microbe microbe-3"></div>
+            <div class="microbe microbe-4"></div>
+            <div class="microbe microbe-5"></div>
+            <div class="microbe microbe-6"></div>
+        </div>
+        
+        <svg class="dna-helix" viewBox="0 0 100 200">
+            <path class="helix-strand" d="M 20,0 Q 50,25 20,50 T 20,100 T 20,150 T 20,200"/>
+            <path class="helix-strand" d="M 80,0 Q 50,25 80,50 T 80,100 T 80,150 T 80,200" style="animation-delay: 1s;"/>
+        </svg>
+        
+        <div class="microbe-icon">🦠</div>
+        
+        <div class="content">
+            <h1 class="title">Human Gut Microbiome</h1>
+            <p class="subtitle">Exploring the <span class="highlight">microbial ecosystem</span> and its impact on human health and disease</p>
+        </div>
+    </div>
+</body>
+</html>

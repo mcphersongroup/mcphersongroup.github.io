@@ -1,7 +1,7 @@
 ---
 title: Artificial Intelligence 🤖
 alias: &ALIAS artificial-intelligence
-image: featured.jpg
+image: featured.png
 listing:
   id: pubs
   #template: ../../../_ejs/publications-people.ejs 

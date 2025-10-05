@@ -16,10 +16,37 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![REDCap Research Data Capture](featured.jpg)
+
+## Overview
+
+REDCap (Research Electronic Data Capture) is a secure web application for building and managing online surveys and databases for research studies. Originally developed at Vanderbilt University, REDCap is now used by thousands of institutions worldwide for data collection and management.
+
+## Key Features
+
+- **Survey Builder**: Intuitive drag-and-drop interface for creating data collection forms
+- **Data Validation**: Built-in validation rules and data quality checks
+- **Security & Compliance**: HIPAA-compliant with role-based access control
+- **Mobile App**: Offline data collection with the REDCap Mobile App
+- **Branching Logic**: Conditional display of questions based on responses
+- **Data Export**: Multiple formats including CSV, SPSS, SAS, R, and Stata
+- **API Access**: Programmatic data import and export capabilities
+
+## Use Cases in Research
+
+- Building electronic case report forms (eCRFs) for clinical trials
+- Creating surveys for epidemiological studies
+- Managing longitudinal data collection projects
+- Ensuring data quality with validation rules
+- Collaborating on multi-site research projects
+- Securely storing protected health information (PHI)
+
+## Getting Started
+
+REDCap is available through institutional licenses. Contact your university's research IT department to request access.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

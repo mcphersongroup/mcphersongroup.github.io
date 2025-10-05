@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Cell Press Journal Collection](featured.jpg)
+
+## Overview
+
+Cell Press is a premier publisher of biomedical research, publishing over 50 journals including the flagship journal Cell. Known for rigorous peer review and high editorial standards, Cell Press journals publish groundbreaking research across the life sciences, physical sciences, and medicine.
+
+## Key Features
+
+- **Premium Journal Portfolio**: Includes Cell, Cell Host & Microbe, Cell Reports, and specialty titles
+- **High Impact Factor**: Journals with top impact factors in their fields
+- **Multimedia Content**: Enhanced articles with videos, 3D models, and interactive figures
+- **Open Access Options**: Cell Reports and other open access titles
+- **STAR Methods**: Structured, transparent, accessible reporting standards
+- **SnapShot Features**: Visual summaries of complex topics
+
+## Use Cases in Research
+
+- Publishing cutting-edge biomedical research
+- Accessing the latest discoveries in life sciences
+- Finding comprehensive reviews and perspectives
+- Viewing innovative data visualizations
+- Following trends in specific biomedical fields
+- Citing high-impact primary research
+
+## Getting Started
+
+Visit [cell.com](https://www.cell.com) to browse the journal portfolio and access articles through your institutional subscription.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

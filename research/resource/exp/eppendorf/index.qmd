@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Eppendorf Laboratory Equipment](featured.jpg)
+
+## Overview
+
+Eppendorf is a leading life science company developing and manufacturing laboratory instruments, consumables, and services for handling liquids, cells, and biological samples. Known for precision and reliability, Eppendorf products are essential tools in research laboratories worldwide.
+
+## Key Features
+
+- **Premium Lab Equipment**: Pipettes, centrifuges, thermocyclers, and bioreactors
+- **Consumables**: High-quality tubes, plates, and pipette tips
+- **Application Support**: Protocols and technical guidance for various applications
+- **Training Resources**: Webinars, videos, and documentation
+- **Service Network**: Global support and maintenance services
+- **Innovation**: Cutting-edge technology for liquid handling and sample processing
+
+## Use Cases in Research
+
+- Precise liquid handling with electronic and manual pipettes
+- Sample preparation and centrifugation
+- PCR and thermal cycling experiments
+- Cell culture and fermentation
+- Automated liquid handling for high-throughput applications
+- Temperature control for sensitive reactions
+
+## Getting Started
+
+Visit [eppendorf.com](https://www.eppendorf.com) to explore products, access technical resources, and find local representatives.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

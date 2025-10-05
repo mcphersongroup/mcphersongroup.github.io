@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![OpenRead AI-Powered Reading Assistant](featured.jpg)
+
+## Overview
+
+OpenRead is an AI-powered research assistant that helps researchers read, understand, and organize academic papers more efficiently. It uses advanced natural language processing to provide paper summaries, answer questions, and extract key insights from scientific literature.
+
+## Key Features
+
+- **AI Paper Summarization**: Get concise summaries of research papers in seconds
+- **Interactive Q&A**: Ask questions about paper content and get instant answers
+- **Figure and Table Extraction**: Automatically identify and organize visual elements
+- **Note-Taking Integration**: Annotate papers while reading with AI-assisted notes
+- **Literature Organization**: Build and manage your research library
+- **Cross-Reference Analysis**: Explore connections between papers
+
+## Use Cases in Research
+
+- Quickly understanding complex research papers
+- Screening papers for systematic reviews
+- Extracting key methodology details
+- Comparing findings across multiple papers
+- Generating literature review summaries
+- Identifying research gaps and opportunities
+
+## Getting Started
+
+Visit [openread.academy](https://www.openread.academy) to access the platform and start reading papers with AI assistance.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

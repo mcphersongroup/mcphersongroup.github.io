@@ -16,10 +16,35 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Zotero Reference Manager](featured.jpg)
+
+## Overview
+
+Zotero is a free, open-source reference management software that helps researchers collect, organize, cite, and share research materials. It's an essential tool for managing bibliographic data and related research materials.
+
+## Key Features
+
+- **Browser Integration**: Automatically capture citations from web pages with one click
+- **Cloud Synchronization**: Sync your library across multiple devices
+- **Collaborative Research**: Share collections with research teams
+- **Citation Management**: Generate citations and bibliographies in thousands of citation styles
+- **PDF Management**: Organize and annotate PDFs directly within Zotero
+- **Word Processor Integration**: Insert citations directly into Word, LibreOffice, and Google Docs
+
+## Use Cases in Research
+
+- Managing literature reviews and systematic reviews
+- Organizing research papers by project or topic
+- Collaborating with team members on shared reference libraries
+- Generating bibliographies for manuscripts and grant applications
+- Annotating and highlighting important sections in research papers
+
+## Getting Started
+
+Visit [zotero.org](https://www.zotero.org) to download the desktop application and browser connector.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

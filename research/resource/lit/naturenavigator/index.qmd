@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Nature Navigator Research Discovery](featured.jpg)
+
+## Overview
+
+Nature Navigator is a research discovery tool that helps scientists explore and navigate the Nature portfolio of journals. It provides advanced search capabilities, personalized recommendations, and insights to help researchers find relevant content and stay updated with the latest developments in their field.
+
+## Key Features
+
+- **Personalized Feed**: Curated content based on your research interests
+- **Smart Search**: Advanced algorithms to find relevant papers across Nature journals
+- **Topic Alerts**: Get notified about new publications in your areas of interest
+- **Trending Research**: Discover what's hot in various scientific disciplines
+- **Reading Lists**: Create and organize collections of papers
+- **Citation Context**: Understand how papers cite and build on each other
+
+## Use Cases in Research
+
+- Discovering relevant papers in the Nature portfolio
+- Staying current with research in your field
+- Finding highly cited and influential papers
+- Exploring emerging research topics and trends
+- Building reading lists for literature reviews
+- Tracking specific research areas over time
+
+## Getting Started
+
+Access Nature Navigator through [nature.com](https://www.nature.com) with your institutional or personal subscription to the Nature portfolio.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

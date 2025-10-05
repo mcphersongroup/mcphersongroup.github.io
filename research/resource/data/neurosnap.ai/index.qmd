@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Neurosnap AI Data Analysis Platform](featured.jpg)
+
+## Overview
+
+Neurosnap.ai is an AI-powered data analysis platform designed to help researchers analyze complex datasets using machine learning and advanced analytics. It provides intuitive interfaces and automated workflows to make sophisticated data analysis accessible to researchers without extensive programming experience.
+
+## Key Features
+
+- **AI-Powered Analysis**: Automated pattern recognition and insights
+- **Visual Interface**: User-friendly drag-and-drop data analysis
+- **Machine Learning**: Pre-built ML models for common research tasks
+- **Data Visualization**: Interactive charts and dashboards
+- **Collaborative Features**: Share analyses and insights with team members
+- **Integration**: Connect to various data sources and export formats
+
+## Use Cases in Research
+
+- Analyzing large-scale experimental datasets
+- Identifying patterns in complex, multi-dimensional data
+- Building predictive models without coding
+- Creating interactive data visualizations for publications
+- Automating routine data processing tasks
+- Exploring relationships in high-dimensional data
+
+## Getting Started
+
+Visit [neurosnap.ai](https://www.neurosnap.ai) to learn about the platform and request access for your research.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

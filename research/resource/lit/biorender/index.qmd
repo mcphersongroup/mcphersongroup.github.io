@@ -1,5 +1,5 @@
 ---
-title: Biorender
+title: BioRender
 alias: &ALIAS biorender
 image: featured.jpg
 listing:
@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![BioRender Scientific Illustration Tool](featured.jpg)
+
+## Overview
+
+BioRender is a web-based scientific illustration software designed specifically for life science researchers. It provides thousands of pre-made icons and templates to create professional scientific figures, graphical abstracts, and presentations without requiring graphic design expertise.
+
+## Key Features
+
+- **Extensive Icon Library**: Access to 30,000+ scientifically accurate icons spanning molecular biology, cell biology, physiology, and more
+- **Templates**: Ready-to-use templates for common figure types and graphical abstracts
+- **Customizable Graphics**: Easy drag-and-drop interface with color and style customization
+- **Collaboration Tools**: Share and collaborate on figures with team members
+- **Export Options**: High-resolution exports for publications, presentations, and posters
+- **Journal Compliance**: Figures compatible with major journal requirements
+
+## Use Cases in Research
+
+- Creating graphical abstracts for publications
+- Designing mechanism of action diagrams
+- Illustrating experimental workflows and study designs
+- Building presentation slides and posters
+- Visualizing complex biological processes
+- Creating figures for grant applications and manuscripts
+
+## Getting Started
+
+Visit [biorender.com](https://biorender.com) to create an account and start designing scientific figures.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

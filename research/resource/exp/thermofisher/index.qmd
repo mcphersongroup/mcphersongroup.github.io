@@ -1,5 +1,5 @@
 ---
-title: Thermo Fisher
+title: Thermo Fisher Scientific
 alias: &ALIAS thermofisher
 image: featured.jpg
 listing:
@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Thermo Fisher Scientific Resources](featured.jpg)
+
+## Overview
+
+Thermo Fisher Scientific is a leading provider of scientific instrumentation, reagents, consumables, software and services for research, analysis, discovery, and diagnostics. Their platform offers extensive resources, protocols, and technical support for life sciences research.
+
+## Key Features
+
+- **Product Catalog**: Comprehensive range of lab equipment, reagents, and consumables
+- **Technical Resources**: Application notes, protocols, and troubleshooting guides
+- **Webinars and Training**: Educational content on techniques and applications
+- **Custom Solutions**: Tailored products and services for specific research needs
+- **Quality Assurance**: Rigorous testing and validation of products
+- **Customer Support**: Expert technical support for research applications
+
+## Use Cases in Research
+
+- Sourcing high-quality reagents and antibodies
+- Finding validated protocols for molecular biology techniques
+- Accessing technical support for experimental troubleshooting
+- Learning about new technologies through webinars
+- Configuring custom oligos and peptides
+- Selecting appropriate instrumentation for research needs
+
+## Getting Started
+
+Visit [thermofisher.com](https://www.thermofisher.com) to browse products, access technical resources, and connect with scientific support.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

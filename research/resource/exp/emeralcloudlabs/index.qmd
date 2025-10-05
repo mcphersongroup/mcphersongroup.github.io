@@ -16,10 +16,36 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Emerald Cloud Lab Remote Laboratory](featured.jpg)
+
+## Overview
+
+Emerald Cloud Lab (ECL) is a revolutionary remote laboratory platform that provides researchers with on-demand access to a fully automated, industrial-scale life science laboratory. Through a web interface, researchers can design and execute experiments without needing physical lab space.
+
+## Key Features
+
+- **Remote Access**: Conduct experiments entirely through a web browser
+- **Automated Equipment**: Access to robotics, analytical instruments, and high-throughput systems
+- **Reproducibility**: Standardized protocols with precise automation
+- **Real-Time Monitoring**: Track experiments in progress with live data
+- **Data Management**: Integrated data storage and analysis tools
+- **Scalability**: Run experiments from single samples to high-throughput screens
+
+## Use Cases in Research
+
+- Conducting experiments without physical lab space
+- Ensuring reproducibility through automation
+- Scaling up high-throughput screening projects
+- Accessing specialized equipment not available in-house
+- Reducing hands-on time for routine experiments
+- Collaborating across distributed research teams
+
+## Getting Started
+
+Visit [emeraldcloudlab.com](https://www.emeraldcloudlab.com) to learn about platform capabilities and request access.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

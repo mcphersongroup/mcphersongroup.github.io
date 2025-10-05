@@ -16,10 +16,37 @@ listing:
   fields: [publication, title, categories, image, date, author]
 
 ---
-![](featured.jpg)
+
+![Springer Nature Experiments Protocol Database](featured.jpg)
+
+## Overview
+
+Springer Nature Experiments is a comprehensive database of peer-reviewed laboratory protocols from leading journals including Nature Protocols, Nature Methods, and other Springer Nature publications. It provides access to detailed, tested methods across all areas of the life sciences.
+
+## Key Features
+
+- **Peer-Reviewed Protocols**: High-quality, validated experimental methods
+- **Detailed Procedures**: Step-by-step instructions with timing and troubleshooting tips
+- **Video Protocols**: Visual demonstrations of complex techniques
+- **Protocol Search**: Find methods by technique, organism, or application
+- **Materials Lists**: Comprehensive lists of required reagents and equipment
+- **Linked Publications**: Connect protocols to original research papers
+- **Expert Authors**: Methods from leading researchers in each field
+
+## Use Cases in Research
+
+- Finding established protocols for standard techniques
+- Learning new experimental methods with expert guidance
+- Accessing video demonstrations of complex procedures
+- Troubleshooting experimental issues with detailed tips
+- Citing standardized methods in publications
+- Teaching laboratory techniques to students and staff
+
+## Getting Started
+
+Visit [experiments.springernature.com](https://experiments.springernature.com) to search protocols and access content through your institutional subscription.
 
 ## Related Publications
-
 
 :::{#pubs}
 :::

@@ -17,7 +17,7 @@ listing:
 
 ---
 
-![Nature Navigator Research Discovery](featured.jpg)
+![Nature Navigator Research Discovery](featured.png)
 
 ## Overview
 

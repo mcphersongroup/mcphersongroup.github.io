@@ -17,7 +17,7 @@ listing:
 
 ---
 
-![Stats and R Statistics Blog](featured.jpg)
+![Stats and R Statistics Blog](featured.png)
 
 ## Overview
 

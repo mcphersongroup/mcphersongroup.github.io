@@ -17,7 +17,7 @@ listing:
 
 ---
 
-![Neurosnap AI Data Analysis Platform](featured.jpg)
+![Neurosnap AI Data Analysis Platform](featured.png)
 
 ## Overview
 

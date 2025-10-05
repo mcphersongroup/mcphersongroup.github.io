@@ -17,7 +17,7 @@ listing:
 
 ---
 
-![Protocols.io Research Methods Platform](featured.jpg)
+![Protocols.io Research Methods Platform](featured.png)
 
 ## Overview
 

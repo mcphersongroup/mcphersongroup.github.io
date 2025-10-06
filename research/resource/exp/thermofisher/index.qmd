@@ -17,7 +17,7 @@ listing:
 
 ---
 
-![Thermo Fisher Scientific Resources](featured.jpg)
+![Thermo Fisher Scientific Resources](featured.png)
 
 ## Overview
 

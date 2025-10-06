@@ -17,7 +17,7 @@ listing:
 
 ---
 
-![Springer Nature Publishing Platform](featured.jpg)
+![Springer Nature Publishing Platform](featured.png)
 
 ## Overview
 

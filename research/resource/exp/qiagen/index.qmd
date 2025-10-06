@@ -17,7 +17,7 @@ listing:
 
 ---
 
-![QIAGEN Sample and Assay Technologies](featured.jpg)
+![QIAGEN Sample and Assay Technologies](featured.png)
 
 ## Overview
 

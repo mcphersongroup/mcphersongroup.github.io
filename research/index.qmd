@@ -5,18 +5,18 @@ listing:
     contents: area/*/index.qmd
     type: grid
     fields: [image, title]
-  - id: literature
-    contents: resource/lit/*/index.qmd
-    type: grid
-    fields: [image, title]
-  - id: experimentation  
-    contents: resource/exp/*/index.qmd
-    type: grid
-    fields: [image, title]
-  - id: data-analysis
-    contents: resource/data/*/index.qmd
-    type: grid
-    fields: [image, title]
+#  - id: literature
+#    contents: resource/lit/*/index.qmd
+#    type: grid
+#    fields: [image, title]
+#  - id: experimentation  
+#    contents: resource/exp/*/index.qmd
+#    type: grid
+#    fields: [image, title]
+#  - id: data-analysis
+#    contents: resource/data/*/index.qmd
+#    type: grid
+#    fields: [image, title]
 page-layout: full
 ---
 
@@ -26,6 +26,7 @@ page-layout: full
 ::: {#research-areas}
 :::
 
+<!---
 ## Research Resources
 
 ### Literature
@@ -42,3 +43,4 @@ page-layout: full
 
 ::: {#data-analysis}
 :::
+--->

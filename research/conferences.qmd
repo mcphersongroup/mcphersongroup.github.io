@@ -32,49 +32,40 @@ m = Map(center=(39.8283, -98.5795), zoom=4)
 # Conference data - locations, dates, and details
 conferences = [
     {
-        "name": "International Conference on Infectious Diseases",
-        "location": "San Francisco, CA",
-        "lat": 37.7749,
-        "lon": -122.4194,
-        "start_date": "2025-03-15",
-        "end_date": "2025-03-18",
+        "name": "ASM Microbe",
+        "location": "Atlanta, GA",
+        "lat": 33.7490,
+        "lon": -84.3880,
+        "start_date": "2025-06-12",
+        "end_date": "2025-06-16",
         "type": "Conference"
     },
     {
-        "name": "Antimicrobial Resistance Summit",
+        "name": "TMC AMR Conference",
+        "location": "Houston, TX",
+        "lat": 29.7174,
+        "lon": -95.4018,
+        "start_date": "2025-09-15",
+        "end_date": "2025-09-17",
+        "type": "Conference"
+    },
+    {
+        "name": "IDSA IDWeek",
+        "location": "Los Angeles, CA",
+        "lat": 34.0522,
+        "lon": -118.2437,
+        "start_date": "2025-10-16",
+        "end_date": "2025-10-19",
+        "type": "Conference"
+    },
+    {
+        "name": "IMARI Conference",
         "location": "Boston, MA",
         "lat": 42.3601,
         "lon": -71.0589,
-        "start_date": "2025-05-20",
-        "end_date": "2025-05-23",
-        "type": "Summit"
-    },
-    {
-        "name": "Microbiome Research Symposium",
-        "location": "Austin, TX",
-        "lat": 30.2672,
-        "lon": -97.7431,
-        "start_date": "2025-07-10",
-        "end_date": "2025-07-12",
-        "type": "Symposium"
-    },
-    {
-        "name": "Healthcare Analytics Conference",
-        "location": "Chicago, IL",
-        "lat": 41.8781,
-        "lon": -87.6298,
-        "start_date": "2025-09-08",
-        "end_date": "2025-09-10",
+        "start_date": "2025-11-10",
+        "end_date": "2025-11-13",
         "type": "Conference"
-    },
-    {
-        "name": "Public Health Data Science Workshop",
-        "location": "Seattle, WA",
-        "lat": 47.6062,
-        "lon": -122.3321,
-        "start_date": "2025-11-03",
-        "end_date": "2025-11-05",
-        "type": "Workshop"
     }
 ]
 

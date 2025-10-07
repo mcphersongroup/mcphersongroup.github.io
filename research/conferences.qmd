@@ -38,6 +38,26 @@ conferences = [
         "url": "https://www.escmid.org/congress-events/escmid-global/"
     },
     {
+        "name": "Japan-US Research Collaboration Week",
+        "location": "Stanford, CA",
+        "lat": 37.4275,
+        "lon": -122.1697,
+        "start_date": "2025-07-28",
+        "end_date": "2025-07-30",
+        "type": "Conference",
+        "url": "https://jurcconference.stanford.edu/"
+    },
+    {
+        "name": "4th United Nations Open Science and Open Scholarship Conference",
+        "location": "Tokyo, Japan",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "start_date": "2025-10-16",
+        "end_date": "2025-10-18",
+        "type": "Conference",
+        "url": "https://unu.edu/events"
+    },
+    {
         "name": "IDSA IDWeek",
         "location": "Atlanta, GA",
         "lat": 33.7490,

@@ -25,57 +25,8 @@ import datetime
 m = Map(center=(39.8283, -98.5795), zoom=4)
 
 # Conference data - locations, dates, and details
+# Sorted by start date (nearest first) and only includes upcoming conferences
 conferences = [
-    {
-        "name": "AAAS Annual Meeting",
-        "location": "Boston, MA",
-        "lat": 42.3601,
-        "lon": -71.0589,
-        "start_date": "2025-02-13",
-        "end_date": "2025-02-16",
-        "type": "Conference",
-        "url": "https://www.aaas.org/meetings"
-    },
-    {
-        "name": "ASPET Annual Meeting",
-        "location": "Philadelphia, PA",
-        "lat": 39.9526,
-        "lon": -75.1652,
-        "start_date": "2025-04-05",
-        "end_date": "2025-04-08",
-        "type": "Conference",
-        "url": "https://www.aspet.org/meetings-events/aspet-annual-meeting"
-    },
-    {
-        "name": "ASV Annual Meeting",
-        "location": "Madison, WI",
-        "lat": 43.0731,
-        "lon": -89.4012,
-        "start_date": "2025-07-12",
-        "end_date": "2025-07-16",
-        "type": "Conference",
-        "url": "https://www.asv.org/annual-meeting"
-    },
-    {
-        "name": "British Pharmacological Society Annual Meeting",
-        "location": "London, UK",
-        "lat": 51.5074,
-        "lon": -0.1278,
-        "start_date": "2025-12-16",
-        "end_date": "2025-12-18",
-        "type": "Conference",
-        "url": "https://www.bps.ac.uk/events"
-    },
-    {
-        "name": "TMC AMR Conference",
-        "location": "Houston, TX",
-        "lat": 29.7174,
-        "lon": -95.4018,
-        "start_date": "2025-09-15",
-        "end_date": "2025-09-17",
-        "type": "Conference",
-        "url": "https://www.tmc.edu/"
-    },
     {
         "name": "IDSA IDWeek",
         "location": "Atlanta, GA",
@@ -97,14 +48,34 @@ conferences = [
         "url": "https://www.ashp.org/meetings-and-events"
     },
     {
-        "name": "IUPHAR World Congress",
-        "location": "Edinburgh, UK",
-        "lat": 55.9533,
-        "lon": -3.1883,
-        "start_date": "2026-07-13",
-        "end_date": "2026-07-17",
+        "name": "British Pharmacological Society Annual Meeting",
+        "location": "London, UK",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "start_date": "2025-12-16",
+        "end_date": "2025-12-18",
         "type": "Conference",
-        "url": "https://www.iuphar.org/"
+        "url": "https://www.bps.ac.uk/events"
+    },
+    {
+        "name": "AAAS Annual Meeting",
+        "location": "Phoenix, AZ",
+        "lat": 33.4484,
+        "lon": -112.0740,
+        "start_date": "2026-02-12",
+        "end_date": "2026-02-14",
+        "type": "Conference",
+        "url": "https://www.aaas.org/meetings"
+    },
+    {
+        "name": "ASPET Annual Meeting",
+        "location": "Minneapolis, MN",
+        "lat": 44.9778,
+        "lon": -93.2650,
+        "start_date": "2026-05-17",
+        "end_date": "2026-05-20",
+        "type": "Conference",
+        "url": "https://www.aspet.org/meetings-events/aspet-annual-meeting"
     },
     {
         "name": "ASM Microbe",
@@ -117,6 +88,26 @@ conferences = [
         "url": "https://asm.org/events/asm-microbe"
     },
     {
+        "name": "IUPHAR World Congress",
+        "location": "Edinburgh, UK",
+        "lat": 55.9533,
+        "lon": -3.1883,
+        "start_date": "2026-07-13",
+        "end_date": "2026-07-17",
+        "type": "Conference",
+        "url": "https://www.iuphar.org/"
+    },
+    {
+        "name": "ASV Annual Meeting",
+        "location": "Minneapolis, MN",
+        "lat": 44.9778,
+        "lon": -93.2650,
+        "start_date": "2026-07-27",
+        "end_date": "2026-07-30",
+        "type": "Conference",
+        "url": "https://www.asv.org/annual-meeting"
+    },
+    {
         "name": "IMARI Conference",
         "location": "Las Vegas, NV",
         "lat": 36.1699,
@@ -124,7 +115,7 @@ conferences = [
         "start_date": "2026-11-09",
         "end_date": "2026-11-12",
         "type": "Conference",
-        "url": "https://www.imariconference.org/"
+        "url": "https://imari.org"
     }
 ]
 

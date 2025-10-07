@@ -88,9 +88,9 @@ conferences = [
     },
     {
         "name": "IDSA IDWeek",
-        "location": "Washington, DC",
-        "lat": 38.9072,
-        "lon": -77.0369,
+        "location": "Atlanta, GA",
+        "lat": 33.7490,
+        "lon": -84.3880,
         "start_date": "2025-10-16",
         "end_date": "2025-10-19",
         "type": "Conference",
@@ -125,6 +125,26 @@ conferences = [
         "end_date": "2026-07-17",
         "type": "Conference",
         "url": "https://www.iuphar.org/"
+    },
+    {
+        "name": "ASM Microbe",
+        "location": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "start_date": "2026-06-11",
+        "end_date": "2026-06-15",
+        "type": "Conference",
+        "url": "https://asm.org/events/asm-microbe"
+    },
+    {
+        "name": "IMARI Conference",
+        "location": "Las Vegas, NV",
+        "lat": 36.1699,
+        "lon": -115.1398,
+        "start_date": "2026-11-09",
+        "end_date": "2026-11-12",
+        "type": "Conference",
+        "url": "https://www.imariconference.org/"
     }
 ]
 

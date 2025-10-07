@@ -3,7 +3,7 @@ This file contains the conference map and calendar for the research page.
 To edit conference information:
 1. Find the 'conferences' list in the first Python code block below
 2. Add, remove, or modify conference entries following the existing format
-3. Each conference needs: name, location, lat, lon, start_date, end_date, and type
+3. Each conference needs: name, location, lat, lon, start_date, end_date, type, and url
 4. The map and table will automatically update based on this data
 
 This file is included in research/index.qmd and renders at the bottom of the research page.
@@ -27,13 +27,54 @@ m = Map(center=(39.8283, -98.5795), zoom=4)
 # Conference data - locations, dates, and details
 conferences = [
     {
+        "name": "AAAS Annual Meeting",
+        "location": "Boston, MA",
+        "lat": 42.3601,
+        "lon": -71.0589,
+        "start_date": "2025-02-13",
+        "end_date": "2025-02-16",
+        "type": "Conference",
+        "url": "https://www.aaas.org/meetings"
+    },
+    {
         "name": "ASM Microbe",
         "location": "Atlanta, GA",
         "lat": 33.7490,
         "lon": -84.3880,
         "start_date": "2025-06-12",
         "end_date": "2025-06-16",
-        "type": "Conference"
+        "type": "Conference",
+        "url": "https://asm.org/events/asm-microbe"
+    },
+    {
+        "name": "ASPET Annual Meeting",
+        "location": "Philadelphia, PA",
+        "lat": 39.9526,
+        "lon": -75.1652,
+        "start_date": "2025-04-05",
+        "end_date": "2025-04-08",
+        "type": "Conference",
+        "url": "https://www.aspet.org/meetings-events/aspet-annual-meeting"
+    },
+    {
+        "name": "ASV Annual Meeting",
+        "location": "Madison, WI",
+        "lat": 43.0731,
+        "lon": -89.4012,
+        "start_date": "2025-07-12",
+        "end_date": "2025-07-16",
+        "type": "Conference",
+        "url": "https://www.asv.org/annual-meeting"
+    },
+    {
+        "name": "British Pharmacological Society Annual Meeting",
+        "location": "London, UK",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "start_date": "2025-12-16",
+        "end_date": "2025-12-18",
+        "type": "Conference",
+        "url": "https://www.bps.ac.uk/events"
     },
     {
         "name": "TMC AMR Conference",
@@ -42,7 +83,8 @@ conferences = [
         "lon": -95.4018,
         "start_date": "2025-09-15",
         "end_date": "2025-09-17",
-        "type": "Conference"
+        "type": "Conference",
+        "url": "https://www.tmc.edu/"
     },
     {
         "name": "IDSA IDWeek",
@@ -51,7 +93,8 @@ conferences = [
         "lon": -118.2437,
         "start_date": "2025-10-16",
         "end_date": "2025-10-19",
-        "type": "Conference"
+        "type": "Conference",
+        "url": "https://www.idweek.org/"
     },
     {
         "name": "IMARI Conference",
@@ -60,7 +103,28 @@ conferences = [
         "lon": -71.0589,
         "start_date": "2025-11-10",
         "end_date": "2025-11-13",
-        "type": "Conference"
+        "type": "Conference",
+        "url": "https://www.imariconference.org/"
+    },
+    {
+        "name": "ASHP Midyear Clinical Meeting",
+        "location": "New Orleans, LA",
+        "lat": 29.9511,
+        "lon": -90.0715,
+        "start_date": "2025-12-07",
+        "end_date": "2025-12-11",
+        "type": "Conference",
+        "url": "https://www.ashp.org/meetings-and-events"
+    },
+    {
+        "name": "IUPHAR World Congress",
+        "location": "Edinburgh, UK",
+        "lat": 55.9533,
+        "lon": -3.1883,
+        "start_date": "2026-07-13",
+        "end_date": "2026-07-17",
+        "type": "Conference",
+        "url": "https://www.iuphar.org/"
     }
 ]
 
@@ -82,8 +146,11 @@ for conf in conferences:
     start = datetime.datetime.strptime(conf["start_date"], "%Y-%m-%d").strftime("%B %d, %Y")
     end = datetime.datetime.strptime(conf["end_date"], "%Y-%m-%d").strftime("%B %d, %Y")
     
+    # Add URL link if available
+    url_html = f"<br><a href='{conf['url']}' target='_blank' style='color: #007bff;'>Website</a>" if 'url' in conf else ""
+    
     marker.popup = HTML(
-        value=f"<div style='width: 200px;'><b>{conf['name']}</b><br><i>{conf['type']}</i><br>{conf['location']}<br>{start} - {end}</div>"
+        value=f"<div style='width: 200px;'><b>{conf['name']}</b><br><i>{conf['type']}</i><br>{conf['location']}<br>{start} - {end}{url_html}</div>"
     )
     m.add_layer(marker)
 
@@ -112,7 +179,8 @@ for conf in conferences:
         "Location": conf["location"],
         "Start Date": start.strftime("%B %d, %Y"),
         "End Date": end.strftime("%B %d, %Y"),
-        "Duration (days)": duration
+        "Duration (days)": duration,
+        "URL": conf.get("url", "")
     })
 
 df = pd.DataFrame(calendar_data)
@@ -184,6 +252,7 @@ def create_calendar_html(df):
                 <th>Start Date</th>
                 <th>End Date</th>
                 <th>Duration</th>
+                <th>Website</th>
             </tr>
         </thead>
         <tbody>
@@ -191,6 +260,7 @@ def create_calendar_html(df):
     
     for _, row in df.iterrows():
         type_class = f"type-{row['Type'].lower()}"
+        url_link = f"<a href='{row['URL']}' target='_blank' style='color: #007bff;'>Visit</a>" if row['URL'] else "N/A"
         html += f"""
             <tr>
                 <td><strong>{row['Event']}</strong></td>
@@ -199,6 +269,7 @@ def create_calendar_html(df):
                 <td>{row['Start Date']}</td>
                 <td>{row['End Date']}</td>
                 <td>{row['Duration (days)']} days</td>
+                <td>{url_link}</td>
             </tr>
         """
     

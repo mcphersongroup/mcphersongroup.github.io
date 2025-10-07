@@ -108,6 +108,16 @@ conferences = [
         "url": "https://asm.org/events/asm-microbe"
     },
     {
+        "name": "Anaerobe",
+        "location": "New York, NY, USA",
+        "lat": 40.7306,
+        "lon": -73.9352,
+        "start_date": "2026-07-07",
+        "end_date": "2026-07-10",
+        "type": "Conference",
+        "url": "https://www.anaerobe.org/"
+    },
+    {
         "name": "IUPHAR 20th World Congress of Basic and Clinical Pharmacology (WCP2026)",
         "location": "Melbourne, Australia",
         "lat": -37.8136,

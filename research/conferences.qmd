@@ -28,6 +28,16 @@ m = Map(center=(39.8283, -98.5795), zoom=4)
 # Sorted by start date (nearest first) and only includes upcoming conferences
 conferences = [
     {
+        "name": "ESCMID annual",
+        "location": "Munich, Germany",
+        "lat": 48.1371,
+        "lon": 11.5761,
+        "start_date": "2025-04-17",
+        "end_date": "2025-04-21",
+        "type": "Conference",
+        "url": "https://www.escmid.org/congress-events/escmid-global/"
+    },
+    {
         "name": "IDSA IDWeek",
         "location": "Atlanta, GA",
         "lat": 33.7490,
@@ -96,6 +106,16 @@ conferences = [
         "end_date": "2026-06-15",
         "type": "Conference",
         "url": "https://asm.org/events/asm-microbe"
+    },
+    {
+        "name": "Anaerobe",
+        "location": "New York, NY, USA",
+        "lat": 40.7306,
+        "lon": -73.9352,
+        "start_date": "2026-07-07",
+        "end_date": "2026-07-10",
+        "type": "Conference",
+        "url": "https://www.anaerobe.org/"
     },
     {
         "name": "IUPHAR 20th World Congress of Basic and Clinical Pharmacology (WCP2026)",

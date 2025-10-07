@@ -32,23 +32,23 @@ conferences = [
         "location": "Atlanta, GA",
         "lat": 33.7490,
         "lon": -84.3880,
-        "start_date": "2025-10-16",
-        "end_date": "2025-10-19",
+        "start_date": "2025-10-19",
+        "end_date": "2025-10-22",
         "type": "Conference",
         "url": "https://www.idweek.org/"
     },
     {
-        "name": "ASHP Midyear Clinical Meeting",
+        "name": "ASHP Midyear",
         "location": "New Orleans, LA",
         "lat": 29.9511,
         "lon": -90.0715,
         "start_date": "2025-12-07",
-        "end_date": "2025-12-11",
+        "end_date": "2025-12-10",
         "type": "Conference",
-        "url": "https://www.ashp.org/meetings-and-events"
+        "url": "https://www.ashp.org/meetings-and-conferences/midyear-clinical-meeting-and-exhibition"
     },
     {
-        "name": "British Pharmacological Society Annual Meeting",
+        "name": "BPS Annual",
         "location": "Belfast, UK",
         "lat": 54.5973,
         "lon": -5.9301,
@@ -68,7 +68,7 @@ conferences = [
         "url": "https://imari.org"
     },
     {
-        "name": "AAAS Annual Meeting",
+        "name": "AAAS Annual",
         "location": "Phoenix, AZ",
         "lat": 33.4484,
         "lon": -112.0740,
@@ -78,14 +78,14 @@ conferences = [
         "url": "https://www.aaas.org/meetings"
     },
     {
-        "name": "ASPET Annual Meeting",
+        "name": "ASPET Annual",
         "location": "Minneapolis, MN",
         "lat": 44.9778,
         "lon": -93.2650,
         "start_date": "2026-05-17",
         "end_date": "2026-05-20",
         "type": "Conference",
-        "url": "https://www.aspet.org/meetings-events/aspet-annual-meeting"
+        "url": "https://www.aspet.org/aspet/meetings-awards"
     },
     {
         "name": "ASM Microbe",
@@ -108,7 +108,7 @@ conferences = [
         "url": "https://www.iuphar.org/"
     },
     {
-        "name": "ASV Annual Meeting",
+        "name": "ASV Annual",
         "location": "Minneapolis, MN",
         "lat": 44.9778,
         "lon": -93.2650,

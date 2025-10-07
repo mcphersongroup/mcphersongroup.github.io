@@ -49,13 +49,23 @@ conferences = [
     },
     {
         "name": "British Pharmacological Society Annual Meeting",
-        "location": "London, UK",
-        "lat": 51.5074,
-        "lon": -0.1278,
+        "location": "Belfast, UK",
+        "lat": 54.5973,
+        "lon": -5.9301,
         "start_date": "2025-12-16",
         "end_date": "2025-12-18",
         "type": "Conference",
         "url": "https://www.bps.ac.uk/events"
+    },
+    {
+        "name": "IMARI Conference",
+        "location": "Las Vegas, NV",
+        "lat": 36.1699,
+        "lon": -115.1398,
+        "start_date": "2026-01-28",
+        "end_date": "2026-01-30",
+        "type": "Conference",
+        "url": "https://imari.org"
     },
     {
         "name": "AAAS Annual Meeting",
@@ -88,11 +98,11 @@ conferences = [
         "url": "https://asm.org/events/asm-microbe"
     },
     {
-        "name": "IUPHAR World Congress",
-        "location": "Edinburgh, UK",
-        "lat": 55.9533,
-        "lon": -3.1883,
-        "start_date": "2026-07-13",
+        "name": "IUPHAR 20th World Congress of Basic and Clinical Pharmacology (WCP2026)",
+        "location": "Melbourne, Australia",
+        "lat": -37.8136,
+        "lon": 144.9631,
+        "start_date": "2026-07-12",
         "end_date": "2026-07-17",
         "type": "Conference",
         "url": "https://www.iuphar.org/"
@@ -106,16 +116,6 @@ conferences = [
         "end_date": "2026-07-30",
         "type": "Conference",
         "url": "https://www.asv.org/annual-meeting"
-    },
-    {
-        "name": "IMARI Conference",
-        "location": "Las Vegas, NV",
-        "lat": 36.1699,
-        "lon": -115.1398,
-        "start_date": "2026-11-09",
-        "end_date": "2026-11-12",
-        "type": "Conference",
-        "url": "https://imari.org"
     }
 ]
 

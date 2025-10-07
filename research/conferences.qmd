@@ -1,8 +1,3 @@
----
-title: Conference Map and Calendar
-jupyter: python3
----
-
 <!-- 
 This file contains the conference map and calendar for the research page.
 To edit conference information:

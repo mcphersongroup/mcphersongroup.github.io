@@ -33,7 +33,8 @@ Each conference needs these fields:
     "lon": -122.4194,            # Longitude coordinate
     "start_date": "YYYY-MM-DD",  # Start date
     "end_date": "YYYY-MM-DD",    # End date
-    "type": "Conference"         # Type: Conference, Summit, Symposium, or Workshop
+    "type": "Conference",        # Type: Conference, Summit, Symposium, or Workshop
+    "url": "https://..."         # URL to conference website
 }
 ```
 

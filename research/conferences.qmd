@@ -22,7 +22,7 @@ from ipywidgets import HTML
 import datetime
 
 # Create a map centered on North America
-m = Map(center=(39.8283, -98.5795), zoom=4)
+m = Map(center=(20, 0), zoom=2)
 
 # Conference data - locations, dates, and details
 # Sorted by start date (nearest first) and only includes upcoming conferences

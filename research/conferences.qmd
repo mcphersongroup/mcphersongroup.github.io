@@ -37,16 +37,6 @@ conferences = [
         "url": "https://www.aaas.org/meetings"
     },
     {
-        "name": "ASM Microbe",
-        "location": "Houston, TX",
-        "lat": 29.7604,
-        "lon": -95.3698,
-        "start_date": "2025-06-12",
-        "end_date": "2025-06-16",
-        "type": "Conference",
-        "url": "https://asm.org/events/asm-microbe"
-    },
-    {
         "name": "ASPET Annual Meeting",
         "location": "Philadelphia, PA",
         "lat": 39.9526,
@@ -95,16 +85,6 @@ conferences = [
         "end_date": "2025-10-19",
         "type": "Conference",
         "url": "https://www.idweek.org/"
-    },
-    {
-        "name": "IMARI Conference",
-        "location": "Boston, MA",
-        "lat": 42.3601,
-        "lon": -71.0589,
-        "start_date": "2025-11-10",
-        "end_date": "2025-11-13",
-        "type": "Conference",
-        "url": "https://www.imariconference.org/"
     },
     {
         "name": "ASHP Midyear Clinical Meeting",

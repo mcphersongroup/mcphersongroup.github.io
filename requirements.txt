@@ -1,3 +1,4 @@
 jupyter
 nbformat
 ipyleaflet
+pandas

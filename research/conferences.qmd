@@ -3,6 +3,17 @@ title: Conference Map and Calendar
 jupyter: python3
 ---
 
+<!-- 
+This file contains the conference map and calendar for the research page.
+To edit conference information:
+1. Find the 'conferences' list in the first Python code block below
+2. Add, remove, or modify conference entries following the existing format
+3. Each conference needs: name, location, lat, lon, start_date, end_date, and type
+4. The map and table will automatically update based on this data
+
+This file is included in research/index.qmd and renders at the bottom of the research page.
+-->
+
 ## Conference Map and Calendar
 
 ### Upcoming Conferences and Events

@@ -108,6 +108,16 @@ conferences = [
         "url": "https://www.aaas.org/meetings"
     },
     {
+        "name": "CROI Conference",
+        "location": "Denver, CO",
+        "lat": 39.7392,
+        "lon": -104.9903,
+        "start_date": "2026-02-22",
+        "end_date": "2026-02-25",
+        "type": "Conference",
+        "url": "https://www.croiconference.org/"
+    },
+    {
         "name": "ASPET Annual",
         "location": "Minneapolis, MN",
         "lat": 44.9778,
@@ -116,6 +126,16 @@ conferences = [
         "end_date": "2026-05-20",
         "type": "Conference",
         "url": "https://www.aspet.org/aspet/meetings-awards"
+    },
+    {
+        "name": "ISPOR 2026",
+        "location": "Philadelphia, PA",
+        "lat": 39.9526,
+        "lon": -75.1652,
+        "start_date": "2026-05-17",
+        "end_date": "2026-05-20",
+        "type": "Conference",
+        "url": "https://www.ispor.org/conferences-education"
     },
     {
         "name": "ASM Microbe",
@@ -156,6 +176,16 @@ conferences = [
         "end_date": "2026-07-30",
         "type": "Conference",
         "url": "https://www.asv.org/annual-meeting"
+    },
+    {
+        "name": "ESCV 2026 – 28th Annual Conference of the European Society for Clinical Virology",
+        "location": "Porto, Portugal",
+        "lat": 41.1579,
+        "lon": -8.6291,
+        "start_date": "2026-09-16",
+        "end_date": "2026-09-19",
+        "type": "Conference",
+        "url": "https://escv.eu/calendar-events/"
     }
 ]
 

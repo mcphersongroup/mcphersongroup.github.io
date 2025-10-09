@@ -178,6 +178,16 @@ conferences = [
         "url": "https://www.asv.org/annual-meeting"
     },
     {
+        "name": "biennial MSGERC meeting",
+        "location": "Denver, CO",
+        "lat": 39.7392,
+        "lon": -104.9903,
+        "start_date": "2026-09-09",
+        "end_date": "2026-09-11",
+        "type": "Conference",
+        "url": "https://msgerc.org/2026-biennial-meeting/"
+    },
+    {
         "name": "ESCV 2026 – 28th Annual Conference of the European Society for Clinical Virology",
         "location": "Porto, Portugal",
         "lat": 41.1579,

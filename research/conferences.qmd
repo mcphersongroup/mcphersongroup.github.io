@@ -202,14 +202,41 @@ conferences = [
 # Get current date once for all comparisons
 current_date = datetime.datetime.now()
 
+# Sort conferences by start date and parse dates once to ensure correct ordering
+sorted_conferences = sorted(conferences, key=lambda x: x["start_date"])
+
+# Parse dates once for all conferences
+conf_dates = {}
+for conf in sorted_conferences:
+    conf_dates[conf["name"]] = {
+        "start": datetime.datetime.strptime(conf["start_date"], "%Y-%m-%d"),
+        "end": datetime.datetime.strptime(conf["end_date"], "%Y-%m-%d")
+    }
+
+# Find the next 3 upcoming conferences (start date in the future)
+upcoming_conferences = []
+for conf in sorted_conferences:
+    if conf_dates[conf["name"]]["start"] > current_date:
+        upcoming_conferences.append(conf["name"])
+    if len(upcoming_conferences) >= 3:
+        break
+
 # Add markers for each conference location
-for conf in conferences:
-    # Check if conference has passed (end date is before current date)
-    conf_end_date = datetime.datetime.strptime(conf["end_date"], "%Y-%m-%d")
-    is_past = conf_end_date < current_date
+for conf in sorted_conferences:
+    # Get pre-parsed dates
+    conf_start_date = conf_dates[conf["name"]]["start"]
+    conf_end_date = conf_dates[conf["name"]]["end"]
     
-    # Use light pink (lightred) for past conferences, red for current/upcoming
-    marker_color = 'lightred' if is_past else 'red'
+    # Determine marker color based on conference status
+    if conf_end_date < current_date:
+        # Past conferences - use beige for even lighter appearance
+        marker_color = 'beige'
+    elif conf["name"] in upcoming_conferences:
+        # Next 3 upcoming conferences - use dark red
+        marker_color = 'darkred'
+    else:
+        # Other future conferences - use regular red
+        marker_color = 'red'
     
     icon = AwesomeIcon(
         name='calendar',
@@ -223,8 +250,8 @@ for conf in conferences:
         icon=icon
     )
     
-    # Format dates for display (reuse already parsed end_date)
-    start = datetime.datetime.strptime(conf["start_date"], "%Y-%m-%d").strftime("%B %d, %Y")
+    # Format dates for display
+    start = conf_start_date.strftime("%B %d, %Y")
     end = conf_end_date.strftime("%B %d, %Y")
     
     # Add URL link if available

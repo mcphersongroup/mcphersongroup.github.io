@@ -201,9 +201,17 @@ conferences = [
 
 # Add markers for each conference location
 for conf in conferences:
+    # Check if conference has passed (end date is before current date)
+    conf_end_date = datetime.datetime.strptime(conf["end_date"], "%Y-%m-%d")
+    current_date = datetime.datetime.now()
+    is_past = conf_end_date < current_date
+    
+    # Use light pink (lightred) for past conferences, red for current/upcoming
+    marker_color = 'lightred' if is_past else 'red'
+    
     icon = AwesomeIcon(
         name='calendar',
-        marker_color='red',
+        marker_color=marker_color,
         icon_color='white'
     )
     marker = Marker(

@@ -202,9 +202,12 @@ conferences = [
 # Get current date once for all comparisons
 current_date = datetime.datetime.now()
 
+# Sort conferences by start date to ensure correct ordering
+sorted_conferences = sorted(conferences, key=lambda x: x["start_date"])
+
 # Find the next 3 upcoming conferences (start date in the future)
 upcoming_conferences = []
-for conf in conferences:
+for conf in sorted_conferences:
     conf_start_date = datetime.datetime.strptime(conf["start_date"], "%Y-%m-%d")
     if conf_start_date > current_date:
         upcoming_conferences.append(conf["name"])
@@ -212,7 +215,7 @@ for conf in conferences:
         break
 
 # Add markers for each conference location
-for conf in conferences:
+for conf in sorted_conferences:
     # Parse dates
     conf_start_date = datetime.datetime.strptime(conf["start_date"], "%Y-%m-%d")
     conf_end_date = datetime.datetime.strptime(conf["end_date"], "%Y-%m-%d")

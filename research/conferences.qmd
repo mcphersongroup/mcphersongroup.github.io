@@ -178,6 +178,16 @@ conferences = [
         "url": "https://www.asv.org/annual-meeting"
     },
     {
+        "name": "biennial MSGERC meeting",
+        "location": "Denver, CO",
+        "lat": 39.7392,
+        "lon": -104.9903,
+        "start_date": "2026-09-09",
+        "end_date": "2026-09-11",
+        "type": "Conference",
+        "url": "https://msgerc.org/2026-biennial-meeting/"
+    },
+    {
         "name": "ESCV 2026 – 28th Annual Conference of the European Society for Clinical Virology",
         "location": "Porto, Portugal",
         "lat": 41.1579,
@@ -229,6 +239,7 @@ from datetime import datetime
 
 # Create a DataFrame for the conference calendar
 calendar_data = []
+
 for conf in conferences:
     start = datetime.strptime(conf["start_date"], "%Y-%m-%d")
     end = datetime.strptime(conf["end_date"], "%Y-%m-%d")
@@ -241,7 +252,9 @@ for conf in conferences:
         "Start Date": start.strftime("%B %d, %Y"),
         "End Date": end.strftime("%B %d, %Y"),
         "Duration (days)": duration,
-        "URL": conf.get("url", "")
+        "URL": conf.get("url", ""),
+        "start_datetime": start,
+        "end_datetime": end
     })
 
 df = pd.DataFrame(calendar_data)
@@ -250,6 +263,15 @@ df = pd.DataFrame(calendar_data)
 from IPython.display import display, HTML
 
 def create_calendar_html(df):
+    current_date = datetime.now()
+    
+    # Find the next upcoming conference (first one with start date in the future)
+    next_upcoming_idx = None
+    for idx, row in df.iterrows():
+        if row['start_datetime'] > current_date:
+            next_upcoming_idx = idx
+            break
+    
     html = """
     <style>
         .calendar-table {
@@ -279,6 +301,22 @@ def create_calendar_html(df):
         .calendar-table tbody tr:hover {
             background-color: #e3f2fd;
             cursor: pointer;
+        }
+        .calendar-table tbody tr.past-conference {
+            opacity: 0.5;
+            background-color: #f9f9f9;
+            color: #999;
+        }
+        .calendar-table tbody tr.past-conference:nth-of-type(even) {
+            background-color: #f5f5f5;
+        }
+        .calendar-table tbody tr.next-upcoming {
+            font-weight: bold;
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+        }
+        .calendar-table tbody tr.next-upcoming:hover {
+            background-color: #ffe69c;
         }
         .event-type {
             display: inline-block;
@@ -319,11 +357,21 @@ def create_calendar_html(df):
         <tbody>
     """
     
-    for _, row in df.iterrows():
+    for idx, row in df.iterrows():
         type_class = f"type-{row['Type'].lower()}"
         url_link = f"<a href='{row['URL']}' target='_blank' style='color: #007bff;'>Visit</a>" if row['URL'] else "N/A"
+        
+        # Determine row classes
+        row_classes = []
+        if row['end_datetime'] < current_date:
+            row_classes.append("past-conference")
+        if idx == next_upcoming_idx:
+            row_classes.append("next-upcoming")
+        
+        row_class_str = f" class='{' '.join(row_classes)}'" if row_classes else ""
+        
         html += f"""
-            <tr>
+            <tr{row_class_str}>
                 <td><strong>{row['Event']}</strong></td>
                 <td><span class="event-type {type_class}">{row['Type']}</span></td>
                 <td>{row['Location']}</td>

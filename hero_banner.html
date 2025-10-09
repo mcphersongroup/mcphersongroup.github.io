@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McPherson Research Group Hero Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .banner {
+            width: 100%;
+            max-width: 1200px;
+            height: 400px;
+            background: linear-gradient(135deg, #003366 0%, #004080 50%, #003366 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        .particles-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(168, 218, 220, 0.4));
+            border-radius: 50%;
+            animation: float 6s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0);
+                opacity: 0.6;
+            }
+            50% {
+                transform: translateY(-20px) translateX(10px);
+                opacity: 0.8;
+            }
+        }
+        
+        .particle:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .particle:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            top: 60%;
+            left: 15%;
+            animation-delay: 1s;
+        }
+        
+        .particle:nth-child(3) {
+            width: 50px;
+            height: 50px;
+            top: 30%;
+            left: 20%;
+            animation-delay: 2s;
+        }
+        
+        .particle:nth-child(4) {
+            width: 45px;
+            height: 45px;
+            top: 70%;
+            left: 8%;
+            animation-delay: 1.5s;
+        }
+        
+        .particle:nth-child(5) {
+            width: 55px;
+            height: 55px;
+            top: 40%;
+            right: 15%;
+            animation-delay: 0.5s;
+        }
+        
+        .particle:nth-child(6) {
+            width: 35px;
+            height: 35px;
+            top: 65%;
+            right: 20%;
+            animation-delay: 2.5s;
+        }
+        
+        .particle:nth-child(7) {
+            width: 48px;
+            height: 48px;
+            top: 25%;
+            right: 10%;
+            animation-delay: 1.2s;
+        }
+        
+        .network-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+        }
+        
+        .network-lines svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .network-line {
+            fill: none;
+            stroke: #4dabf7;
+            stroke-width: 2;
+            stroke-dasharray: 300;
+            stroke-dashoffset: 300;
+            animation: drawNetwork 4s ease-in-out forwards infinite;
+        }
+        
+        @keyframes drawNetwork {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        
+        .content {
+            position: relative;
+            z-index: 10;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #a8dadc;
+            font-weight: 300;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+            max-width: 650px;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            color: #4dabf7;
+            font-weight: 600;
+        }
+        
+        .science-icon {
+            position: absolute;
+            top: 50%;
+            right: 8%;
+            transform: translateY(-50%);
+            font-size: 150px;
+            opacity: 0.15;
+        }
+        
+        @media (max-width: 768px) {
+            .banner {
+                height: 350px;
+            }
+            
+            .content {
+                padding: 40px;
+            }
+            
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .science-icon {
+                font-size: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="particles-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            
+            <div class="network-lines">
+                <svg viewBox="0 0 1200 400">
+                    <path class="network-line" d="M 120,80 L 240,120 L 180,240 L 100,280"/>
+                    <path class="network-line" d="M 240,120 L 360,100 L 450,160" style="animation-delay: 0.5s;"/>
+                    <path class="network-line" d="M 1000,160 L 1050,100 L 1120,140" style="animation-delay: 1s;"/>
+                    <path class="network-line" d="M 1000,260 L 1080,240 L 1140,300" style="animation-delay: 1.5s;"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="science-icon">🔬</div>
+        
+        <div class="content">
+            <h1 class="title">Welcome to the McPherson Research Group</h1>
+            <p class="subtitle">Using <span class="highlight">open-source science</span> to solve today's most pressing issues through innovative approaches to publicly available data</p>
+        </div>
+    </div>
+</body>
+</html>

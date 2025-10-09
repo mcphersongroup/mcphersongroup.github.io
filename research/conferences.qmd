@@ -199,11 +199,21 @@ conferences = [
     }
 ]
 
+# Get current date once for all comparisons
+current_date = datetime.datetime.now()
+
 # Add markers for each conference location
 for conf in conferences:
+    # Check if conference has passed (end date is before current date)
+    conf_end_date = datetime.datetime.strptime(conf["end_date"], "%Y-%m-%d")
+    is_past = conf_end_date < current_date
+    
+    # Use light pink (lightred) for past conferences, red for current/upcoming
+    marker_color = 'lightred' if is_past else 'red'
+    
     icon = AwesomeIcon(
         name='calendar',
-        marker_color='red',
+        marker_color=marker_color,
         icon_color='white'
     )
     marker = Marker(
@@ -213,9 +223,9 @@ for conf in conferences:
         icon=icon
     )
     
-    # Format dates for display
+    # Format dates for display (reuse already parsed end_date)
     start = datetime.datetime.strptime(conf["start_date"], "%Y-%m-%d").strftime("%B %d, %Y")
-    end = datetime.datetime.strptime(conf["end_date"], "%Y-%m-%d").strftime("%B %d, %Y")
+    end = conf_end_date.strftime("%B %d, %Y")
     
     # Add URL link if available
     url_html = f"<br><a href='{conf['url']}' target='_blank' style='color: #007bff;'>Website</a>" if 'url' in conf else ""

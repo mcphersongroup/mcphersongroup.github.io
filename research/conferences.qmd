@@ -202,23 +202,30 @@ conferences = [
 # Get current date once for all comparisons
 current_date = datetime.datetime.now()
 
-# Sort conferences by start date to ensure correct ordering
+# Sort conferences by start date and parse dates once to ensure correct ordering
 sorted_conferences = sorted(conferences, key=lambda x: x["start_date"])
+
+# Parse dates once for all conferences
+conf_dates = {}
+for conf in sorted_conferences:
+    conf_dates[conf["name"]] = {
+        "start": datetime.datetime.strptime(conf["start_date"], "%Y-%m-%d"),
+        "end": datetime.datetime.strptime(conf["end_date"], "%Y-%m-%d")
+    }
 
 # Find the next 3 upcoming conferences (start date in the future)
 upcoming_conferences = []
 for conf in sorted_conferences:
-    conf_start_date = datetime.datetime.strptime(conf["start_date"], "%Y-%m-%d")
-    if conf_start_date > current_date:
+    if conf_dates[conf["name"]]["start"] > current_date:
         upcoming_conferences.append(conf["name"])
     if len(upcoming_conferences) >= 3:
         break
 
 # Add markers for each conference location
 for conf in sorted_conferences:
-    # Parse dates
-    conf_start_date = datetime.datetime.strptime(conf["start_date"], "%Y-%m-%d")
-    conf_end_date = datetime.datetime.strptime(conf["end_date"], "%Y-%m-%d")
+    # Get pre-parsed dates
+    conf_start_date = conf_dates[conf["name"]]["start"]
+    conf_end_date = conf_dates[conf["name"]]["end"]
     
     # Determine marker color based on conference status
     if conf_end_date < current_date:

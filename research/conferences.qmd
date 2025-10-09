@@ -239,7 +239,6 @@ from datetime import datetime
 
 # Create a DataFrame for the conference calendar
 calendar_data = []
-current_date = datetime.now()
 
 for conf in conferences:
     start = datetime.strptime(conf["start_date"], "%Y-%m-%d")

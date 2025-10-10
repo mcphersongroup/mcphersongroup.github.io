@@ -1,6 +1,7 @@
 ---
 title: "join"
 format: html
+jupyter: python3
 
 ---
 
@@ -21,3 +22,95 @@ Create a *free* account in
   - Begin reading, writing, publishing in our [Favorite Journals](https://pubmed.ncbi.nlm.nih.gov/?term=%27SEARCH-TERM%27%20AND%20(%221476-4687%22%5Bta%5D%20OR%20%222058-5276%22%5Bta%5D%20OR%20%221740-1534%22%5Bta%5D%20OR%20%221474-1784%22%5Bta%5D%20OR%20%221548-7105%22%5Bta%5D%20OR%20%221533-4406%22%5Bta%5D%20OR%20%221474-547X%22%5Bta%5D%20OR%20%221538-3598%22%5Bta%5D%20OR%20%221097-4172%22%5Bta%5D%20OR%20%221934-6069%22%5Bta%5D%20OR%20%221095-9203%22%5Bta%5D%20OR%20%221537-6591%22%5Bta%5D%20OR%20%221474-4457%22%5Bta%5D%20OR%20%222666-5247%22%5Bta%5D%20OR%20%221098-6596%22%5Bta%5D%20OR%20%221095-8274%22%5Bta%5D%20OR%20%221946-6242%22%5Bta%5D%20OR%20%221529-2916%22%5Bta%5D%20OR%20%221474-1741%22%5Bta%5D%20OR%20%221759-5053%22%5Bta%5D%20OR%20%221535-2900%22%5Bta%5D%20OR%20%221546-170X%22%5Bta%5D%20OR%20%221545-9985%22%5Bta%5D%20OR%20%221476-5381%22%5Bta%5D%20OR%20%221476-4679%22%5Bta%5D%20OR%20%221755-4349%22%5Bta%5D%20OR%20%222522-5839%22%5Bta%5D%20OR%20%222522-5812%22%5Bta%5D%20OR%20%221750-2799%22%5Bta%5D%20OR%20%222056-676X%22%5Bta%5D%20OR%20%222662-8449%22%5Bta%5D%20OR%20%221521-0081%22%5Bta%5D%20OR%20%221521-0103%22%5Bta%5D%20OR%20%221553-7374%22%5Bta%5D%20OR%20%222470-9468%22%5Bta%5D%20OR%20%221362-4962%22%5Bta%5D%20OR%20%221474-760X%22%5Bta%5D%20OR%20%221471-0064%22%5Bta%5D%20OR%20%221367-4811%22%5Bta%5D%20OR%20%221520-5126%22%5Bta%5D%20OR%20%221549-9626%22%5Bta%5D%20OR%20%221549-960X%22%5Bta%5D%20OR%20%222662-8457%22%5Bta%5D%20OR%20%221546-1696%22%5Bta%5D%20OR%20%221546-1718%22%5Bta%5D%20OR%20%221471-0080%22%5Bta%5D%20OR%20%221474-1776%22%5Bta%5D%20OR%20%221473-3099%22%5Bta%5D%20OR%20%221756-1833%22%5Bta%5D%20OR%20%221520-6890%22%5Bta%5D%20OR%20%221545-3278%22%5Bta%5D%20OR%20%221545-3251%22%5Bta%5D%20OR%20%221545-4509%22%5Bta%5D%20OR%20%221522-1601%22%5Bta%5D%20OR%20%221522-1210%22%5Bta%5D%20OR%20%221522-1563%22%5Bta%5D%20OR%20%221522-1555%22%5Bta%5D%20OR%20%221522-1539%22%5Bta%5D%20OR%20%221522-1547%22%5Bta%5D%20OR%20%221522-1466%22%5Bta%5D%20OR%20%221531-2267%22%5Bta%5D%20OR%20%221758-0463%22%5Bta%5D))
 
   - Place your research posts as a sub-folder in folder '*publications*' such as that of mine [mine](https://github.com/JacobKMcPherson/jacobkmcpherson.github.io/tree/main/publications). I will pull it into the [Group publications folder](https://github.com/mcphersongroup/mcphersongroup.github.io/tree/main/publications)
+
+## Universities of Active Recruitment
+
+We actively recruit talented researchers from the following institutions worldwide:
+
+```{python}
+#| echo: false
+#| warning: false
+
+from ipyleaflet import Map, Marker, AwesomeIcon
+from ipywidgets import HTML
+
+# Create a world map centered to show all continents
+m = Map(center=(30.0, 0.0), zoom=2)
+
+# University locations for active recruitment
+universities = [
+    # US - Ivy League and Elite Private
+    {"name": "Harvard University", "city": "Cambridge, MA", "lat": 42.3770, "lon": -71.1167, "country": "USA"},
+    {"name": "Columbia University", "city": "New York, NY", "lat": 40.8075, "lon": -73.9626, "country": "USA"},
+    {"name": "Yale University", "city": "New Haven, CT", "lat": 41.3163, "lon": -72.9223, "country": "USA"},
+    {"name": "Princeton University", "city": "Princeton, NJ", "lat": 40.3430, "lon": -74.6514, "country": "USA"},
+    {"name": "Stanford University", "city": "Stanford, CA", "lat": 37.4275, "lon": -122.1697, "country": "USA"},
+    {"name": "Vanderbilt University", "city": "Nashville, TN", "lat": 36.1447, "lon": -86.8027, "country": "USA"},
+    {"name": "Rice University", "city": "Houston, TX", "lat": 29.7174, "lon": -95.4018, "country": "USA"},
+    {"name": "Emory University", "city": "Atlanta, GA", "lat": 33.7920, "lon": -84.3240, "country": "USA"},
+    {"name": "University of Pennsylvania", "city": "Philadelphia, PA", "lat": 39.9522, "lon": -75.1932, "country": "USA"},
+    {"name": "University of Chicago", "city": "Chicago, IL", "lat": 41.7886, "lon": -87.5987, "country": "USA"},
+    {"name": "Johns Hopkins University", "city": "Baltimore, MD", "lat": 39.3299, "lon": -76.6205, "country": "USA"},
+    
+    # US - Tech Schools
+    {"name": "MIT", "city": "Cambridge, MA", "lat": 42.3601, "lon": -71.0942, "country": "USA"},
+    {"name": "Georgia Tech", "city": "Atlanta, GA", "lat": 33.7756, "lon": -84.3963, "country": "USA"},
+    {"name": "Cal Tech", "city": "Pasadena, CA", "lat": 34.1377, "lon": -118.1253, "country": "USA"},
+    
+    # US - Large Public Research Universities
+    {"name": "University of Texas at Austin", "city": "Austin, TX", "lat": 30.2849, "lon": -97.7341, "country": "USA"},
+    {"name": "University of Washington", "city": "Seattle, WA", "lat": 47.6553, "lon": -122.3035, "country": "USA"},
+    {"name": "University of California at Berkeley", "city": "Berkeley, CA", "lat": 37.8719, "lon": -122.2585, "country": "USA"},
+    {"name": "University of Michigan at Ann Arbor", "city": "Ann Arbor, MI", "lat": 42.2780, "lon": -83.7382, "country": "USA"},
+    {"name": "University of Colorado at Boulder", "city": "Boulder, CO", "lat": 40.0076, "lon": -105.2659, "country": "USA"},
+    {"name": "University of Illinois at Urbana-Champaign", "city": "Urbana-Champaign, IL", "lat": 40.1020, "lon": -88.2272, "country": "USA"},
+    {"name": "University of North Carolina at Chapel Hill", "city": "Chapel Hill, NC", "lat": 35.9049, "lon": -79.0469, "country": "USA"},
+    {"name": "University of Florida at Gainesville", "city": "Gainesville, FL", "lat": 29.6436, "lon": -82.3549, "country": "USA"},
+    
+    # US - Other Research Universities
+    {"name": "University of Pittsburgh", "city": "Pittsburgh, PA", "lat": 40.4444, "lon": -79.9608, "country": "USA"},
+    {"name": "University of Miami", "city": "Coral Gables, FL", "lat": 25.7217, "lon": -80.2798, "country": "USA"},
+    {"name": "University of Houston", "city": "Houston, TX", "lat": 29.7199, "lon": -95.3422, "country": "USA"},
+    {"name": "Boston University", "city": "Boston, MA", "lat": 42.3505, "lon": -71.1054, "country": "USA"},
+    {"name": "University of Illinois Chicago", "city": "Chicago, IL", "lat": 41.8708, "lon": -87.6505, "country": "USA"},
+    {"name": "Wash U St Louis", "city": "St. Louis, MO", "lat": 38.6488, "lon": -90.3048, "country": "USA"},
+    {"name": "University of California San Francisco", "city": "San Francisco, CA", "lat": 37.7632, "lon": -122.4577, "country": "USA"},
+    
+    # UK
+    {"name": "University of Oxford", "city": "Oxford, UK", "lat": 51.7548, "lon": -1.2544, "country": "UK"},
+    {"name": "University of Cambridge", "city": "Cambridge, UK", "lat": 52.2053, "lon": 0.1218, "country": "UK"},
+    {"name": "London School of Economics", "city": "London, UK", "lat": 51.5144, "lon": -0.1167, "country": "UK"},
+    {"name": "London School of Tropical Hygiene and Medicine", "city": "London, UK", "lat": 51.5207, "lon": -0.1303, "country": "UK"},
+    
+    # Switzerland
+    {"name": "ETH Zurich", "city": "Zurich, Switzerland", "lat": 47.3769, "lon": 8.5417, "country": "Switzerland"},
+    
+    # Japan
+    {"name": "University of Tokyo", "city": "Tokyo, Japan", "lat": 35.7126, "lon": 139.7621, "country": "Japan"},
+    {"name": "University of Kyoto", "city": "Kyoto, Japan", "lat": 35.0262, "lon": 135.7806, "country": "Japan"},
+    
+    # Australia
+    {"name": "University of Melbourne", "city": "Melbourne, Australia", "lat": -37.7964, "lon": 144.9612, "country": "Australia"},
+    {"name": "University of Sydney", "city": "Sydney, Australia", "lat": -33.8886, "lon": 151.1873, "country": "Australia"},
+]
+
+# Add markers for each university
+for uni in universities:
+    icon = AwesomeIcon(
+        name='graduation-cap',
+        marker_color='red',
+        icon_color='white'
+    )
+    marker = Marker(
+        location=(uni["lat"], uni["lon"]),
+        draggable=False,
+        title=uni["name"],
+        icon=icon
+    )
+    marker.popup = HTML(
+        value=f"<b>{uni['name']}</b><br>{uni['city']}"
+    )
+    m.add_layer(marker)
+
+m
+```

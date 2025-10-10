@@ -98,6 +98,19 @@ universities = [
     # Australia
     {"name": "University of Melbourne", "city": "Melbourne, Australia", "lat": -37.7964, "lon": 144.9612, "country": "Australia"},
     {"name": "University of Sydney", "city": "Sydney, Australia", "lat": -33.8886, "lon": 151.1873, "country": "Australia"},
+    
+    # France
+    {"name": "Pasteur Institute", "city": "Paris, France", "lat": 48.8404, "lon": 2.3111, "country": "France"},
+    
+    # Sweden
+    {"name": "Karolinska Institute", "city": "Stockholm, Sweden", "lat": 59.3501, "lon": 18.0249, "country": "Sweden"},
+    
+    # Italy
+    {"name": "University of Milan", "city": "Milan, Italy", "lat": 45.4628, "lon": 9.1886, "country": "Italy"},
+    {"name": "University of Padua", "city": "Padua, Italy", "lat": 45.4064, "lon": 11.8768, "country": "Italy"},
+    
+    # Argentina
+    {"name": "University of Buenos Aires", "city": "Buenos Aires, Argentina", "lat": -34.5997, "lon": -58.3731, "country": "Argentina"},
 ]
 
 # Add markers for each university

@@ -66,6 +66,11 @@ universities = [
     {"name": "University of Illinois at Urbana-Champaign", "city": "Urbana-Champaign, IL", "lat": 40.1020, "lon": -88.2272, "country": "USA"},
     {"name": "University of North Carolina at Chapel Hill", "city": "Chapel Hill, NC", "lat": 35.9049, "lon": -79.0469, "country": "USA"},
     {"name": "University of Florida at Gainesville", "city": "Gainesville, FL", "lat": 29.6436, "lon": -82.3549, "country": "USA"},
+    {"name": "University of Arizona, Tucson", "city": "Tucson, AZ", "lat": 32.2488, "lon": -110.9874, "country": "USA"},
+    {"name": "University of California, Los Angeles", "city": "Los Angeles, CA", "lat": 34.0689, "lon": -118.4452, "country": "USA"},
+    {"name": "University of Wisconsin at Madison", "city": "Madison, WI", "lat": 43.0766, "lon": -89.4125, "country": "USA"},
+    {"name": "University of Missouri, Columbia", "city": "Columbia, MO", "lat": 38.9453, "lon": -92.3288, "country": "USA"},
+    {"name": "University of Kansas, Lawrence", "city": "Lawrence, KS", "lat": 38.9543, "lon": -95.2558, "country": "USA"},
     
     # US - Other Research Universities
     {"name": "University of Pittsburgh", "city": "Pittsburgh, PA", "lat": 40.4444, "lon": -79.9608, "country": "USA"},
@@ -84,6 +89,7 @@ universities = [
     
     # Switzerland
     {"name": "ETH Zurich", "city": "Zurich, Switzerland", "lat": 47.3769, "lon": 8.5417, "country": "Switzerland"},
+    {"name": "University of Zurich", "city": "Zurich, Switzerland", "lat": 47.3715, "lon": 8.5423, "country": "Switzerland"},
     
     # Japan
     {"name": "University of Tokyo", "city": "Tokyo, Japan", "lat": 35.7126, "lon": 139.7621, "country": "Japan"},

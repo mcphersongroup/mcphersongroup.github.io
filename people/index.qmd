@@ -102,8 +102,8 @@ jupyter: python3
 from ipyleaflet import Map, Marker, AwesomeIcon
 from ipywidgets import HTML
 
-# Create a map centered on Texas (between Houston and Austin)
-m = Map(center=(30.0, -96.5), zoom=6)
+# Create a map centered to show all continents
+m = Map(center=(30.0, 0.0), zoom=2)
 
 # Example locations - these can be updated with actual member locations
 locations = [

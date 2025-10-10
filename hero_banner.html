@@ -58,8 +58,7 @@
         }
         
         @media (prefers-reduced-motion: reduce) {
-            .particle,
-            .network-line {
+            .particle {
                 animation: none !important;
             }
         }
@@ -118,33 +117,6 @@
             top: 25%;
             right: 10%;
             animation-delay: 1.2s;
-        }
-        
-        .network-lines {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0.3;
-        }
-        
-        .network-lines svg {
-            width: 100%;
-            height: 100%;
-        }
-        
-        .network-line {
-            fill: none;
-            stroke: #4dabf7;
-            stroke-width: 2;
-            stroke-dasharray: 300;
-            stroke-dashoffset: 300;
-            animation: drawNetwork 4s ease-in-out forwards infinite;
-        }
-        
-        @keyframes drawNetwork {
-            to {
-                stroke-dashoffset: 0;
-            }
         }
         
         .content {
@@ -222,23 +194,6 @@
             <div class="particle"></div>
             <div class="particle"></div>
             <div class="particle"></div>
-            
-            <div class="network-lines">
-                <svg viewBox="0 0 1200 400">
-                    <!-- Left hexagon (benzene ring) -->
-                    <path class="network-line" d="M 150,150 L 200,120 L 250,150 L 250,210 L 200,240 L 150,210 Z" style="animation-delay: 0s;"/>
-                    
-                    <!-- Right hexagon (benzene ring) connected to left -->
-                    <path class="network-line" d="M 250,150 L 300,120 L 350,150 L 350,210 L 300,240 L 250,210 Z" style="animation-delay: 0.3s;"/>
-                    
-                    <!-- Additional molecular structure on the right side -->
-                    <path class="network-line" d="M 1000,180 L 1050,150 L 1100,180 L 1100,240 L 1050,270 L 1000,240 Z" style="animation-delay: 1s;"/>
-                    
-                    <!-- Small connecting bonds -->
-                    <path class="network-line" d="M 1050,150 L 1050,130" style="animation-delay: 1.2s;"/>
-                    <path class="network-line" d="M 1100,210 L 1120,210" style="animation-delay: 1.4s;"/>
-                </svg>
-            </div>
         </div>
         
         <div class="science-icon" role="img" aria-label="microscope icon">🔬</div>

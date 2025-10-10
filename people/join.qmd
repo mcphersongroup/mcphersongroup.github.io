@@ -111,6 +111,12 @@ universities = [
     
     # Argentina
     {"name": "University of Buenos Aires", "city": "Buenos Aires, Argentina", "lat": -34.5997, "lon": -58.3731, "country": "Argentina"},
+    
+    # Germany
+    {"name": "University of Munich", "city": "Munich, Germany", "lat": 48.1500, "lon": 11.5800, "country": "Germany"},
+    
+    # Singapore
+    {"name": "National University of Singapore", "city": "Singapore", "lat": 1.2966, "lon": 103.7764, "country": "Singapore"},
 ]
 
 # Add markers for each university

@@ -109,9 +109,6 @@ universities = [
     {"name": "University of Milan", "city": "Milan, Italy", "lat": 45.4628, "lon": 9.1886, "country": "Italy"},
     {"name": "University of Padua", "city": "Padua, Italy", "lat": 45.4065, "lon": 11.8768, "country": "Italy"},
     
-    # Argentina
-    {"name": "University of Buenos Aires", "city": "Buenos Aires, Argentina", "lat": -34.5997, "lon": -58.3731, "country": "Argentina"},
-    
     # Germany
     {"name": "University of Munich", "city": "Munich, Germany", "lat": 48.1500, "lon": 11.5800, "country": "Germany"},
     

@@ -1,64 +1,78 @@
 ---
 title: "Meet the Group"
 listing:
-  - id: pi
-    include: 
-      people_group: "pi"
-    exclude:
-      external: true
-    template: ../_ejs/people-box.ejs
-    type: grid
-    fields: [title, subtitle, image, education]
-  - id: researcher
-    include: 
-      people_group: "researcher"
+  # Commented out hierarchical listings - keeping code for reference
+  # - id: pi
+  #   include: 
+  #     people_group: "pi"
+  #   exclude:
+  #     external: true
+  #   template: ../_ejs/people-box.ejs
+  #   type: grid
+  #   fields: [title, subtitle, image, education]
+  # - id: researcher
+  #   include: 
+  #     people_group: "researcher"
+  #   exclude:
+  #     external: true
+  #   template: ../_ejs/people-box.ejs
+  #   sort: last
+  #   type: grid
+  #   fields: [title, subtitle, image, education]
+  # - id: postdoc
+  #   include: 
+  #     people_group: "postdoc"
+  #   exclude:
+  #     external: true
+  #   template: ../_ejs/people-box.ejs
+  #   sort: last    
+  #   type: grid
+  #   fields: [title, subtitle, image, education]
+  # - id: gradstudent
+  #   include: 
+  #     people_group: "gradstudent"
+  #   exclude:
+  #     external: true
+  #   template: ../_ejs/people-box.ejs
+  #   sort: last
+  #   type: grid
+  #   fields: [title, subtitle, image, education]
+  # - id: post-bac
+  #   include: 
+  #     people_group: "post-bac"
+  #   exclude:
+  #     external: true
+  #   template: ../_ejs/people-box.ejs
+  #   sort: last
+  #   type: grid
+  #   fields: [title, subtitle, image, education]
+  # - id: alumni
+  #   include: 
+  #     people_group: "alumni"
+  #   exclude:
+  #     external: true
+  #   template: ../_ejs/alumni-box.ejs
+  #   sort: last
+  #   type: grid
+  #   fields: [title, subtitle, image, education, altsubtitle, alteducation]
+  
+  # Unified listing for all group members (equal individuals)
+  - id: all-members
+    contents: 
+      - "*/index.qmd"
+      - "!_template/"
     exclude:
       external: true
     template: ../_ejs/people-box.ejs
     sort: last
     type: grid
     fields: [title, subtitle, image, education]
-  - id: postdoc
-    include: 
-      people_group: "postdoc"
-    exclude:
-      external: true
-    template: ../_ejs/people-box.ejs
-    sort: last    
-    type: grid
-    fields: [title, subtitle, image, education]
-  - id: gradstudent
-    include: 
-      people_group: "gradstudent"
-    exclude:
-      external: true
-    template: ../_ejs/people-box.ejs
-    sort: last
-    type: grid
-    fields: [title, subtitle, image, education]
-  - id: post-bac
-    include: 
-      people_group: "post-bac"
-    exclude:
-      external: true
-    template: ../_ejs/people-box.ejs
-    sort: last
-    type: grid
-    fields: [title, subtitle, image, education]
-  - id: alumni
-    include: 
-      people_group: "alumni"
-    exclude:
-      external: true
-    template: ../_ejs/alumni-box.ejs
-    sort: last
-    type: grid
-    fields: [title, subtitle, image, education, altsubtitle, alteducation]
 page-layout: full
 jupyter: python3
 ---
 
-## Principal Investigator
+<!-- Commented out hierarchical sections - keeping code for reference -->
+<!-- ## Principal Investigator
 ::: {#pi}
 :::
 
@@ -91,9 +105,14 @@ jupyter: python3
 :::
 
 
+::: -->
+
+## Group Members
+::: {#all-members}
 :::
 
-## Group Member Locations
+<!-- Commented out map code - keeping code for reference -->
+<!-- ## Group Member Locations
 
 ```{python}
 #| echo: false
@@ -136,3 +155,4 @@ for loc in locations:
 
 m
 ```
+-->

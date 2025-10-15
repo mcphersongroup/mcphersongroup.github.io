@@ -7,7 +7,7 @@ title: "Welcome"
 ```
 
 ```{=html}
-<div style="display: flex; justify-content: space-between; margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid #dee2e6;">
+<div class="page-navigation">
   <div></div>
   <div>
     <a href="about.html" class="btn btn-outline-primary">About <i class="bi bi-arrow-right"></i></a>

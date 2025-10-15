@@ -41,7 +41,7 @@ We believe in:
 For joining the group, please use the above link [join](people/join.qmd)
 
 ```{=html}
-<div style="display: flex; justify-content: space-between; margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid #dee2e6;">
+<div class="page-navigation">
   <div>
     <a href="index.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> Home</a>
   </div>

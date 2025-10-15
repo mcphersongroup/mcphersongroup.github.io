@@ -11,7 +11,7 @@ listing:
       - area/human-gut-microbiome/index.qmd
     type: grid
     fields: [image, title]
-    sort: false
+    sort: false  # Disable sorting to maintain custom research area order
 #  - id: literature
 #    contents: resource/lit/*/index.qmd
 #    type: grid
@@ -36,7 +36,7 @@ jupyter: python3
 {{< include conferences.qmd >}}
 
 ```{=html}
-<div style="display: flex; justify-content: space-between; margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid #dee2e6;">
+<div class="page-navigation">
   <div>
     <a href="../about.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> About</a>
   </div>

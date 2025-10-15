@@ -20,3 +20,14 @@ Welcome to the Group publications! Please take a look around.
 
 :::{#pubs}
 :::
+
+```{=html}
+<div style="display: flex; justify-content: space-between; margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid #dee2e6;">
+  <div>
+    <a href="../research/index.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> Research</a>
+  </div>
+  <div>
+    <a href="../people/index.html" class="btn btn-outline-primary">People <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+```

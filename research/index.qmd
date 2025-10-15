@@ -2,9 +2,16 @@
 title: Research Areas
 listing:
   - id: research-areas
-    contents: area/*/index.qmd
+    contents: 
+      - area/artificial-intelligence/index.qmd
+      - area/drug-development/index.qmd
+      - area/economic-analysis/index.qmd
+      - area/infectious-diseases/index.qmd
+      - area/antimicrobial-resistance/index.qmd
+      - area/human-gut-microbiome/index.qmd
     type: grid
     fields: [image, title]
+    sort: false
 #  - id: literature
 #    contents: resource/lit/*/index.qmd
 #    type: grid
@@ -27,6 +34,17 @@ jupyter: python3
 :::
 
 {{< include conferences.qmd >}}
+
+```{=html}
+<div style="display: flex; justify-content: space-between; margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid #dee2e6;">
+  <div>
+    <a href="../about.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> About</a>
+  </div>
+  <div>
+    <a href="../publications/index.html" class="btn btn-outline-primary">Publications <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+```
 
 <!---
 ## Research Resources

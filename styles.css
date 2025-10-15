@@ -90,3 +90,12 @@ img {
   color: #6c757d;
   font-size: 0.9rem;
 }
+
+/* Page navigation styling */
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #dee2e6;
+}

@@ -136,3 +136,14 @@ for uni in universities:
 
 m
 ```
+
+```{=html}
+<div class="page-navigation">
+  <div>
+    <a href="index.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> People</a>
+  </div>
+  <div>
+    <a href="../index.html" class="btn btn-outline-primary">Home <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+```

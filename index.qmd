@@ -5,3 +5,12 @@ title: "Welcome"
 ```{=html}
 <iframe src="hero_banner.html" width="100%" height="450px" frameborder="0" style="border-radius: 20px; margin-bottom: 2rem;" title="McPherson Research Group Hero Banner"></iframe>
 ```
+
+```{=html}
+<div class="page-navigation">
+  <div></div>
+  <div>
+    <a href="about.html" class="btn btn-outline-primary">About <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+```

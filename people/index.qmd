@@ -111,6 +111,17 @@ jupyter: python3
 ::: {#all-members}
 :::
 
+```{=html}
+<div class="page-navigation">
+  <div>
+    <a href="../publications/index.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> Publications</a>
+  </div>
+  <div>
+    <a href="join.html" class="btn btn-outline-primary">Join <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+```
+
 <!-- Commented out map code - keeping code for reference -->
 <!-- ## Group Member Locations
 

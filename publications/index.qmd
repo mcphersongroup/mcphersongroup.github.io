@@ -20,3 +20,14 @@ Welcome to the Group publications! Please take a look around.
 
 :::{#pubs}
 :::
+
+```{=html}
+<div class="page-navigation">
+  <div>
+    <a href="../research/index.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> Research</a>
+  </div>
+  <div>
+    <a href="../people/index.html" class="btn btn-outline-primary">People <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+```

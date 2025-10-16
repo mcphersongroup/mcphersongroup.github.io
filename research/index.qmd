@@ -3,6 +3,9 @@ title: Research Areas
 listing:
   - id: research-areas
     contents: 
+      - area/pharmacy/index.qmd
+      - area/pharmacology/index.qmd
+      - area/medicinal-chemistry/index.qmd
       - area/artificial-intelligence/index.qmd
       - area/drug-development/index.qmd
       - area/economic-analysis/index.qmd

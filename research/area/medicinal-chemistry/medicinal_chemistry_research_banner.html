@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicinal Chemistry Research Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .banner {
+            width: 100%;
+            max-width: 1200px;
+            height: 400px;
+            background: linear-gradient(135deg, #003366 0%, #004080 50%, #003366 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        .chemistry-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .molecule-structure {
+            position: absolute;
+            opacity: 0.5;
+            animation: rotate-float 10s infinite ease-in-out;
+        }
+        
+        @keyframes rotate-float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            33% {
+                transform: translateY(-25px) rotate(120deg);
+            }
+            66% {
+                transform: translateY(-15px) rotate(240deg);
+            }
+        }
+        
+        .molecule-structure:nth-child(1) {
+            top: 18%;
+            left: 14%;
+            width: 100px;
+            height: 100px;
+            animation-delay: 0s;
+        }
+        
+        .molecule-structure:nth-child(2) {
+            top: 52%;
+            left: 20%;
+            width: 120px;
+            height: 120px;
+            animation-delay: 1.5s;
+        }
+        
+        .molecule-structure:nth-child(3) {
+            top: 72%;
+            left: 10%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 2.8s;
+        }
+        
+        .molecule-structure:nth-child(4) {
+            top: 32%;
+            right: 14%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 2s;
+        }
+        
+        .molecule-structure:nth-child(5) {
+            top: 68%;
+            right: 18%;
+            width: 95px;
+            height: 95px;
+            animation-delay: 0.8s;
+        }
+        
+        .atom {
+            width: 22px;
+            height: 22px;
+            background: radial-gradient(circle at 30% 30%, #ff922b, #fd7e14);
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0 0 15px rgba(255, 146, 43, 0.7);
+        }
+        
+        .carbon-atom {
+            background: radial-gradient(circle at 30% 30%, #868e96, #495057);
+            box-shadow: 0 0 12px rgba(134, 142, 150, 0.6);
+        }
+        
+        .oxygen-atom {
+            background: radial-gradient(circle at 30% 30%, #ff6b6b, #fa5252);
+            box-shadow: 0 0 12px rgba(255, 107, 107, 0.6);
+        }
+        
+        .bond {
+            position: absolute;
+            height: 3px;
+            background: linear-gradient(90deg, #ff922b, #fd7e14);
+            transform-origin: left center;
+        }
+        
+        .double-bond {
+            height: 6px;
+            background: linear-gradient(90deg, #ff922b 0%, #ff922b 40%, transparent 40%, transparent 60%, #ff922b 60%, #ff922b 100%);
+        }
+        
+        .flask-icon {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            font-size: 150px;
+            opacity: 0.15;
+        }
+        
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 146, 43, 0.4);
+            border-radius: 50%;
+            animation: particleRise 10s infinite;
+        }
+        
+        .particle:nth-child(1) { left: 30%; animation-delay: 0s; }
+        .particle:nth-child(2) { left: 50%; animation-delay: 1.5s; }
+        .particle:nth-child(3) { left: 70%; animation-delay: 3s; }
+        .particle:nth-child(4) { left: 40%; animation-delay: 2s; }
+        .particle:nth-child(5) { left: 60%; animation-delay: 1s; }
+        .particle:nth-child(6) { left: 80%; animation-delay: 2.5s; }
+        
+        @keyframes particleRise {
+            0% {
+                top: 100%;
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                top: -5%;
+                opacity: 0;
+            }
+        }
+        
+        .content {
+            position: relative;
+            z-index: 10;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #a8dadc;
+            font-weight: 300;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            color: #ff922b;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="chemistry-container">
+            <div class="molecule-structure">
+                <div class="atom carbon-atom" style="top: 10px; left: 20px;"></div>
+                <div class="atom carbon-atom" style="top: 40px; left: 0;"></div>
+                <div class="atom carbon-atom" style="top: 40px; left: 40px;"></div>
+                <div class="atom oxygen-atom" style="top: 70px; left: 20px;"></div>
+                <div class="bond" style="top: 20px; left: 20px; width: 30px; transform: rotate(-60deg);"></div>
+                <div class="bond" style="top: 20px; left: 32px; width: 30px; transform: rotate(60deg);"></div>
+                <div class="bond" style="top: 50px; left: 20px; width: 30px; transform: rotate(90deg);"></div>
+            </div>
+            <div class="molecule-structure">
+                <div class="atom carbon-atom" style="top: 15px; left: 25px;"></div>
+                <div class="atom carbon-atom" style="top: 45px; left: 5px;"></div>
+                <div class="atom carbon-atom" style="top: 45px; left: 45px;"></div>
+                <div class="atom" style="top: 75px; left: 25px;"></div>
+                <div class="atom oxygen-atom" style="top: 15px; left: 65px;"></div>
+            </div>
+            <div class="molecule-structure">
+                <div class="atom carbon-atom" style="top: 5px; left: 15px;"></div>
+                <div class="atom carbon-atom" style="top: 30px; left: 0;"></div>
+                <div class="atom carbon-atom" style="top: 30px; left: 35px;"></div>
+                <div class="atom oxygen-atom" style="top: 55px; left: 15px;"></div>
+            </div>
+            <div class="molecule-structure">
+                <div class="atom" style="top: 18px; left: 18px;"></div>
+                <div class="atom carbon-atom" style="top: 48px; left: 32px;"></div>
+                <div class="atom carbon-atom" style="top: 18px; left: 48px;"></div>
+                <div class="atom oxygen-atom" style="top: 48px; left: 62px;"></div>
+            </div>
+            <div class="molecule-structure">
+                <div class="atom carbon-atom" style="top: 12px; left: 12px;"></div>
+                <div class="atom" style="top: 38px; left: 38px;"></div>
+                <div class="atom carbon-atom" style="top: 12px; left: 62px;"></div>
+                <div class="bond double-bond" style="top: 22px; left: 22px; width: 35px; transform: rotate(45deg);"></div>
+            </div>
+        </div>
+        
+        <div class="flask-icon">⚗️</div>
+        
+        <div class="content">
+            <h1 class="title">Medicinal Chemistry</h1>
+            <p class="subtitle">Designing and synthesizing <span class="highlight">novel compounds</span> for therapeutic applications</p>
+        </div>
+    </div>
+</body>
+</html>

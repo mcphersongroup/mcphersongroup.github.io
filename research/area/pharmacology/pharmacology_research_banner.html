@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacology Research Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .banner {
+            width: 100%;
+            max-width: 1200px;
+            height: 400px;
+            background: linear-gradient(135deg, #003366 0%, #004080 50%, #003366 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        .molecules-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .molecule {
+            position: absolute;
+            opacity: 0.45;
+            animation: drift 9s infinite ease-in-out;
+        }
+        
+        @keyframes drift {
+            0%, 100% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-20px) translateX(10px) rotate(90deg);
+            }
+            50% {
+                transform: translateY(-35px) translateX(0) rotate(180deg);
+            }
+            75% {
+                transform: translateY(-20px) translateX(-10px) rotate(270deg);
+            }
+        }
+        
+        .molecule:nth-child(1) {
+            top: 12%;
+            left: 16%;
+            width: 75px;
+            height: 75px;
+            animation-delay: 0s;
+        }
+        
+        .molecule:nth-child(2) {
+            top: 48%;
+            left: 22%;
+            width: 95px;
+            height: 95px;
+            animation-delay: 1.2s;
+        }
+        
+        .molecule:nth-child(3) {
+            top: 68%;
+            left: 12%;
+            width: 65px;
+            height: 65px;
+            animation-delay: 2.3s;
+        }
+        
+        .molecule:nth-child(4) {
+            top: 28%;
+            right: 17%;
+            width: 85px;
+            height: 85px;
+            animation-delay: 1.8s;
+        }
+        
+        .molecule:nth-child(5) {
+            top: 62%;
+            right: 23%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0.7s;
+        }
+        
+        .atom {
+            width: 18px;
+            height: 18px;
+            background: radial-gradient(circle at 30% 30%, #51cf66, #2b8a3e);
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0 0 12px rgba(81, 207, 102, 0.6);
+        }
+        
+        .bond {
+            position: absolute;
+            height: 2.5px;
+            background: #51cf66;
+            transform-origin: left center;
+            opacity: 0.8;
+        }
+        
+        .receptor {
+            position: absolute;
+            top: 50%;
+            right: 12%;
+            transform: translateY(-50%);
+            width: 140px;
+            height: 140px;
+            opacity: 0.25;
+        }
+        
+        .receptor-circle {
+            position: absolute;
+            border: 3px solid #4dabf7;
+            border-radius: 50%;
+            animation: pulse 4s infinite ease-in-out;
+        }
+        
+        .receptor-circle:nth-child(1) {
+            width: 140px;
+            height: 140px;
+            animation-delay: 0s;
+        }
+        
+        .receptor-circle:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            top: 20px;
+            left: 20px;
+            animation-delay: 0.5s;
+        }
+        
+        .receptor-circle:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            top: 40px;
+            left: 40px;
+            animation-delay: 1s;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.3;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.6;
+            }
+        }
+        
+        .content {
+            position: relative;
+            z-index: 10;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #a8dadc;
+            font-weight: 300;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            color: #51cf66;
+            font-weight: 600;
+        }
+        
+        .pharmacology-icon {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            font-size: 150px;
+            opacity: 0.15;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="molecules-container">
+            <div class="molecule">
+                <div class="atom" style="top: 0; left: 0;"></div>
+                <div class="atom" style="top: 28px; left: 28px;"></div>
+                <div class="atom" style="top: 0; left: 56px;"></div>
+                <div class="bond" style="top: 9px; left: 9px; width: 28px; transform: rotate(45deg);"></div>
+                <div class="bond" style="top: 9px; left: 37px; width: 28px; transform: rotate(-45deg);"></div>
+            </div>
+            <div class="molecule">
+                <div class="atom" style="top: 8px; left: 18px;"></div>
+                <div class="atom" style="top: 36px; left: 36px;"></div>
+                <div class="atom" style="top: 8px; left: 56px;"></div>
+                <div class="atom" style="top: 36px; left: 0;"></div>
+            </div>
+            <div class="molecule">
+                <div class="atom" style="top: 0; left: 22px;"></div>
+                <div class="atom" style="top: 28px; left: 0;"></div>
+                <div class="atom" style="top: 28px; left: 46px;"></div>
+            </div>
+            <div class="molecule">
+                <div class="atom" style="top: 12px; left: 12px;"></div>
+                <div class="atom" style="top: 40px; left: 28px;"></div>
+                <div class="atom" style="top: 12px; left: 42px;"></div>
+            </div>
+            <div class="molecule">
+                <div class="atom" style="top: 8px; left: 8px;"></div>
+                <div class="atom" style="top: 32px; left: 32px;"></div>
+                <div class="atom" style="top: 8px; left: 56px;"></div>
+            </div>
+        </div>
+        
+        <div class="receptor">
+            <div class="receptor-circle"></div>
+            <div class="receptor-circle"></div>
+            <div class="receptor-circle"></div>
+        </div>
+        
+        <div class="pharmacology-icon">🔬</div>
+        
+        <div class="content">
+            <h1 class="title">Pharmacology</h1>
+            <p class="subtitle">Exploring <span class="highlight">drug mechanisms</span> and therapeutic effects to improve patient outcomes</p>
+        </div>
+    </div>
+</body>
+</html>

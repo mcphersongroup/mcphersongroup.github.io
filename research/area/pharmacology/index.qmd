@@ -17,6 +17,10 @@ listing:
 
 ---
 
+```{=html}
+<iframe src="pharmacology_research_banner.html" width="100%" height="450px" frameborder="0" style="border-radius: 20px; margin-bottom: 2rem;"></iframe>
+```
+
 ## Pharmacology-Related Publications
 
 

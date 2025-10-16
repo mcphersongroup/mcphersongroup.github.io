@@ -49,6 +49,32 @@ jupyter: python3
 </div>
 ```
 
+<!-- Banner previews for selected research areas -->
+```{=html}
+<section class="research-banner-previews" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1rem; margin:2rem 0;">
+  <a href="area/pharmacy/index.html" style="text-decoration:none; color:inherit;">
+    <div style="border-radius:12px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <iframe src="area/pharmacy/pharmacy_research_banner.html" width="100%" height="160" frameborder="0" style="display:block;"></iframe>
+      <div style="padding:0.5rem 1rem; font-weight:600;">Pharmacy</div>
+    </div>
+  </a>
+
+  <a href="area/pharmacology/index.html" style="text-decoration:none; color:inherit;">
+    <div style="border-radius:12px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <iframe src="area/pharmacology/pharmacology_research_banner.html" width="100%" height="160" frameborder="0" style="display:block;"></iframe>
+      <div style="padding:0.5rem 1rem; font-weight:600;">Pharmacology</div>
+    </div>
+  </a>
+
+  <a href="area/medicinal-chemistry/index.html" style="text-decoration:none; color:inherit;">
+    <div style="border-radius:12px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <iframe src="area/medicinal-chemistry/medicinal_chemistry_research_banner.html" width="100%" height="160" frameborder="0" style="display:block;"></iframe>
+      <div style="padding:0.5rem 1rem; font-weight:600;">Medicinal Chemistry</div>
+    </div>
+  </a>
+</section>
+```
+
 <!---
 ## Research Resources
 

@@ -11,11 +11,11 @@ jupyter: python3
 
 Create a *free* account in 
 
-1. [**ORCID**](https://orcid.org); use to sign-in to: [**OverLeaf**](https://www.overleaf.com/) and [**Author.Link**](https://author.link/) by 
+1. [**ORCID**](https://orcid.org); use to sign-in to: [**OverLeaf**](https://www.overleaf.com/) and [**Author.Link**](https://author.link/)
 
 2. [**GitHub**](https://github.com); use to sign-in to [**RStudio Cloud**](https://posit.cloud) and [**VS Code**](https://vscode.dev)
 
-3. I curate and organize publicly available data on my [**AWS**](https://aws.amazon.com/), which I maintain access via the SIB's [**AWS-Docker**](https://sib-swiss.github.io/AWS-docker/) for container and volume infrastructure
+  - Next, we science: [Emerald Cloud Labs (ECL)](https://www.emeraldcloudlab.com/), CLC Genomics (Qiagen) and [**AWS**](https://aws.amazon.com/), which I maintain access via the SIB's [**AWS-Docker**](https://sib-swiss.github.io/AWS-docker/)
 
   - Create a quarto-rendered github-pages profile at repo named '*CHANGETOYOURUSERNAME.github.io*', similar to [mine](https://github.com/JacobKMcPherson/jacobkmcpherson.github.io)
 

@@ -15,7 +15,7 @@ Create a *free* account in
 
 2. [**GitHub**](https://github.com); use to sign-in to [**RStudio Cloud**](https://posit.cloud) and [**VS Code**](https://vscode.dev)
 
-  - Next, we science: [Emerald Cloud Labs (ECL)](https://www.emeraldcloudlab.com/), CLC Genomics (Qiagen) and [**AWS**](https://aws.amazon.com/), which I maintain access via the SIB's [**AWS-Docker**](https://sib-swiss.github.io/AWS-docker/)
+  - Next, we science: [**Emerald Cloud Labs (ECL)**](https://www.emeraldcloudlab.com/), [**CLC Genomics (Qiagen)**](https://digitalinsights.qiagen.com/) and [**AWS**](https://aws.amazon.com/), which I maintain access via the SIB's [**AWS-Docker**](https://sib-swiss.github.io/AWS-docker/)
 
   - Create a quarto-rendered github-pages profile at repo named '*CHANGETOYOURUSERNAME.github.io*', similar to [mine](https://github.com/JacobKMcPherson/jacobkmcpherson.github.io)
 

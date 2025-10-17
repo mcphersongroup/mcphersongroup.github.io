@@ -11,9 +11,9 @@ jupyter: python3
 
 Create a *free* account in 
 
-1. [**ORCID**](https://orcid.org); use to sign-in to: [**OverLeaf**](https://www.overleaf.com/)
+1. [**ORCID**](https://orcid.org); use to sign-in to: [**OverLeaf**](https://www.overleaf.com/) and [**Author.Link**](https://author.link/) by 
 
-2. [**GitHub**](https://github.com); use to sign-in to [**RStudio Cloud**](https://posit.cloud)
+2. [**GitHub**](https://github.com); use to sign-in to [**RStudio Cloud**](https://posit.cloud) and [**VS Code**](https://vscode.dev)
 
 3. I curate and organize publicly available data on my [**AWS**](https://aws.amazon.com/), which I maintain access via the SIB's [**AWS-Docker**](https://sib-swiss.github.io/AWS-docker/) for container and volume infrastructure
 

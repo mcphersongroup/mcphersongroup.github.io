@@ -44,9 +44,6 @@ website:
         text: Join
         aria-label: Join
     right:
-      - icon: envelope
-        href: mailto:jacobmcpherson@utexas.edu
-        aria-label: Email
       - icon: calendar-date
         href: https://scheduler.zoom.us/mcpherson-group
         aria-label: Calendar

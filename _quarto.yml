@@ -48,7 +48,7 @@ website:
         href: mailto:jacobmcpherson@utexas.edu
         aria-label: Email
       - icon: calendar-date
-        href: https://jacobkmcpherson.com/appointments
+        href: https://scheduler.zoom.us/mcpherson-group
         aria-label: Calendar
       - icon: building
         href: https://jacobkmcpherson.com/
@@ -57,7 +57,7 @@ website:
         href: https://github.com/McPhersonGroup
         aria-label: GitHub
   page-footer:
-    left: "Copyright © 2025 Jacob K. McPherson - All Rights Reserved"
+    left: "Copyright © 2025 Jacob K. McPherson, PharmD, PhD - All Rights Reserved"
     right: 
       - text: "License"
         href: LICENSE.html

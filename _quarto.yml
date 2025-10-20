@@ -45,7 +45,7 @@ website:
         aria-label: Join
     right:
       - icon: calendar-date
-        href: https://scheduler.zoom.us/mcpherson-group
+        href: https://calendar.app.google/hFWaGJn7qYa74EYaA
         aria-label: Calendar
       - icon: building
         href: https://jacobkmcpherson.com/

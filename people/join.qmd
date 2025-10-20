@@ -50,7 +50,7 @@ universities = [
     {"name": "Emory University", "city": "Atlanta, GA", "lat": 33.7920, "lon": -84.3240, "country": "USA"},
     {"name": "University of Pennsylvania", "city": "Philadelphia, PA", "lat": 39.9522, "lon": -75.1932, "country": "USA"},
     # {"name": "University of Chicago", "city": "Chicago, IL", "lat": 41.7886, "lon": -87.5987, "country": "USA"},
-    # {"name": "Johns Hopkins University", "city": "Baltimore, MD", "lat": 39.3299, "lon": -76.6205, "country": "USA"},
+    {"name": "Johns Hopkins University", "city": "Baltimore, MD", "lat": 39.3299, "lon": -76.6205, "country": "USA"},
     
     # US - Tech Schools
     # {"name": "MIT", "city": "Cambridge, MA", "lat": 42.3601, "lon": -71.0942, "country": "USA"},
@@ -84,8 +84,8 @@ universities = [
     # UK
     {"name": "University of Oxford", "city": "Oxford, UK", "lat": 51.7548, "lon": -1.2544, "country": "UK"},
     # {"name": "University of Cambridge", "city": "Cambridge, UK", "lat": 52.2053, "lon": 0.1218, "country": "UK"},
-    # {"name": "London School of Economics", "city": "London, UK", "lat": 51.5144, "lon": -0.1167, "country": "UK"},
-    # {"name": "London School of Tropical Hygiene and Medicine", "city": "London, UK", "lat": 51.5207, "lon": -0.1303, "country": "UK"},
+    {"name": "London School of Economics", "city": "London, UK", "lat": 51.5144, "lon": -0.1167, "country": "UK"},
+    {"name": "London School of Tropical Hygiene and Medicine", "city": "London, UK", "lat": 51.5207, "lon": -0.1303, "country": "UK"},
     
     # Switzerland
     {"name": "ETH Zurich", "city": "Zurich, Switzerland", "lat": 47.3769, "lon": 8.5417, "country": "Switzerland"},
@@ -100,10 +100,10 @@ universities = [
     {"name": "University of Sydney", "city": "Sydney, Australia", "lat": -33.8886, "lon": 151.1873, "country": "Australia"},
     
     # France
-    # {"name": "Pasteur Institute", "city": "Paris, France", "lat": 48.8404, "lon": 2.3111, "country": "France"},
+    {"name": "Pasteur Institute", "city": "Paris, France", "lat": 48.8404, "lon": 2.3111, "country": "France"},
     
     # Sweden
-    # {"name": "Karolinska Institute", "city": "Stockholm, Sweden", "lat": 59.3501, "lon": 18.0249, "country": "Sweden"},
+    {"name": "Karolinska Institute", "city": "Stockholm, Sweden", "lat": 59.3501, "lon": 18.0249, "country": "Sweden"},
     
     # Italy
     # {"name": "University of Milan", "city": "Milan, Italy", "lat": 45.4628, "lon": 9.1886, "country": "Italy"},

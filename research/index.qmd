@@ -15,18 +15,18 @@ listing:
     type: grid
     fields: [image, title]
     sort: false  # Disable sorting to maintain custom research area order
-#  - id: literature
-#    contents: resource/lit/*/index.qmd
-#    type: grid
-#    fields: [image, title]
-#  - id: experimentation  
-#    contents: resource/exp/*/index.qmd
-#    type: grid
-#    fields: [image, title]
-#  - id: data-analysis
-#    contents: resource/data/*/index.qmd
-#    type: grid
-#    fields: [image, title]
+  - id: literature
+    contents: resource/lit/*/index.qmd
+    type: grid
+    fields: [image, title]
+  - id: experimentation  
+    contents: resource/exp/*/index.qmd
+    type: grid
+    fields: [image, title]
+  - id: data-analysis
+    contents: resource/data/*/index.qmd
+    type: grid
+    fields: [image, title]
 page-layout: full
 jupyter: python3
 ---
@@ -49,7 +49,6 @@ jupyter: python3
 </div>
 ```
 
-<!---
 ## Research Resources
 
 ### Literature
@@ -66,4 +65,3 @@ jupyter: python3
 
 ::: {#data-analysis}
 :::
---->

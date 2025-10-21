@@ -8,7 +8,7 @@ project:
     - "!**/README.md"
 
 website:
-  title: "McPherson Group"
+  title: "McPherson Lab"
   favicon: images/logo.ico
   description: "Research Group Website"
   navbar:
@@ -54,7 +54,7 @@ website:
         href: https://jacobkmcpherson.com/
         aria-label: Business
       - icon: github
-        href: https://github.com/McPhersonGroup
+        href: https://github.com/McPhersonLab
         aria-label: GitHub
   page-footer:
     left: "Copyright © 2025 Jacob K. McPherson, PharmD, PhD - All Rights Reserved"

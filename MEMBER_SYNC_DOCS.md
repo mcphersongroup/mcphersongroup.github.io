@@ -4,7 +4,7 @@ This repository includes an automated system to aggregate research publications 
 
 ## Overview
 
-The system monitors the GitHub profiles of McPherson Group members and automatically syncs their research publications from `USERNAME.github.io/publications` to the organization repository at `mcphersongroup.github.io/publications/`.
+The system monitors the GitHub profiles of McPherson Lab members and automatically syncs their research publications from `USERNAME.github.io/publications` to the organization repository at `mcphersonlab.github.io/publications/`.
 
 ## Files
 

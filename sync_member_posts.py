@@ -36,7 +36,7 @@ class MemberPostSync:
         self.dry_run = dry_run
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'McPhersonGroup-PostSync/1.0'
+            'User-Agent': 'McPhersonLab-PostSync/1.0'
         })
         
         # Load configuration
@@ -387,7 +387,7 @@ class MemberPostSync:
         # Add attribution if configured
         sync_config = self.config.get('sync_config', {})
         if sync_config.get('add_attribution', True):
-            attribution = f"\n\n---\n\n*This publication was originally published by [{member['name']}]({member['profile_url']}) and automatically synced to the McPherson Group website.*"
+            attribution = f"\n\n---\n\n*This publication was originally published by [{member['name']}]({member['profile_url']}) and automatically synced to the McPherson Lab website.*"
             content += attribution
         
         # Create the full post content

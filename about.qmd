@@ -2,11 +2,11 @@
 title: "About"
 ---
 
-<!--- # About the McPherson Group -->
+<!--- # About the McPherson Lab -->
 
 ## Our Mission
 
-The McPherson Group is dedicated to advancing scientific knowledge through rigorous research, open collaboration, and the development of innovative methodologies.
+The McPherson Lab is dedicated to advancing scientific knowledge through rigorous research, open collaboration, and the development of innovative methodologies.
 
 ## Research Philosophy
 

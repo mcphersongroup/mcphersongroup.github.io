@@ -1,8 +1,8 @@
-# McPherson Group Website
+# McPherson Lab Website
 
-[![Deploy to GitHub Pages](https://github.com/mcphersongroup/mcphersongroup.github.io/actions/workflows/quarto-publish.yml/badge.svg)](https://github.com/mcphersongroup/mcphersongroup.github.io/actions/workflows/quarto-publish.yml)
+[![Deploy to GitHub Pages](https://github.com/mcphersonlab/mcphersonlab.github.io/actions/workflows/quarto-publish.yml/badge.svg)](https://github.com/mcphersonlab/mcphersonlab.github.io/actions/workflows/quarto-publish.yml)
 
-This repository contains the source code for the McPherson Group research website, built with [Quarto](https://quarto.org/) and deployed using GitHub Actions.
+This repository contains the source code for the McPherson Lab research website, built with [Quarto](https://quarto.org/) and deployed using GitHub Actions.
 
 ## Website Structure
 

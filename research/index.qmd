@@ -18,15 +18,15 @@ listing:
   - id: literature
     contents: resource/lit/*/index.qmd
     type: grid
-    fields: [image, title]
+    fields: [title]
   - id: experimentation  
     contents: resource/exp/*/index.qmd
     type: grid
-    fields: [image, title]
+    fields: [title]
   - id: data-analysis
     contents: resource/data/*/index.qmd
     type: grid
-    fields: [image, title]
+    fields: [title]
 page-layout: full
 jupyter: python3
 ---

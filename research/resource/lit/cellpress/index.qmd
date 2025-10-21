@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Cell Press Journal Collection](featured.jpg)
-
 ## Overview
 
 Cell Press is a premier publisher of biomedical research, publishing over 50 journals including the flagship journal Cell. Known for rigorous peer review and high editorial standards, Cell Press journals publish groundbreaking research across the life sciences, physical sciences, and medicine.

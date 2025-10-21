@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Protocols.io Research Methods Platform](featured.png)
-
 ## Overview
 
 Protocols.io is an open-access repository for science methods that enables researchers to share, discover, and discuss detailed experimental protocols. It provides a collaborative platform for protocol development with version control, making methods more reproducible and accessible.

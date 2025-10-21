@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Springer Nature Experiments Protocol Database](featured.jpg)
-
 ## Overview
 
 Springer Nature Experiments is a comprehensive database of peer-reviewed laboratory protocols from leading journals including Nature Protocols, Nature Methods, and other Springer Nature publications. It provides access to detailed, tested methods across all areas of the life sciences.

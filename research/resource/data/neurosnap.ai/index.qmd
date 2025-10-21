@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Neurosnap AI Data Analysis Platform](featured.png)
-
 ## Overview
 
 Neurosnap.ai is an AI-powered data analysis platform designed to help researchers analyze complex datasets using machine learning and advanced analytics. It provides intuitive interfaces and automated workflows to make sophisticated data analysis accessible to researchers without extensive programming experience.

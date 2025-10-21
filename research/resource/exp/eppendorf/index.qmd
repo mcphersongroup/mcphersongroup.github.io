@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Eppendorf Laboratory Equipment](featured.jpg)
-
 ## Overview
 
 Eppendorf is a leading life science company developing and manufacturing laboratory instruments, consumables, and services for handling liquids, cells, and biological samples. Known for precision and reliability, Eppendorf products are essential tools in research laboratories worldwide.

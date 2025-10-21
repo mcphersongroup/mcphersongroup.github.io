@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Author.Link Research Networking](featured.png)
-
 ## Overview
 
 Author.Link is a platform designed to help researchers create comprehensive academic profiles, showcase their work, and connect with collaborators. It aggregates publication data from multiple sources to create a unified view of a researcher's scholarly output and impact.

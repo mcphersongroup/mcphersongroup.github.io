@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Springer Nature Publishing Platform](featured.png)
-
 ## Overview
 
 Springer Nature is one of the world's leading global research, educational and professional publishers, home to an array of respected and trusted brands providing quality content through a range of innovative products and services. The platform offers access to millions of scientific documents from journals, books, and protocols.

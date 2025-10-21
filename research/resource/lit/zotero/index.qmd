@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Zotero Reference Manager](featured.jpg)
-
 ## Overview
 
 Zotero is a free, open-source reference management software that helps researchers collect, organize, cite, and share research materials. It's an essential tool for managing bibliographic data and related research materials.

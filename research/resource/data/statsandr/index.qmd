@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Stats and R Statistics Blog](featured.png)
-
 ## Overview
 
 Stats and R is a comprehensive blog by Antoine Soetewey that provides tutorials, guides, and articles on statistics and R programming. It covers fundamental statistical concepts, practical R implementations, and real-world data analysis examples.

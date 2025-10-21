@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![BioRender Scientific Illustration Tool](featured.jpg)
-
 ## Overview
 
 BioRender is a web-based scientific illustration software designed specifically for life science researchers. It provides thousands of pre-made icons and templates to create professional scientific figures, graphical abstracts, and presentations without requiring graphic design expertise.

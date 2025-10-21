@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Thermo Fisher Scientific Resources](featured.png)
-
 ## Overview
 
 Thermo Fisher Scientific is a leading provider of scientific instrumentation, reagents, consumables, software and services for research, analysis, discovery, and diagnostics. Their platform offers extensive resources, protocols, and technical support for life sciences research.

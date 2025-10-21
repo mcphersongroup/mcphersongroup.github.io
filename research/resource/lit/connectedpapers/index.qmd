@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Connected Papers Literature Discovery](featured.jpg)
-
 ## Overview
 
 Connected Papers is a visual tool for exploring the academic literature landscape. It creates an interactive graph showing papers related to a seed paper, helping researchers discover relevant work and understand the research field structure.

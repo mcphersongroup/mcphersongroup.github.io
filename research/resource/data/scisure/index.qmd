@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Scisure Research Data Management](featured.png)
-
 ## Overview
 
 Scisure is a research data management platform designed to help laboratories organize, track, and manage their experimental data, samples, and workflows. It provides tools for ensuring data quality, regulatory compliance, and efficient collaboration.

@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![AWS and Docker for Research Computing](featured.jpg)
-
 ## Overview
 
 Amazon Web Services (AWS) and Docker provide powerful cloud computing and containerization technologies for research. Together, they enable scalable, reproducible computational workflows that can run anywhere from a laptop to massive cloud infrastructure.

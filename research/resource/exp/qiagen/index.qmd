@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![QIAGEN Sample and Assay Technologies](featured.png)
-
 ## Overview
 
 QIAGEN is a leading global provider of sample and assay technologies for molecular diagnostics, applied testing, academic and pharmaceutical research. Their products enable researchers to extract, purify, and analyze nucleic acids and proteins from biological samples.

@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![R for Data Science Learning Resource](featured.png)
-
 ## Overview
 
 R for Data Science (R4DS) is a comprehensive, freely available book by Hadley Wickham and Garrett Grolemund that teaches data science using R and the tidyverse collection of packages. It's an essential resource for learning modern data analysis workflows in R.

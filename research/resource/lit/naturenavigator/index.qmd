@@ -17,8 +17,6 @@ listing:
 
 ---
 
-![Nature Navigator Research Discovery](featured.png)
-
 ## Overview
 
 Nature Navigator is a research discovery tool that helps scientists explore and navigate the Nature portfolio of journals. It provides advanced search capabilities, personalized recommendations, and insights to help researchers find relevant content and stay updated with the latest developments in their field.

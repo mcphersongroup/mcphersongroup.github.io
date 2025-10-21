@@ -31,9 +31,9 @@ about:
   image: https://raw.githubusercontent.com/JacobKMcPherson/jacobkmcpherson.github.io/refs/heads/main/profile.svg
   links:
       - icon: vector-pen
-        href: https://author.link/JacobKMcPherson/
-        aria-label: Author.Link
-        text: Author.link
+        href: https://www.scopus.com/authid/detail.uri?authorId=57204192355
+        aria-label: SCOPUS
+        text: SCOPUS
       - icon: mortarboard
         href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en
         aria-label: Google Scholar

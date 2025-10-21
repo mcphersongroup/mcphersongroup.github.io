@@ -30,6 +30,10 @@ about:
   image-shape: round
   image: https://raw.githubusercontent.com/JacobKMcPherson/jacobkmcpherson.github.io/refs/heads/main/profile.svg
   links:
+      - icon: globe
+        href: https://jacobkmcpherson.github.io
+        aria-label: website
+        text: Website
       - icon: vector-pen
         href: https://www.scopus.com/authid/detail.uri?authorId=57204192355
         aria-label: SCOPUS

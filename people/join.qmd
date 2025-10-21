@@ -11,7 +11,7 @@ jupyter: python3
 
 Create a *free* account in 
 
-1. [**ORCID**](https://orcid.org); use to sign-in to: [**OverLeaf**](https://www.overleaf.com/)
+1. [**ORCID**](https://orcid.org); use to sign-in to: [**OverLeaf**](https://www.overleaf.com/) and [**My NCBI**](https://account.ncbi.nlm.nih.gov/)
 
 2. [**GitHub**](https://github.com); use to sign-in to [**RStudio Cloud**](https://posit.cloud) and [**VS Code**](https://vscode.dev)
 

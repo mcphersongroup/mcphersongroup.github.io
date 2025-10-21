@@ -36,7 +36,7 @@ about:
         text: Website
       - icon: vector-pen
         href: https://www.scopus.com/authid/detail.uri?authorId=57204192355
-        aria-label: SCOPUS
+        aria-label: Scopus
         text: SCOPUS
       - icon: mortarboard
         href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en

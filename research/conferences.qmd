@@ -34,7 +34,7 @@ conferences = [
         "lon": 11.5761,
         "start_date": "2025-04-17",
         "end_date": "2025-04-21",
-        "abstract_due_date": "TBD",
+        "abstract_due_date": "November 26, 2024",
         "type": "Conference",
         "url": "https://www.escmid.org/congress-events/escmid-global/"
     },
@@ -67,7 +67,7 @@ conferences = [
         "lon": -84.3880,
         "start_date": "2025-10-19",
         "end_date": "2025-10-22",
-        "abstract_due_date": "TBD",
+        "abstract_due_date": "May 1, 2025",
         "type": "Conference",
         "url": "https://www.idweek.org/"
     },
@@ -78,7 +78,7 @@ conferences = [
         "lon": -90.0715,
         "start_date": "2025-12-07",
         "end_date": "2025-12-10",
-        "abstract_due_date": "TBD",
+        "abstract_due_date": "October 22, 2025",
         "type": "Conference",
         "url": "https://www.ashp.org/meetings-and-conferences/midyear-clinical-meeting-and-exhibition"
     },
@@ -122,7 +122,7 @@ conferences = [
         "lon": -104.9903,
         "start_date": "2026-02-22",
         "end_date": "2026-02-25",
-        "abstract_due_date": "TBD",
+        "abstract_due_date": "October 1, 2025",
         "type": "Conference",
         "url": "https://www.croiconference.org/"
     },
@@ -133,7 +133,7 @@ conferences = [
         "lon": -93.2650,
         "start_date": "2026-05-17",
         "end_date": "2026-05-20",
-        "abstract_due_date": "TBD",
+        "abstract_due_date": "December 4, 2025",
         "type": "Conference",
         "url": "https://www.aspet.org/aspet/meetings-awards"
     },
@@ -144,7 +144,7 @@ conferences = [
         "lon": -75.1652,
         "start_date": "2026-05-17",
         "end_date": "2026-05-20",
-        "abstract_due_date": "TBD",
+        "abstract_due_date": "January 9, 2026",
         "type": "Conference",
         "url": "https://www.ispor.org/conferences-education"
     },
@@ -155,7 +155,7 @@ conferences = [
         "lon": -77.0369,
         "start_date": "2026-06-11",
         "end_date": "2026-06-15",
-        "abstract_due_date": "TBD",
+        "abstract_due_date": "January 30, 2026",
         "type": "Conference",
         "url": "https://asm.org/events/asm-microbe"
     },

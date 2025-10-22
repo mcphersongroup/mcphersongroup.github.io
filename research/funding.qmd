@@ -22,15 +22,9 @@ from IPython.display import display, HTML
 funding_opportunities = [
     {
         "source": "APhA",
-        "title": "APhA Foundation New Investigator Award",
-        "link": "https://www.aphafoundation.org/grants",
-        "due_dates": "TBD"
-    },
-    {
-        "source": "APhA",
         "title": "APhA Foundation Incentive Grants",
         "link": "https://www.aphafoundation.org/grants",
-        "due_dates": "TBD"
+        "due_dates": "September 1, 2025"
     },
     {
         "source": "ACCP",
@@ -42,19 +36,19 @@ funding_opportunities = [
         "source": "ASHP",
         "title": "ASHP Foundation Research and Education Grants",
         "link": "https://www.ashpfoundation.org/grants-and-awards",
-        "due_dates": "TBD"
+        "due_dates": "October 7, 2025"
     },
     {
         "source": "SIDP",
         "title": "SIDP Grant Programs",
         "link": "https://www.sidp.org/Grants",
-        "due_dates": "TBD"
+        "due_dates": "February 17 - March 14, 2025"
     },
     {
         "source": "Welch Foundation",
         "title": "Welch Foundation Research Grants",
         "link": "https://welch1.org/grants-programs/research-grants",
-        "due_dates": "TBD"
+        "due_dates": "January 31, 2025"
     },
     {
         "source": "NIAID",

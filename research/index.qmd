@@ -38,6 +38,8 @@ jupyter: python3
 
 {{< include conferences.qmd >}}
 
+{{< include funding.qmd >}}
+
 ```{=html}
 <div class="page-navigation">
   <div>

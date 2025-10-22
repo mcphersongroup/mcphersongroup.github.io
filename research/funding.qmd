@@ -1,0 +1,157 @@
+<!-- 
+This file contains the research funding opportunities table.
+To edit funding information:
+1. Find the 'funding_opportunities' list in the Python code block below
+2. Add, remove, or modify funding entries following the existing format
+3. Each funding entry needs: source, title, link, and due_dates
+4. The table will automatically update based on this data
+
+This file is included in research/index.qmd and renders on the research page.
+-->
+
+## Research Funding Opportunities
+
+```{python}
+#| echo: false
+#| warning: false
+
+import pandas as pd
+from IPython.display import display, HTML
+
+# Funding opportunities data
+funding_opportunities = [
+    {
+        "source": "APhA",
+        "title": "APhA Foundation New Investigator Award",
+        "link": "https://www.aphafoundation.org/grants",
+        "due_dates": "TBD"
+    },
+    {
+        "source": "APhA",
+        "title": "APhA Foundation Incentive Grants",
+        "link": "https://www.aphafoundation.org/grants",
+        "due_dates": "TBD"
+    },
+    {
+        "source": "ACCP",
+        "title": "ACCP Foundation Futures Grants",
+        "link": "https://www.accpfoundation.org/futures/",
+        "due_dates": "2025 ONLINE APPLICATION OPENS: May 15, 2025 | 2025 APPLICATION SUBMISSION DEADLINE: September 1, 2025 | 2025 AWARD DECISIONS ANNOUNCED: November 15, 2025"
+    },
+    {
+        "source": "ASHP",
+        "title": "ASHP Foundation Research and Education Grants",
+        "link": "https://www.ashpfoundation.org/grants-and-awards",
+        "due_dates": "TBD"
+    },
+    {
+        "source": "SIDP",
+        "title": "SIDP Grant Programs",
+        "link": "https://www.sidp.org/Grants",
+        "due_dates": "TBD"
+    },
+    {
+        "source": "Welch Foundation",
+        "title": "Welch Foundation Research Grants",
+        "link": "https://welch1.org/grants-programs/research-grants",
+        "due_dates": "TBD"
+    },
+    {
+        "source": "NIAID",
+        "title": "Opportunities & Announcements",
+        "link": "https://www.niaid.nih.gov/grants-contracts/opportunities",
+        "due_dates": "Standard NIH deadlines"
+    }
+]
+
+def create_funding_html(funding_data):
+    html = """
+    <style>
+        .funding-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .funding-table thead tr {
+            background-color: #28a745;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+        }
+        .funding-table th,
+        .funding-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+        .funding-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+        .funding-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        .funding-table tbody tr:hover {
+            background-color: #e8f5e9;
+            cursor: pointer;
+        }
+        .source-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+        .source-apha {
+            background-color: #0066cc;
+        }
+        .source-accp {
+            background-color: #9c27b0;
+        }
+        .source-ashp {
+            background-color: #ff6f00;
+        }
+        .source-sidp {
+            background-color: #d32f2f;
+        }
+        .source-welch {
+            background-color: #6a1b9a;
+        }
+        .source-niaid {
+            background-color: #00695c;
+        }
+    </style>
+    <table class="funding-table">
+        <thead>
+            <tr>
+                <th>Source</th>
+                <th>Title</th>
+                <th>Link</th>
+                <th>Due Date(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+    """
+    
+    for fund in funding_data:
+        source_class = f"source-{fund['source'].lower()}"
+        link_html = f"<a href='{fund['link']}' target='_blank' style='color: #007bff;'>Visit</a>" if fund['link'] else "N/A"
+        
+        html += f"""
+            <tr>
+                <td><span class="source-badge {source_class}">{fund['source']}</span></td>
+                <td><strong>{fund['title']}</strong></td>
+                <td>{link_html}</td>
+                <td>{fund['due_dates']}</td>
+            </tr>
+        """
+    
+    html += """
+        </tbody>
+    </table>
+    """
+    return html
+
+display(HTML(create_funding_html(funding_opportunities)))
+```

@@ -40,17 +40,6 @@ jupyter: python3
 
 {{< include funding.qmd >}}
 
-```{=html}
-<div class="page-navigation">
-  <div>
-    <a href="../about.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> About</a>
-  </div>
-  <div>
-    <a href="../publications/index.html" class="btn btn-outline-primary">Publications <i class="bi bi-arrow-right"></i></a>
-  </div>
-</div>
-```
-
 ## Research Resources
 
 ### Literature
@@ -67,3 +56,14 @@ jupyter: python3
 
 ::: {#data-analysis}
 :::
+
+```{=html}
+<div class="page-navigation">
+  <div>
+    <a href="../about.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> About</a>
+  </div>
+  <div>
+    <a href="../publications/index.html" class="btn btn-outline-primary">Publications <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+```

@@ -114,8 +114,11 @@ universities = [
     # Germany
     # {"name": "University of Munich", "city": "Munich, Germany", "lat": 48.1500, "lon": 11.5800, "country": "Germany"},
     
-    # Singapore
-    # {"name": "National University of Singapore", "city": "Singapore", "lat": 1.2966, "lon": 103.7764, "country": "Singapore"},
+  # Singapore
+  {"name": "National University of Singapore", "city": "Singapore", "lat": 1.2966, "lon": 103.7764, "country": "Singapore"},
+
+  # Israel
+  {"name": "Weizmann Institute of Science", "city": "Rehovot, Israel", "lat": 31.9036, "lon": 34.8086, "country": "Israel"},
 ]
 
 # Add markers for each university

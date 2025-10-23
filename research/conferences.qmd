@@ -506,6 +506,11 @@ def create_calendar_html(df):
             background-color: #9C27B0;
             color: white;
         }
+        /* Highlight style for currently open submission windows */
+        .submission-window.active {
+            color: #d32f2f;
+            font-weight: 600;
+        }
     </style>
     <table class="calendar-table">
         <thead>
@@ -535,11 +540,14 @@ def create_calendar_html(df):
         
         row_class_str = f" class='{' '.join(row_classes)}'" if row_classes else ""
         
-        # Highlight submission window if active
+        # Build window cell with data attributes so the browser can determine 'active' based on its current date
         window_text = row['Abstract Submission Window']
-        is_active = is_window_active(window_text, row['start_datetime'])
+        start_bound, end_bound = parse_window_bounds(window_text, row['start_datetime'])
+        start_iso = start_bound.strftime('%Y-%m-%d') if start_bound else ''
+        end_iso = end_bound.strftime('%Y-%m-%d') if end_bound else ''
+        conf_start_iso = row['start_datetime'].strftime('%Y-%m-%d')
         window_cell = (
-            f"<span style='color:#d32f2f; font-weight:600'>{window_text}</span>" if is_active else window_text
+            f"<span class='submission-window' data-start='{start_iso}' data-end='{end_iso}' data-conf-start='{conf_start_iso}'>{window_text}</span>"
         )
 
         html += f"""
@@ -554,9 +562,30 @@ def create_calendar_html(df):
             </tr>
         """
     
-    html += """
+        # Add a small script to toggle 'active' class for windows based on the viewer's current date
+        html += """
         </tbody>
     </table>
+        <script>
+        (function(){
+            function parseISO(d){ return d ? new Date(d + 'T00:00:00') : null; }
+            const now = new Date(); now.setHours(0,0,0,0);
+            document.querySelectorAll('.submission-window').forEach(function(el){
+                const s = parseISO(el.dataset.start);
+                const e = parseISO(el.dataset.end);
+                const cs = parseISO(el.dataset.confStart);
+                let active = false;
+                if (s && e) {
+                    active = (s <= now && now <= e);
+                } else if (s && !e) {
+                    active = (cs ? (s <= now && now <= cs) : (s <= now));
+                } else if (!s && e) {
+                    active = (now <= e);
+                }
+                if (active) el.classList.add('active');
+            });
+        })();
+        </script>
     """
     return html
 

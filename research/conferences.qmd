@@ -34,7 +34,7 @@ conferences = [
         "lon": 11.5761,
         "start_date": "2025-04-17",
         "end_date": "2025-04-21",
-        "abstract_due_date": "November 26, 2024",
+    "abstract_submission_window": "November 26, 2024",
         "type": "Conference",
         "url": "https://www.escmid.org/congress-events/escmid-global/"
     },
@@ -45,7 +45,7 @@ conferences = [
         "lon": -122.1697,
         "start_date": "2025-07-28",
         "end_date": "2025-07-30",
-        "abstract_due_date": "TBD",
+    "abstract_submission_window": "TBD",
         "type": "Conference",
         "url": "https://jurcconference.stanford.edu/"
     },
@@ -56,7 +56,7 @@ conferences = [
         "lon": 139.6503,
         "start_date": "2025-10-16",
         "end_date": "2025-10-18",
-        "abstract_due_date": "TBD",
+    "abstract_submission_window": "TBD",
         "type": "Conference",
         "url": "https://unu.edu/events"
     },
@@ -67,7 +67,7 @@ conferences = [
         "lon": -84.3880,
         "start_date": "2025-10-19",
         "end_date": "2025-10-22",
-        "abstract_due_date": "May 1, 2025",
+    "abstract_submission_window": "May 1, 2025",
         "type": "Conference",
         "url": "https://www.idweek.org/"
     },
@@ -78,7 +78,7 @@ conferences = [
         "lon": -90.0715,
         "start_date": "2025-12-07",
         "end_date": "2025-12-10",
-        "abstract_due_date": "October 22, 2025",
+    "abstract_submission_window": "June 15 (professional) or Aug 15 (trainee) to Oct 1",
         "type": "Conference",
         "url": "https://www.ashp.org/meetings-and-conferences/midyear-clinical-meeting-and-exhibition"
     },
@@ -89,7 +89,7 @@ conferences = [
         "lon": -5.9301,
         "start_date": "2025-12-16",
         "end_date": "2025-12-18",
-        "abstract_due_date": "TBD",
+    "abstract_submission_window": "TBD",
         "type": "Conference",
         "url": "https://www.bps.ac.uk/events"
     },
@@ -100,7 +100,7 @@ conferences = [
         "lon": -115.1398,
         "start_date": "2026-01-28",
         "end_date": "2026-01-30",
-        "abstract_due_date": "TBD",
+    "abstract_submission_window": "July 16, 2025 to October 1, 2025",
         "type": "Conference",
         "url": "https://imari.org"
     },
@@ -111,7 +111,7 @@ conferences = [
         "lon": -112.0740,
         "start_date": "2026-02-12",
         "end_date": "2026-02-14",
-        "abstract_due_date": "TBD",
+    "abstract_submission_window": "TBD",
         "type": "Conference",
         "url": "https://www.aaas.org/meetings"
     },
@@ -122,7 +122,7 @@ conferences = [
         "lon": -104.9903,
         "start_date": "2026-02-22",
         "end_date": "2026-02-25",
-        "abstract_due_date": "October 1, 2025",
+    "abstract_submission_window": "October 1, 2025",
         "type": "Conference",
         "url": "https://www.croiconference.org/"
     },
@@ -133,7 +133,7 @@ conferences = [
         "lon": -93.2650,
         "start_date": "2026-05-17",
         "end_date": "2026-05-20",
-        "abstract_due_date": "December 4, 2025",
+    "abstract_submission_window": "December 4, 2025",
         "type": "Conference",
         "url": "https://www.aspet.org/aspet/meetings-awards"
     },
@@ -144,7 +144,7 @@ conferences = [
         "lon": -75.1652,
         "start_date": "2026-05-17",
         "end_date": "2026-05-20",
-        "abstract_due_date": "January 9, 2026",
+    "abstract_submission_window": "January 9, 2026",
         "type": "Conference",
         "url": "https://www.ispor.org/conferences-education"
     },
@@ -155,20 +155,20 @@ conferences = [
         "lon": -77.0369,
         "start_date": "2026-06-11",
         "end_date": "2026-06-15",
-        "abstract_due_date": "January 30, 2026",
+    "abstract_submission_window": "January 30, 2026",
         "type": "Conference",
         "url": "https://asm.org/events/asm-microbe"
     },
     {
-        "name": "Anaerobe",
+        "name": "Biennial Anaerobe",
         "location": "New York, NY, USA",
         "lat": 40.7306,
         "lon": -73.9352,
         "start_date": "2026-07-07",
         "end_date": "2026-07-10",
-        "abstract_due_date": "TBD",
+    "abstract_submission_window": "October 23, 2025 to January 1, 2026 (oral) or February 1, 2026 (poster)",
         "type": "Conference",
-        "url": "https://www.anaerobe.org/"
+        "url": "http://www.anaerobe.org/2026/"
     },
     {
         "name": "IUPHAR 20th World Congress of Basic and Clinical Pharmacology (WCP2026)",
@@ -177,7 +177,7 @@ conferences = [
         "lon": 144.9631,
         "start_date": "2026-07-12",
         "end_date": "2026-07-17",
-        "abstract_due_date": "TBD",
+    "abstract_submission_window": "Through September 15, 2025",
         "type": "Conference",
         "url": "https://www.iuphar.org/"
     },
@@ -188,18 +188,18 @@ conferences = [
         "lon": -93.2650,
         "start_date": "2026-07-27",
         "end_date": "2026-07-30",
-        "abstract_due_date": "TBD",
+    "abstract_submission_window": "Opens December 1, 2025",
         "type": "Conference",
         "url": "https://www.asv.org/annual-meeting"
     },
     {
-        "name": "biennial MSGERC meeting",
+        "name": "Biennial MSGERC meeting",
         "location": "Denver, CO",
         "lat": 39.7392,
         "lon": -104.9903,
         "start_date": "2026-09-09",
         "end_date": "2026-09-11",
-        "abstract_due_date": "TBD",
+    "abstract_submission_window": "TBD",
         "type": "Conference",
         "url": "https://msgerc.org/2026-biennial-meeting/"
     },
@@ -210,7 +210,7 @@ conferences = [
         "lon": -8.6291,
         "start_date": "2026-09-16",
         "end_date": "2026-09-19",
-        "abstract_due_date": "TBD",
+    "abstract_submission_window": "February 2, 2026 to May 11, 2026",
         "type": "Conference",
         "url": "https://escv.eu/calendar-events/"
     }
@@ -302,7 +302,7 @@ for conf in conferences:
         "Event": conf["name"],
         "Type": conf["type"],
         "Location": conf["location"],
-        "Abstract Due Date": conf.get("abstract_due_date", "TBD"),
+        "Abstract Submission Window": conf.get("abstract_submission_window", "TBD"),
         "Start Date": start.strftime("%B %d, %Y"),
         "End Date": end.strftime("%B %d, %Y"),
         "URL": conf.get("url", ""),
@@ -401,7 +401,7 @@ def create_calendar_html(df):
                 <th>Event Name</th>
                 <th>Type</th>
                 <th>Location</th>
-                <th>Abstract Due Date</th>
+                <th>Abstract Submission Window</th>
                 <th>Start Date</th>
                 <th>End Date</th>
                 <th>Website</th>
@@ -428,7 +428,7 @@ def create_calendar_html(df):
                 <td><strong>{row['Event']}</strong></td>
                 <td><span class="event-type {type_class}">{row['Type']}</span></td>
                 <td>{row['Location']}</td>
-                <td>{row['Abstract Due Date']}</td>
+                <td>{row['Abstract Submission Window']}</td>
                 <td>{row['Start Date']}</td>
                 <td>{row['End Date']}</td>
                 <td>{url_link}</td>

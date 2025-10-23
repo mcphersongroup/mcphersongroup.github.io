@@ -30,7 +30,7 @@ funding_opportunities = [
         "source": "ACCP",
         "title": "ACCP Foundation Futures Grants",
         "link": "https://www.accpfoundation.org/futures/",
-        "due_dates": "2025 ONLINE APPLICATION OPENS: May 15, 2025 | 2025 APPLICATION SUBMISSION DEADLINE: September 1, 2025 | 2025 AWARD DECISIONS ANNOUNCED: November 15, 2025"
+        "due_dates": "APPLICATION SUBMISSION DEADLINE: September 1, 2025"
     },
     {
         "source": "ASHP",
@@ -45,7 +45,7 @@ funding_opportunities = [
         "due_dates": "February 17 - March 14, 2025"
     },
     {
-        "source": "Welch Foundation",
+        "source": "Welch",
         "title": "Welch Foundation Research Grants",
         "link": "https://welch1.org/grants-programs/research-grants",
         "due_dates": "January 31, 2025"

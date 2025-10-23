@@ -30,7 +30,7 @@ funding_opportunities = [
         "source": "ACCP",
         "title": "ACCP Foundation Futures Grants",
         "link": "https://www.accpfoundation.org/futures/",
-        "due_dates": "APPLICATION SUBMISSION DEADLINE: September 1, 2025"
+        "due_dates": "September 1, 2025"
     },
     {
         "source": "ASHP",

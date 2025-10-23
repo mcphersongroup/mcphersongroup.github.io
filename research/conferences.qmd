@@ -331,7 +331,6 @@ for conf in conferences:
     
     calendar_data.append({
         "Event": conf["name"],
-        "Type": conf["type"],
         "Location": conf["location"],
         "Abstract Open": abstract_open_str,
         "Abstract Close": abstract_close_str,
@@ -413,29 +412,6 @@ def create_calendar_html(df):
         .calendar-table tbody tr.submission-open:hover {
             background-color: #c3e6cb !important;
         }
-        .event-type {
-            display: inline-block;
-            padding: 3px 8px;
-            border-radius: 3px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-        .type-conference {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .type-summit {
-            background-color: #FF9800;
-            color: white;
-        }
-        .type-symposium {
-            background-color: #2196F3;
-            color: white;
-        }
-        .type-workshop {
-            background-color: #9C27B0;
-            color: white;
-        }
         .abstract-note {
             font-size: 12px;
             color: #666;
@@ -446,7 +422,6 @@ def create_calendar_html(df):
         <thead>
             <tr>
                 <th>Event Name</th>
-                <th>Type</th>
                 <th>Location</th>
                 <th>Abstract Open</th>
                 <th>Abstract Close</th>
@@ -459,7 +434,6 @@ def create_calendar_html(df):
     """
     
     for idx, row in df.iterrows():
-        type_class = f"type-{row['Type'].lower()}"
         url_link = f"<a href='{row['URL']}' target='_blank' style='color: #007bff;'>Visit</a>" if row['URL'] else "N/A"
         
         # Determine row classes
@@ -485,7 +459,6 @@ def create_calendar_html(df):
         html += f"""
             <tr{row_class_str}>
                 <td><strong>{row['Event']}</strong></td>
-                <td><span class="event-type {type_class}">{row['Type']}</span></td>
                 <td>{row['Location']}</td>
                 <td>{abstract_open_cell}</td>
                 <td>{abstract_close_cell}</td>

@@ -43,7 +43,7 @@ Reviewer3 is an AI-powered platform that provides automated peer review feedback
 
 ## Getting Started
 
-Visit [reviewer3.ai](https://www.reviewer3.ai) to upload your manuscript and receive AI-powered peer review feedback.
+Visit [Reviewer3](https://www.reviewer3.com) to upload your manuscript and receive AI-powered peer review feedback.
 
 ## Related Publications
 

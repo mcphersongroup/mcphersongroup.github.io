@@ -77,9 +77,9 @@ conferences = [
     },
     {
         "name": "ASHP Midyear",
-        "location": "New Orleans, LA",
-        "lat": 29.9511,
-        "lon": -90.0715,
+        "location": "Las Vegas, NV",
+        "lat": 36.1699,
+        "lon": -115.1398,
         "start_date": "2025-12-07",
         "end_date": "2025-12-10",
         "abstract_open": "2025-06-15",

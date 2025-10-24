@@ -1,0 +1,51 @@
+---
+title: Reviewer3
+alias: &ALIAS reviewer3
+image: featured.jpg
+listing:
+  id: pubs
+  template: ../../../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../../publications/**/*.qmd"
+    - "!../../../../publications/_template/"
+  sort: "pub_number desc"
+  # sort-ui: true
+  # filter-ui: true
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+
+## Overview
+
+Reviewer3 is an AI-powered platform that provides automated peer review feedback for scientific manuscripts. Named after the notoriously critical "Reviewer 3" in academic publishing, it helps researchers improve their manuscripts before submission by identifying potential weaknesses and areas for improvement.
+
+## Key Features
+
+- **AI-Powered Review**: Receive detailed feedback on your manuscript
+- **Multiple Perspectives**: Get reviews from different academic viewpoints
+- **Quick Turnaround**: Receive feedback in minutes rather than months
+- **Iterative Improvement**: Refine your manuscript based on AI suggestions
+- **Pre-Submission Check**: Identify issues before journal submission
+- **Critical Analysis**: Comprehensive review of methodology, results, and discussion
+- **Writing Quality**: Feedback on clarity, organization, and presentation
+
+## Use Cases in Research
+
+- Pre-submission manuscript improvement
+- Identifying methodological weaknesses before peer review
+- Improving manuscript clarity and organization
+- Training early-career researchers on peer review standards
+- Getting quick feedback on grant proposals
+- Preparing responses to reviewer comments
+- Enhancing manuscript quality before journal submission
+
+## Getting Started
+
+Visit [reviewer3.ai](https://www.reviewer3.ai) to upload your manuscript and receive AI-powered peer review feedback.
+
+## Related Publications
+
+:::{#pubs}
+:::

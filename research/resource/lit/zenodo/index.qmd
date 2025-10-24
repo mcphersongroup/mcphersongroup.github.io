@@ -1,0 +1,51 @@
+---
+title: Zenodo
+alias: &ALIAS zenodo
+image: featured.jpg
+listing:
+  id: pubs
+  template: ../../../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../../publications/**/*.qmd"
+    - "!../../../../publications/_template/"
+  sort: "pub_number desc"
+  # sort-ui: true
+  # filter-ui: true
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+
+## Overview
+
+Zenodo is an open-access repository developed by CERN that enables researchers to deposit research papers, data sets, software, reports, and other research-related digital artifacts. It provides long-term preservation and makes research outputs citable and discoverable.
+
+## Key Features
+
+- **DOI Assignment**: Automatic DOI minting for all uploads
+- **Version Control**: Support for multiple versions of the same record
+- **Large File Support**: Upload files up to 50 GB
+- **GitHub Integration**: Automatic archiving of GitHub releases
+- **Open Access**: Free for all researchers to upload and download
+- **FAIR Principles**: Supports Findable, Accessible, Interoperable, and Reusable data
+- **Community Collections**: Create curated collections around projects or topics
+
+## Use Cases in Research
+
+- Archiving research data for long-term preservation
+- Making supplementary materials available with publications
+- Sharing datasets, code, and software with proper citations
+- Creating citable versions of GitHub repositories
+- Complying with funder open data mandates
+- Sharing preprints and working papers
+- Building community-specific research collections
+
+## Getting Started
+
+Visit [zenodo.org](https://zenodo.org) to create a free account and start uploading research outputs. Integration with ORCID and GitHub is available.
+
+## Related Publications
+
+:::{#pubs}
+:::

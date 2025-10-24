@@ -1,0 +1,50 @@
+---
+title: Overleaf
+alias: &ALIAS overleaf
+image: featured.jpg
+listing:
+  id: pubs
+  template: ../../../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../../publications/**/*.qmd"
+    - "!../../../../publications/_template/"
+  sort: "pub_number desc"
+  # sort-ui: true
+  # filter-ui: true
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+
+## Overview
+
+Overleaf is a collaborative cloud-based LaTeX editor used for writing, editing, and publishing scientific documents. It provides real-time collaboration features and a rich text editor, making it easier to write professional academic papers, reports, and presentations.
+
+## Key Features
+
+- **Real-time Collaboration**: Work simultaneously with colleagues on the same document
+- **Rich Text Editor**: Visual editing with LaTeX support
+- **Template Library**: Access thousands of journal and conference templates
+- **Version Control**: Built-in history and change tracking
+- **Easy Compilation**: Automatic compilation without local LaTeX installation
+- **Integration**: Connect with Mendeley, Zotero, and Git
+- **Track Changes**: Review mode for manuscript revisions and peer review
+
+## Use Cases in Research
+
+- Writing journal manuscripts and conference papers
+- Preparing grant proposals and technical reports
+- Creating presentations with Beamer
+- Collaborating with international research teams
+- Submitting to journals with specific LaTeX templates
+- Managing complex mathematical equations and scientific notation
+
+## Getting Started
+
+Visit [overleaf.com](https://www.overleaf.com) to create a free account and start writing with LaTeX in the cloud.
+
+## Related Publications
+
+:::{#pubs}
+:::

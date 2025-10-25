@@ -28,7 +28,7 @@ m = Map(center=(20, 0), zoom=2)
 # Sorted by start date (nearest first) and only includes upcoming conferences
 conferences = [
     {
-        "name": "ESCMID annual",
+        "name": "ESCMID Annual",
         "location": "Munich, Germany",
         "lat": 48.1371,
         "lon": 11.5761,
@@ -101,7 +101,7 @@ conferences = [
         "url": "https://www.bps.ac.uk/events"
     },
     {
-        "name": "IMARI Conference",
+        "name": "IMARI Annual",
         "location": "Las Vegas, NV",
         "lat": 36.1699,
         "lon": -115.1398,
@@ -125,7 +125,7 @@ conferences = [
         "url": "https://www.aaas.org/meetings"
     },
     {
-        "name": "CROI Conference",
+        "name": "CROI Annual",
         "location": "Denver, CO",
         "lat": 39.7392,
         "lon": -104.9903,
@@ -149,7 +149,7 @@ conferences = [
         "url": "https://www.aspet.org/aspet/meetings-awards"
     },
     {
-        "name": "ISPOR 2026",
+        "name": "ISPOR Annual",
         "location": "Philadelphia, PA",
         "lat": 39.9526,
         "lon": -75.1652,
@@ -174,7 +174,7 @@ conferences = [
         "url": "https://asm.org/events/asm-microbe"
     },
     {
-        "name": "Biennial Anaerobe",
+        "name": "Anaerobe Biennial",
         "location": "New York, NY, USA",
         "lat": 40.7306,
         "lon": -73.9352,
@@ -187,7 +187,7 @@ conferences = [
         "url": "http://www.anaerobe.org/2026/"
     },
     {
-        "name": "IUPHAR 20th World Congress of Basic and Clinical Pharmacology (WCP2026)",
+        "name": "IUPHAR Annual",
         "location": "Melbourne, Australia",
         "lat": -37.8136,
         "lon": 144.9631,
@@ -211,7 +211,7 @@ conferences = [
         "url": "https://www.asv.org/annual-meeting"
     },
     {
-        "name": "Biennial MSGERC meeting",
+        "name": "MSGERC Biennial",
         "location": "Denver, CO",
         "lat": 39.7392,
         "lon": -104.9903,
@@ -223,7 +223,7 @@ conferences = [
         "url": "https://msgerc.org/2026-biennial-meeting/"
     },
     {
-        "name": "ESCV 2026 – 28th Annual Conference of the European Society for Clinical Virology",
+        "name": "ESCV Annual",
         "location": "Porto, Portugal",
         "lat": 41.1579,
         "lon": -8.6291,
@@ -233,7 +233,72 @@ conferences = [
         "abstract_close": "2026-05-11",
         "type": "Conference",
         "url": "https://escv.eu/calendar-events/"
-    }
+    },
+	{
+		"name": "AWS re:Invent",
+		"location": "Las Vegas, NV",
+		"lat": 36.1219,
+		"lon": -115.16623,
+		"start_date": "2025-12-01",
+		"end_date": "2025-12-05",
+		"abstract_open": null,
+		"abstract_close": null,
+		"abstract_note": "No abstract submissions; multi-venue conference across the Las Vegas Strip.",
+		"type": "Conference",
+		"url": "https://reinvent.awsevents.com/"
+	},
+	{
+		"name": "GitHub Universe",
+		"location": "San Francisco, CA",
+		"lat": 37.8070,
+		"lon": -122.4311,
+		"start_date": "2025-10-28",
+		"end_date": "2025-10-29",
+		"abstract_open": null,
+		"abstract_close": null,
+		"abstract_note": "No abstracts; curated speaker/event program at Fort Mason Center.",
+		"type": "Conference",
+		"url": "https://githubuniverse.com/"
+	},
+	{
+		"name": "J.P. Morgan Healthcare Conference",
+		"location": "San Francisco, CA",
+		"lat": 37.78769,
+		"lon": -122.4084,
+		"start_date": "2026-01-12",
+		"end_date": "2026-01-15",
+		"abstract_open": null,
+		"abstract_close": null,
+		"abstract_note": "Invitation-only investor/industry conference; no abstracts.",
+		"type": "Conference",
+		"url": "https://www.jpmorgan.com/about-us/events-conferences/health-care-conference"
+	},
+	{
+		"name": "Conference on Beneficial Microbes",
+		"location": "Madison, WI",
+		"lat": 43.0731,
+		"lon": -89.4012,
+		"start_date": "2026-07-19",
+		"end_date": "2026-07-23",
+		"abstract_open": "2026-02-01",
+		"abstract_close": "2026-04-08",
+		"abstract_note": "Abstracts invited for oral and poster presentations; deadline April 8. :contentReference[oaicite:0]{index=0}",
+		"type": "Conference",
+		"url": "https://conferences.union.wisc.edu/microbes/"
+	},
+	{
+		"name": "Houston C diff & Microbiome Conference",
+		"location": "Houston, TX",
+		"lat": 29.7191,
+		"lon": -95.3881,
+		"start_date": "2025-05-16",
+		"end_date": "2025-05-16",
+		"abstract_open": null,
+		"abstract_close": null,
+		"abstract_note": "Abstracts accepted for podium/poster presentations. :contentReference[oaicite:1]{index=1}",
+		"type": "Conference",
+		"url": "https://www.uh.edu/pharmacy/news-and-events/events/houston-cdiff-and-microbiome-conference/"
+	}
 ]
 
 # Get current date once for all comparisons
@@ -476,3 +541,5 @@ def create_calendar_html(df):
 
 display(HTML(create_calendar_html(df)))
 ```
+
+and many more at [**Cell Symposia**](https://www.cell.com/symposia), [**Keystone Symposia**](https://www.keystonesymposia.org/), [**Cold Spring Harbor Laboratory**](https://meetings.cshl.edu/), and the [**Wellcome Trust**](https://coursesandconferences.wellcomeconnectingscience.org/our-events/conferences/)

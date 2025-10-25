@@ -241,8 +241,8 @@ conferences = [
 		"lon": -115.16623,
 		"start_date": "2025-12-01",
 		"end_date": "2025-12-05",
-		"abstract_open": null,
-		"abstract_close": null,
+		"abstract_open": none,
+		"abstract_close": none,
 		"abstract_note": "No abstract submissions; multi-venue conference across the Las Vegas Strip.",
 		"type": "Conference",
 		"url": "https://reinvent.awsevents.com/"
@@ -254,8 +254,8 @@ conferences = [
 		"lon": -122.4311,
 		"start_date": "2025-10-28",
 		"end_date": "2025-10-29",
-		"abstract_open": null,
-		"abstract_close": null,
+		"abstract_open": none,
+		"abstract_close": none,
 		"abstract_note": "No abstracts; curated speaker/event program at Fort Mason Center.",
 		"type": "Conference",
 		"url": "https://githubuniverse.com/"
@@ -267,8 +267,8 @@ conferences = [
 		"lon": -122.4084,
 		"start_date": "2026-01-12",
 		"end_date": "2026-01-15",
-		"abstract_open": null,
-		"abstract_close": null,
+		"abstract_open": none,
+		"abstract_close": none,
 		"abstract_note": "Invitation-only investor/industry conference; no abstracts.",
 		"type": "Conference",
 		"url": "https://www.jpmorgan.com/about-us/events-conferences/health-care-conference"
@@ -293,8 +293,8 @@ conferences = [
 		"lon": -95.3881,
 		"start_date": "2025-05-16",
 		"end_date": "2025-05-16",
-		"abstract_open": null,
-		"abstract_close": null,
+		"abstract_open": 2025-02-22,
+		"abstract_close": 2025-04-22,
 		"abstract_note": "Abstracts accepted for podium/poster presentations. :contentReference[oaicite:1]{index=1}",
 		"type": "Conference",
 		"url": "https://www.uh.edu/pharmacy/news-and-events/events/houston-cdiff-and-microbiome-conference/"

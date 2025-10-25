@@ -234,71 +234,71 @@ conferences = [
         "type": "Conference",
         "url": "https://escv.eu/calendar-events/"
     },
-	{
-		"name": "AWS re:Invent",
-		"location": "Las Vegas, NV",
-		"lat": 36.1219,
-		"lon": -115.16623,
-		"start_date": "2025-12-01",
-		"end_date": "2025-12-05",
-		"abstract_open": none,
-		"abstract_close": none,
-		"abstract_note": "No abstract submissions; multi-venue conference across the Las Vegas Strip.",
-		"type": "Conference",
-		"url": "https://reinvent.awsevents.com/"
-	},
-	{
-		"name": "GitHub Universe",
-		"location": "San Francisco, CA",
-		"lat": 37.8070,
-		"lon": -122.4311,
-		"start_date": "2025-10-28",
-		"end_date": "2025-10-29",
-		"abstract_open": none,
-		"abstract_close": none,
-		"abstract_note": "No abstracts; curated speaker/event program at Fort Mason Center.",
-		"type": "Conference",
-		"url": "https://githubuniverse.com/"
-	},
-	{
-		"name": "J.P. Morgan Healthcare Conference",
-		"location": "San Francisco, CA",
-		"lat": 37.78769,
-		"lon": -122.4084,
-		"start_date": "2026-01-12",
-		"end_date": "2026-01-15",
-		"abstract_open": none,
-		"abstract_close": none,
-		"abstract_note": "Invitation-only investor/industry conference; no abstracts.",
-		"type": "Conference",
-		"url": "https://www.jpmorgan.com/about-us/events-conferences/health-care-conference"
-	},
-	{
-		"name": "Conference on Beneficial Microbes",
-		"location": "Madison, WI",
-		"lat": 43.0731,
-		"lon": -89.4012,
-		"start_date": "2026-07-19",
-		"end_date": "2026-07-23",
-		"abstract_open": "2026-02-01",
-		"abstract_close": "2026-04-08",
-		"abstract_note": "Abstracts invited for oral and poster presentations; deadline April 8. :contentReference[oaicite:0]{index=0}",
-		"type": "Conference",
-		"url": "https://conferences.union.wisc.edu/microbes/"
-	},
-	{
-		"name": "Houston C diff & Microbiome Conference",
-		"location": "Houston, TX",
-		"lat": 29.7191,
-		"lon": -95.3881,
-		"start_date": "2025-05-16",
-		"end_date": "2025-05-16",
-		"abstract_open": 2025-02-22,
-		"abstract_close": 2025-04-22,
-		"abstract_note": "Abstracts accepted for podium/poster presentations. :contentReference[oaicite:1]{index=1}",
-		"type": "Conference",
-		"url": "https://www.uh.edu/pharmacy/news-and-events/events/houston-cdiff-and-microbiome-conference/"
-	}
+    {
+        "name": "AWS re:Invent",
+        "location": "Las Vegas, NV",
+        "lat": 36.1219,
+        "lon": -115.16623,
+        "start_date": "2025-12-01",
+        "end_date": "2025-12-05",
+        "abstract_open": "",
+        "abstract_close": "",
+        "abstract_note": "No abstract submissions; multi-venue conference across the Las Vegas Strip.",
+        "type": "Conference",
+        "url": "https://reinvent.awsevents.com/"
+    },
+    {
+        "name": "GitHub Universe",
+        "location": "San Francisco, CA",
+        "lat": 37.8070,
+        "lon": -122.4311,
+        "start_date": "2025-10-28",
+        "end_date": "2025-10-29",
+        "abstract_open": "",
+        "abstract_close": "",
+        "abstract_note": "No abstracts; curated speaker/event program at Fort Mason Center.",
+        "type": "Conference",
+        "url": "https://githubuniverse.com/"
+    },
+    {
+        "name": "J.P. Morgan Healthcare Conference",
+        "location": "San Francisco, CA",
+        "lat": 37.78769,
+        "lon": -122.4084,
+        "start_date": "2026-01-12",
+        "end_date": "2026-01-15",
+        "abstract_open": "",
+        "abstract_close": "",
+        "abstract_note": "Invitation-only investor/industry conference; no abstracts.",
+        "type": "Conference",
+        "url": "https://www.jpmorgan.com/about-us/events-conferences/health-care-conference"
+    },
+    {
+        "name": "Conference on Beneficial Microbes",
+        "location": "Madison, WI",
+        "lat": 43.0731,
+        "lon": -89.4012,
+        "start_date": "2026-07-19",
+        "end_date": "2026-07-23",
+        "abstract_open": "2026-02-01",
+        "abstract_close": "2026-04-08",
+        "abstract_note": "Abstracts invited for oral and poster presentations; deadline April 8.",
+        "type": "Conference",
+        "url": "https://conferences.union.wisc.edu/microbes/"
+    },
+    {
+        "name": "Houston C diff & Microbiome Conference",
+        "location": "Houston, TX",
+        "lat": 29.7191,
+        "lon": -95.3881,
+        "start_date": "2025-05-16",
+        "end_date": "2025-05-16",
+        "abstract_open": "2025-02-22",
+        "abstract_close": "2025-04-22",
+        "abstract_note": "Abstracts accepted for podium/poster presentations.",
+        "type": "Conference",
+        "url": "https://www.uh.edu/pharmacy/news-and-events/events/houston-cdiff-and-microbiome-conference/"
+    }
 ]
 
 # Get current date once for all comparisons

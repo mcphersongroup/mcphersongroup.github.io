@@ -55,7 +55,7 @@ conferences = [
     {
         "name": "GitHub Universe",
         "location": "San Francisco, CA",
-        "lat": 37.807,
+        "lat": 37.8070,
         "lon": -122.4311,
         "start_date": "2025-10-28",
         "end_date": "2025-10-29",
@@ -243,7 +243,7 @@ conferences = [
         "name": "ASV Annual",
         "location": "Minneapolis, MN",
         "lat": 44.9778,
-        "lon": -93.265,
+        "lon": -93.2650,
         "start_date": "2026-07-27",
         "end_date": "2026-07-30",
         "abstract_open": "2025-12-01",

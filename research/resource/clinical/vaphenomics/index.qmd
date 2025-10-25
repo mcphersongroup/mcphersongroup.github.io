@@ -1,0 +1,46 @@
+---
+title: VA Phenomics
+alias: &ALIAS vaphenomics
+listing:
+  id: pubs
+  template: ../../../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../../publications/**/*.qmd"
+    - "!../../../../publications/_template/"
+  sort: "pub_number desc"
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+
+## Overview
+
+VA Phenomics is the Department of Veterans Affairs' initiative to integrate genomic and phenotypic data from millions of veterans to advance precision medicine and improve veteran healthcare. The program combines genetic data with comprehensive health records to enable cutting-edge research.
+
+## Key Features
+
+- **Large Veteran Cohort**: Data from millions of veterans enrolled in VA healthcare
+- **Genomic Integration**: Genetic data linked with comprehensive electronic health records
+- **Longitudinal Follow-up**: Decades of health data for many participants
+- **Diverse Health Conditions**: Rich data on conditions prevalent in veteran populations
+- **Research Infrastructure**: Tools and resources for genomic and phenotypic analysis
+- **Collaborative Research**: Partnerships with academic and research institutions
+
+## Use Cases in Research
+
+- Pharmacogenomics and drug response studies
+- Disease risk prediction and prevention
+- Health disparities in veteran populations
+- Post-traumatic stress disorder and mental health research
+- Chronic disease management and outcomes
+- Precision medicine implementation research
+
+## Getting Started
+
+Visit [phenomics.va.ornl.gov/web/](https://phenomics.va.ornl.gov/web/) to learn more about research opportunities and data access through the VA research system.
+
+## Related Publications
+
+:::{#pubs}
+:::

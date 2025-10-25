@@ -1,0 +1,45 @@
+---
+title: All of Us Research Program
+alias: &ALIAS allofus
+listing:
+  id: pubs
+  template: ../../../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../../publications/**/*.qmd"
+    - "!../../../../publications/_template/"
+  sort: "pub_number desc"
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+
+## Overview
+
+The All of Us Research Program is a historic effort by the National Institutes of Health (NIH) to gather data from one million or more people living in the United States to accelerate research and improve health. The program is building one of the most diverse health databases in history to enable precision medicine research.
+
+## Key Features
+
+- **Diverse Dataset**: Prioritizes inclusion of historically underrepresented groups in biomedical research
+- **Comprehensive Data**: Surveys, electronic health records, physical measurements, and biospecimens
+- **Genomic Data**: Whole genome sequencing for participants
+- **Participant-Centered**: Participants receive their own health information and can stay engaged with research
+- **Open Access**: Registered researchers can access the data through the Researcher Workbench
+- **Longitudinal Data**: Ongoing data collection over time
+
+## Use Cases in Research
+
+- Precision medicine and personalized treatment approaches
+- Health disparities research
+- Disease prevention and early detection studies
+- Genetic and environmental risk factor analysis
+- Drug response and pharmacogenomics research
+
+## Getting Started
+
+Visit [allofus.nih.gov](https://allofus.nih.gov/) to learn about becoming a registered researcher and accessing the data.
+
+## Related Publications
+
+:::{#pubs}
+:::

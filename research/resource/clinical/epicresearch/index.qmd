@@ -1,0 +1,44 @@
+---
+title: EPIC Research
+alias: &ALIAS epicresearch
+listing:
+  id: pubs
+  template: ../../../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../../publications/**/*.qmd"
+    - "!../../../../publications/_template/"
+  sort: "pub_number desc"
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+
+## Overview
+
+EPIC Research is a collaborative initiative that leverages de-identified electronic health record (EHR) data from Epic's vast network of healthcare organizations to support real-world evidence research. The platform provides access to one of the largest and most diverse datasets of clinical information in the United States.
+
+## Key Features
+
+- **Large-Scale EHR Data**: Access to de-identified data from millions of patients across diverse healthcare settings
+- **Real-World Evidence**: Comprehensive clinical data including diagnoses, procedures, medications, and lab results
+- **Research Partnerships**: Collaborative research opportunities with Epic and participating health systems
+- **Data Quality**: Standardized, high-quality clinical data from Epic's EHR system
+- **Diverse Patient Population**: Representative data across demographics and geographic regions
+
+## Use Cases in Research
+
+- Conducting real-world evidence studies on treatment effectiveness
+- Analyzing healthcare utilization patterns and outcomes
+- Studying disease prevalence and progression
+- Evaluating drug safety and comparative effectiveness
+- Supporting epidemiological research and public health initiatives
+
+## Getting Started
+
+Visit [epicresearch.org](https://www.epicresearch.org/) to learn more about research collaboration opportunities and data access.
+
+## Related Publications
+
+:::{#pubs}
+:::

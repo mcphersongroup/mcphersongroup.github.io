@@ -1,0 +1,46 @@
+---
+title: UK Biobank
+alias: &ALIAS ukbiobank
+listing:
+  id: pubs
+  template: ../../../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../../publications/**/*.qmd"
+    - "!../../../../publications/_template/"
+  sort: "pub_number desc"
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+
+## Overview
+
+UK Biobank is a large-scale biomedical database and research resource containing in-depth genetic and health information from half a million UK participants aged 40-69 years. This resource is globally available to approved researchers undertaking health-related research that's in the public interest.
+
+## Key Features
+
+- **Large Cohort**: Data from 500,000+ participants with long-term follow-up
+- **Genetic Data**: Whole genome sequencing, genotyping, and exome sequencing
+- **Imaging Data**: Brain, cardiac, and body MRI scans for 100,000+ participants
+- **Biological Samples**: Blood, urine, and saliva samples with comprehensive biomarker data
+- **Longitudinal Records**: Linked health records and repeat assessments
+- **Open Access**: Available to bona fide researchers worldwide
+
+## Use Cases in Research
+
+- Genetic determinants of disease
+- Cardiovascular disease research
+- Cancer epidemiology and genetics
+- Neurological and psychiatric disorders
+- Metabolic and endocrine research
+- Development and validation of disease prediction models
+
+## Getting Started
+
+Visit [ukbiobank.ac.uk](https://www.ukbiobank.ac.uk/) to register as a researcher and apply for data access.
+
+## Related Publications
+
+:::{#pubs}
+:::

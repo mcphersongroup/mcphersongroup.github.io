@@ -1,0 +1,46 @@
+---
+title: TriNetX
+alias: &ALIAS trinetx
+listing:
+  id: pubs
+  template: ../../../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../../publications/**/*.qmd"
+    - "!../../../../publications/_template/"
+  sort: "pub_number desc"
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+
+## Overview
+
+TriNetX is a global health research network that provides access to de-identified electronic health records from healthcare organizations worldwide. The platform enables real-world evidence research and supports clinical trial design, feasibility, and recruitment.
+
+## Key Features
+
+- **Global Network**: Data from millions of patients across healthcare organizations worldwide
+- **Real-Time Analytics**: Interactive platform for querying and analyzing clinical data
+- **Cohort Building**: Advanced tools for identifying and characterizing patient populations
+- **Comparative Analysis**: Built-in statistical tools for propensity score matching and outcomes analysis
+- **Clinical Trial Support**: Feasibility assessment and patient recruitment capabilities
+- **Standardized Data**: Harmonized data using common terminologies (ICD, CPT, LOINC, RxNorm)
+
+## Use Cases in Research
+
+- Real-world evidence studies on treatment effectiveness and safety
+- Clinical trial feasibility and site selection
+- Comparative effectiveness research
+- Drug safety and pharmacovigilance
+- Disease natural history studies
+- Healthcare utilization and outcomes research
+
+## Getting Started
+
+Visit [trinetx.com](https://trinetx.com/) to learn about institutional access and research collaboration opportunities.
+
+## Related Publications
+
+:::{#pubs}
+:::

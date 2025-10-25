@@ -27,6 +27,10 @@ listing:
     contents: resource/data/*/index.qmd
     type: grid
     fields: [title]
+  - id: clinical-data
+    contents: resource/clinical/*/index.qmd
+    type: grid
+    fields: [title]
 page-layout: full
 jupyter: python3
 ---
@@ -55,6 +59,11 @@ jupyter: python3
 ### Data Management & Analysis
 
 ::: {#data-analysis}
+:::
+
+### Clinical Data Sources
+
+::: {#clinical-data}
 :::
 
 ```{=html}

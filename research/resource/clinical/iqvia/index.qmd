@@ -1,0 +1,46 @@
+---
+title: IQVIA
+alias: &ALIAS iqvia
+listing:
+  id: pubs
+  template: ../../../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../../publications/**/*.qmd"
+    - "!../../../../publications/_template/"
+  sort: "pub_number desc"
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+
+## Overview
+
+IQVIA is a leading global provider of advanced analytics, technology solutions, and clinical research services to the life sciences industry. The company offers access to one of the world's largest healthcare databases, combining de-identified patient data, prescriptions, medical claims, and electronic health records.
+
+## Key Features
+
+- **Comprehensive Healthcare Data**: Claims, EMR/EHR, pharmacy, and diagnostic data from diverse sources
+- **Global Coverage**: Data from healthcare systems across multiple countries and regions
+- **Advanced Analytics**: Sophisticated tools and platforms for data analysis and insights
+- **Real-World Evidence**: Large-scale observational data for outcomes research
+- **Market Intelligence**: Prescription and treatment pattern data
+- **Connected Intelligence**: Integration of multiple data sources for comprehensive insights
+
+## Use Cases in Research
+
+- Real-world evidence generation for drug development and regulatory submissions
+- Comparative effectiveness and safety studies
+- Health economics and outcomes research (HEOR)
+- Market access and value demonstration
+- Post-market surveillance and pharmacovigilance
+- Treatment pathway and clinical practice pattern analysis
+
+## Getting Started
+
+Visit [iqvia.com](https://www.iqvia.com/) to explore data solutions and research collaboration opportunities through institutional partnerships.
+
+## Related Publications
+
+:::{#pubs}
+:::

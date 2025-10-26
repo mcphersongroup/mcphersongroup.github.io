@@ -19,8 +19,16 @@ listing:
     contents: resource/lit/*/index.qmd
     type: grid
     fields: [title]
+  - id: publishing-groups
+    contents: resource/lit/publishinggroups/*/index.qmd
+    type: grid
+    fields: [title]
   - id: experimentation  
     contents: resource/exp/*/index.qmd
+    type: grid
+    fields: [title]
+  - id: vendors
+    contents: resource/exp/vendors/*/index.qmd
     type: grid
     fields: [title]
   - id: data-analysis
@@ -51,9 +59,19 @@ jupyter: python3
 ::: {#literature}
 :::
 
+#### Publishing Groups
+
+::: {#publishing-groups}
+:::
+
 ### Experimentation
 
 ::: {#experimentation}
+:::
+
+#### Vendors
+
+::: {#vendors}
 :::
 
 ### Data Management & Analysis

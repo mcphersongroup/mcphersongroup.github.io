@@ -43,6 +43,7 @@ Amazon Web Services (AWS) and Docker provide powerful cloud computing and contai
 
 - AWS: Visit [aws.amazon.com](https://aws.amazon.com) to create an account and explore services
 - Docker: Download from [docker.com](https://www.docker.com) and follow tutorials to learn containerization
+- SIB AWS-Docker Tutorial: Learn how to use AWS and Docker together at [sib-swiss.github.io/AWS-docker/](https://sib-swiss.github.io/AWS-docker/)
 
 ## Related Publications
 

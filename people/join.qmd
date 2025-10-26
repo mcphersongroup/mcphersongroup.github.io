@@ -15,7 +15,7 @@ Create a *free* account in
 
 2. [**GitHub**](https://github.com); use to sign-in to [**RStudio Cloud**](https://posit.cloud) and [**VS Code**](https://vscode.dev); integrates with [**OverLeaf**](https://www.overleaf.com/)
 
-3. [**Zenodo**](https://zenodo.org/) and join the [**McPhersonLab community**](https://zenodo.org/communities/mcphersonlab/)
+3. Create an account on [**Zenodo**](https://zenodo.org/) and join the [**McPhersonLab community**](https://zenodo.org/communities/mcphersonlab/)
 
 4. [**Zotero**](https://www.zotero.org/), a citation manager that integrates with Chrome, Word, Overleaf
 

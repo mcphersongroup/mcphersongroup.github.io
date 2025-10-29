@@ -46,20 +46,20 @@ universities = [
     # US - Ivy League and Elite Private
     {"name": "Harvard University", "city": "Cambridge, MA", "lat": 42.3770, "lon": -71.1167, "country": "USA"},
     {"name": "Columbia University", "city": "New York, NY", "lat": 40.8075, "lon": -73.9626, "country": "USA"},
-    # {"name": "Yale University", "city": "New Haven, CT", "lat": 41.3163, "lon": -72.9223, "country": "USA"},
-    # {"name": "Princeton University", "city": "Princeton, NJ", "lat": 40.3430, "lon": -74.6514, "country": "USA"},
+    {"name": "Yale University", "city": "New Haven, CT", "lat": 41.3163, "lon": -72.9223, "country": "USA"},
+    {"name": "Princeton University", "city": "Princeton, NJ", "lat": 40.3430, "lon": -74.6514, "country": "USA"},
     {"name": "Stanford University", "city": "Stanford, CA", "lat": 37.4275, "lon": -122.1697, "country": "USA"},
     {"name": "Vanderbilt University", "city": "Nashville, TN", "lat": 36.1447, "lon": -86.8027, "country": "USA"},
     {"name": "Rice University", "city": "Houston, TX", "lat": 29.7174, "lon": -95.4018, "country": "USA"},
     {"name": "Emory University", "city": "Atlanta, GA", "lat": 33.7920, "lon": -84.3240, "country": "USA"},
     {"name": "University of Pennsylvania", "city": "Philadelphia, PA", "lat": 39.9522, "lon": -75.1932, "country": "USA"},
-    # {"name": "University of Chicago", "city": "Chicago, IL", "lat": 41.7886, "lon": -87.5987, "country": "USA"},
+    {"name": "University of Chicago", "city": "Chicago, IL", "lat": 41.7886, "lon": -87.5987, "country": "USA"},
     {"name": "Johns Hopkins University", "city": "Baltimore, MD", "lat": 39.3299, "lon": -76.6205, "country": "USA"},
     
     # US - Tech Schools
-    # {"name": "MIT", "city": "Cambridge, MA", "lat": 42.3601, "lon": -71.0942, "country": "USA"},
-    # {"name": "Georgia Tech", "city": "Atlanta, GA", "lat": 33.7756, "lon": -84.3963, "country": "USA"},
-    # {"name": "Cal Tech", "city": "Pasadena, CA", "lat": 34.1377, "lon": -118.1253, "country": "USA"},
+    {"name": "MIT", "city": "Cambridge, MA", "lat": 42.3601, "lon": -71.0942, "country": "USA"},
+    {"name": "Georgia Tech", "city": "Atlanta, GA", "lat": 33.7756, "lon": -84.3963, "country": "USA"},
+    {"name": "Cal Tech", "city": "Pasadena, CA", "lat": 34.1377, "lon": -118.1253, "country": "USA"},
     
     # US - Large Public Research Universities
     {"name": "University of Texas at Austin", "city": "Austin, TX", "lat": 30.2849, "lon": -97.7341, "country": "USA"},
@@ -69,21 +69,20 @@ universities = [
     {"name": "University of Colorado at Boulder", "city": "Boulder, CO", "lat": 40.0076, "lon": -105.2659, "country": "USA"},
     {"name": "University of Illinois at Urbana-Champaign", "city": "Urbana-Champaign, IL", "lat": 40.1020, "lon": -88.2272, "country": "USA"},
     {"name": "University of North Carolina at Chapel Hill", "city": "Chapel Hill, NC", "lat": 35.9049, "lon": -79.0469, "country": "USA"},
-    #{"name": "University of Florida at Gainesville", "city": "Gainesville, FL", "lat": 29.6436, "lon": -82.3549, "country": "USA"},
-    #{"name": "University of Arizona, Tucson", "city": "Tucson, AZ", "lat": 32.2488, "lon": -110.9874, "country": "USA"},
-    #{"name": "University of California, Los Angeles", "city": "Los Angeles, CA", "lat": 34.0689, "lon": -118.4452, "country": "USA"},
-    #{"name": "University of Wisconsin at Madison", "city": "Madison, WI", "lat": 43.0766, "lon": -89.4125, "country": "USA"},
-    #{"name": "University of Missouri, Columbia", "city": "Columbia, MO", "lat": 38.9453, "lon": -92.3288, "country": "USA"},
-    # {"name": "University of Kansas, Lawrence", "city": "Lawrence, KS", "lat": 38.9543, "lon": -95.2558, "country": "USA"},
-    
+    {"name": "University of Florida at Gainesville", "city": "Gainesville, FL", "lat": 29.6436, "lon": -82.3549, "country": "USA"},
+    {"name": "University of Arizona, Tucson", "city": "Tucson, AZ", "lat": 32.2488, "lon": -110.9874, "country": "USA"},
+    {"name": "University of California, Los Angeles", "city": "Los Angeles, CA", "lat": 34.0689, "lon": -118.4452, "country": "USA"},
+    {"name": "University of Wisconsin at Madison", "city": "Madison, WI", "lat": 43.0766, "lon": -89.4125, "country": "USA"},
+    {"name": "University of Minnesota", "city": "Minneapolis, MN", "lat": 44.9733, "lon": -93.2323, "country": "USA"}
+
     # US - Other Research Universities
-    #{"name": "University of Pittsburgh", "city": "Pittsburgh, PA", "lat": 40.4444, "lon": -79.9608, "country": "USA"},
-    #{"name": "University of Miami", "city": "Coral Gables, FL", "lat": 25.7217, "lon": -80.2798, "country": "USA"},
-    #{"name": "University of Houston", "city": "Houston, TX", "lat": 29.7199, "lon": -95.3422, "country": "USA"},
-    #{"name": "Boston University", "city": "Boston, MA", "lat": 42.3505, "lon": -71.1054, "country": "USA"},
-    # {"name": "University of Illinois Chicago", "city": "Chicago, IL", "lat": 41.8708, "lon": -87.6505, "country": "USA"},
-    # {"name": "Wash U St Louis", "city": "St. Louis, MO", "lat": 38.6488, "lon": -90.3048, "country": "USA"},
-    # {"name": "University of California San Francisco", "city": "San Francisco, CA", "lat": 37.7632, "lon": -122.4577, "country": "USA"},
+    {"name": "University of Pittsburgh", "city": "Pittsburgh, PA", "lat": 40.4444, "lon": -79.9608, "country": "USA"},
+    {"name": "University of Miami", "city": "Coral Gables, FL", "lat": 25.7217, "lon": -80.2798, "country": "USA"},
+    {"name": "University of Houston", "city": "Houston, TX", "lat": 29.7199, "lon": -95.3422, "country": "USA"},
+    {"name": "Boston University", "city": "Boston, MA", "lat": 42.3505, "lon": -71.1054, "country": "USA"},
+    {"name": "University of Illinois Chicago", "city": "Chicago, IL", "lat": 41.8708, "lon": -87.6505, "country": "USA"},
+    {"name": "Wash U St Louis", "city": "St. Louis, MO", "lat": 38.6488, "lon": -90.3048, "country": "USA"},
+    {"name": "University of California San Francisco", "city": "San Francisco, CA", "lat": 37.7632, "lon": -122.4577, "country": "USA"},
     
     # UK
     {"name": "University of Oxford", "city": "Oxford, UK", "lat": 51.7548, "lon": -1.2544, "country": "UK"},
@@ -100,8 +99,8 @@ universities = [
     # {"name": "University of Kyoto", "city": "Kyoto, Japan", "lat": 35.0262, "lon": 135.7806, "country": "Japan"},
     
     # Australia
-    # {"name": "University of Melbourne", "city": "Melbourne, Australia", "lat": -37.7964, "lon": 144.9612, "country": "Australia"},
-    {"name": "University of Sydney", "city": "Sydney, Australia", "lat": -33.8886, "lon": 151.1873, "country": "Australia"},
+    {"name": "University of Melbourne", "city": "Melbourne, Australia", "lat": -37.7964, "lon": 144.9612, "country": "Australia"},
+    #{"name": "University of Sydney", "city": "Sydney, Australia", "lat": -33.8886, "lon": 151.1873, "country": "Australia"},
     
     # France
     {"name": "Pasteur Institute", "city": "Paris, France", "lat": 48.8404, "lon": 2.3111, "country": "France"},

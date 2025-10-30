@@ -73,7 +73,7 @@ universities = [
     {"name": "University of Arizona, Tucson", "city": "Tucson, AZ", "lat": 32.2488, "lon": -110.9874, "country": "USA"},
     {"name": "University of California, Los Angeles", "city": "Los Angeles, CA", "lat": 34.0689, "lon": -118.4452, "country": "USA"},
     {"name": "University of Wisconsin at Madison", "city": "Madison, WI", "lat": 43.0766, "lon": -89.4125, "country": "USA"},
-    {"name": "University of Minnesota", "city": "Minneapolis, MN", "lat": 44.9733, "lon": -93.2323, "country": "USA"}
+    {"name": "University of Minnesota", "city": "Minneapolis, MN", "lat": 44.9733, "lon": -93.2323, "country": "USA"},
 
     # US - Other Research Universities
     {"name": "University of Pittsburgh", "city": "Pittsburgh, PA", "lat": 40.4444, "lon": -79.9608, "country": "USA"},

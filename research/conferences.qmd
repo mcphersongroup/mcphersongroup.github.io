@@ -181,7 +181,7 @@ conferences = [
         "name": "Google Cloud Next",
         "location": "Las Vegas, NV",
         "lat": 36.0924,
-        "lon": -115.1751,
+        "lon": -115.1761,
         "start_date": "2026-04-22",
         "end_date": "2026-04-24",
         "abstract_open": "",

@@ -153,6 +153,19 @@ conferences = [
         "url": "https://www.croiconference.org/"
     },
     {
+        "name": "NVIDIA GTC",
+        "location": "San Jose, CA",
+        "lat": 37.3297,
+        "lon": -121.8900,
+        "start_date": "2026-03-16",
+        "end_date": "2026-03-19",
+        "abstract_open": "",
+        "abstract_close": "",
+        "abstract_note": "Premier AI and GPU technology conference with keynotes, technical sessions, and demos.",
+        "type": "Conference",
+        "url": "https://www.nvidia.com/gtc/"
+    },
+    {
         "name": "ESCMID Annual",
         "location": "Munich, Germany",
         "lat": 48.1371,
@@ -163,6 +176,19 @@ conferences = [
         "abstract_close": "2025-11-26",
         "type": "Conference",
         "url": "https://www.escmid.org/congress-events/escmid-global/"
+    },
+    {
+        "name": "Google Cloud Next",
+        "location": "Las Vegas, NV",
+        "lat": 36.0924,
+        "lon": -115.1751,
+        "start_date": "2026-04-22",
+        "end_date": "2026-04-24",
+        "abstract_open": "",
+        "abstract_close": "",
+        "abstract_note": "Annual cloud computing and AI conference featuring Google Cloud innovations.",
+        "type": "Conference",
+        "url": "https://cloud.withgoogle.com/next"
     },
     {
         "name": "ASPET Annual",

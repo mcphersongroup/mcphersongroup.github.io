@@ -117,6 +117,19 @@ conferences = [
         "url": "https://www.jpmorgan.com/about-us/events-conferences/health-care-conference"
     },
     {
+        "name": "TMC AMR",
+        "location": "Houston, TX",
+        "lat": 29.7110,
+        "lon": -95.3981,
+        "start_date": "2026-01-15",
+        "end_date": "2026-01-17",
+        "abstract_open": "",
+        "abstract_close": "",
+        "abstract_note": "Annual Texas Medical Center Antimicrobial Resistance & Stewardship Conference; dates estimated based on previous year.",
+        "type": "Conference",
+        "url": "https://amr25.blogs.rice.edu/"
+    },
+    {
         "name": "IMARI Annual",
         "location": "Las Vegas, NV",
         "lat": 36.1699,
@@ -251,6 +264,19 @@ conferences = [
         "abstract_close": "2025-09-15",
         "type": "Conference",
         "url": "https://www.iuphar.org/"
+    },
+    {
+        "name": "AACP Annual",
+        "location": "Grapevine, TX",
+        "lat": 32.9342,
+        "lon": -97.0781,
+        "start_date": "2026-07-18",
+        "end_date": "2026-07-21",
+        "abstract_open": "",
+        "abstract_close": "",
+        "abstract_note": "Premier event for pharmacy educators; check AACP website for abstract deadlines.",
+        "type": "Conference",
+        "url": "https://www.aacp.org/event/pharmacy-education-2026"
     },
     {
         "name": "Conference on Beneficial Microbes",

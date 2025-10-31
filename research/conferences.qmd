@@ -125,9 +125,9 @@ conferences = [
         "end_date": "2026-01-17",
         "abstract_open": "",
         "abstract_close": "",
-        "abstract_note": "Annual Texas Medical Center Antimicrobial Resistance & Stewardship Conference; dates estimated based on previous year.",
+        "abstract_note": "Annual Texas Medical Center Antimicrobial Resistance & Stewardship Conference; dates estimated based on 2025 event. Check TMC events for 2026 updates.",
         "type": "Conference",
-        "url": "https://amr25.blogs.rice.edu/"
+        "url": "https://www.tmc.edu/events/"
     },
     {
         "name": "IMARI Annual",

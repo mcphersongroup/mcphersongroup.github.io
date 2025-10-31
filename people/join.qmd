@@ -46,6 +46,7 @@ universities = [
     # US - Ivy League and Elite Private
     {"name": "Harvard University", "city": "Cambridge, MA", "lat": 42.3770, "lon": -71.1167, "country": "USA"},
     {"name": "Columbia University", "city": "New York, NY", "lat": 40.8075, "lon": -73.9626, "country": "USA"},
+    {"name": "Cornell University", "city": "Ithaca, NY", "lat": 42.4534, "lon": -76.4735, "country": "USA"},
     {"name": "Yale University", "city": "New Haven, CT", "lat": 41.3163, "lon": -72.9223, "country": "USA"},
     {"name": "Princeton University", "city": "Princeton, NJ", "lat": 40.3430, "lon": -74.6514, "country": "USA"},
     {"name": "Stanford University", "city": "Stanford, CA", "lat": 37.4275, "lon": -122.1697, "country": "USA"},

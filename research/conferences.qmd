@@ -87,7 +87,7 @@ conferences = [
         "end_date": "2025-12-10",
         "abstract_open": "2025-06-15",
         "abstract_close": "2025-10-01",
-        "abstract_note": "Non-trainees: Jun 15; Trainees: Aug 15",
+        "abstract_note": "",
         "type": "Conference",
         "url": "https://www.ashp.org/meetings-and-conferences/midyear-clinical-meeting-and-exhibition"
     },

@@ -261,7 +261,7 @@ conferences = [
         "end_date": "2026-07-21",
         "abstract_open": "",
         "abstract_close": "",
-        "abstract_note": "Premier event for pharmacy educators; check AACP website for abstract deadlines.",
+        "abstract_note": "",
         "type": "Conference",
         "url": "https://www.aacp.org/event/pharmacy-education-2026"
     },
@@ -400,8 +400,8 @@ for conf in conferences:
     end = datetime.strptime(conf["end_date"], "%Y-%m-%d")
     
     # Format abstract submission dates
-    abstract_open_str = "TBD"
-    abstract_close_str = "TBD"
+    abstract_open_str = "NA"
+    abstract_close_str = "NA"
     if conf.get("abstract_open"):
         abstract_open = datetime.strptime(conf["abstract_open"], "%Y-%m-%d")
         abstract_open_str = abstract_open.strftime("%B %d, %Y")

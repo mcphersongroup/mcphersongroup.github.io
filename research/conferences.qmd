@@ -557,4 +557,14 @@ def create_calendar_html(df):
 display(HTML(create_calendar_html(df)))
 ```
 
-and many more at [**Cell Symposia**](https://www.cell.com/symposia), [**Keystone Symposia**](https://www.keystonesymposia.org/), [**Cold Spring Harbor Laboratory**](https://meetings.cshl.edu/), [**Wellcome Trust**](https://coursesandconferences.wellcomeconnectingscience.org/our-events/conferences/), [**University of Texas**](https://research.utexas.edu/events), [**UT MD Anderson Cancer Center**](https://www.mdanderson.org/research/research-resources/conferences-seminars.html), [**Houston Methodist**](https://attend.houstonmethodist.org/), [**Baylor College of Medicine**](https://www.bcm.edu/departments/medicine/research/conferences-grand-rounds-seminars), and [**UT School of Public Health**](https://sph.uth.edu/events/)
+and many more at:
+
+- [**Cell Symposia**](https://www.cell.com/symposia)
+- [**Keystone Symposia**](https://www.keystonesymposia.org/)
+- [**Cold Spring Harbor Laboratory**](https://meetings.cshl.edu/)
+- [**Wellcome Trust**](https://coursesandconferences.wellcomeconnectingscience.org/our-events/conferences/)
+- [**University of Texas**](https://research.utexas.edu/events)
+- [**UT MD Anderson Cancer Center**](https://www.mdanderson.org/research/research-resources/conferences-seminars.html)
+- [**Houston Methodist**](https://attend.houstonmethodist.org/)
+- [**Baylor College of Medicine**](https://www.bcm.edu/departments/medicine/research/conferences-grand-rounds-seminars)
+- [**UT School of Public Health**](https://sph.uth.edu/events/)

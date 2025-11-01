@@ -36,7 +36,7 @@ conferences = [
         "end_date": "2025-05-16",
         "abstract_open": "2025-02-22",
         "abstract_close": "2025-04-22",
-        "abstract_note": "Abstracts accepted for podium/poster presentations.",
+        "abstract_note": "",
         "type": "Conference",
         "url": "https://www.uh.edu/pharmacy/news-and-events/events/houston-cdiff-and-microbiome-conference/"
     },
@@ -61,7 +61,7 @@ conferences = [
         "end_date": "2025-10-29",
         "abstract_open": "",
         "abstract_close": "",
-        "abstract_note": "No abstracts; curated speaker/event program at Fort Mason Center.",
+        "abstract_note": "",
         "type": "Conference",
         "url": "https://githubuniverse.com/"
     },
@@ -74,7 +74,7 @@ conferences = [
         "end_date": "2025-12-05",
         "abstract_open": "",
         "abstract_close": "",
-        "abstract_note": "No abstract submissions; multi-venue conference across the Las Vegas Strip.",
+        "abstract_note": "",
         "type": "Conference",
         "url": "https://reinvent.awsevents.com/"
     },
@@ -87,7 +87,7 @@ conferences = [
         "end_date": "2025-12-10",
         "abstract_open": "2025-06-15",
         "abstract_close": "2025-10-01",
-        "abstract_note": "Professional deadline: Jun 15; Trainee deadline: Aug 15",
+        "abstract_note": "Non-trainees: Jun 15; Trainees: Aug 15",
         "type": "Conference",
         "url": "https://www.ashp.org/meetings-and-conferences/midyear-clinical-meeting-and-exhibition"
     },
@@ -104,19 +104,6 @@ conferences = [
         "url": "https://www.bps.ac.uk/events"
     },
     {
-        "name": "J.P. Morgan Healthcare Conference",
-        "location": "San Francisco, CA",
-        "lat": 37.78769,
-        "lon": -122.4084,
-        "start_date": "2026-01-12",
-        "end_date": "2026-01-15",
-        "abstract_open": "",
-        "abstract_close": "",
-        "abstract_note": "Invitation-only investor/industry conference; no abstracts.",
-        "type": "Conference",
-        "url": "https://www.jpmorgan.com/about-us/events-conferences/health-care-conference"
-    },
-    {
         "name": "TMC AMR",
         "location": "Houston, TX",
         "lat": 29.7110,
@@ -125,7 +112,7 @@ conferences = [
         "end_date": "2026-01-17",
         "abstract_open": "2025-07-29",
         "abstract_close": "2025-11-15",
-        "abstract_note": "Annual Texas Medical Center Antimicrobial Resistance & Stewardship Conference; dates estimated based on 2025 event. Check TMC events for 2026 updates.",
+        "abstract_note": "",
         "type": "Conference",
         "url": "https://www.tmc.edu/events/"
     },
@@ -174,7 +161,7 @@ conferences = [
         "end_date": "2026-03-19",
         "abstract_open": "",
         "abstract_close": "",
-        "abstract_note": "Premier AI and GPU technology conference with keynotes, technical sessions, and demos.",
+        "abstract_note": "",
         "type": "Conference",
         "url": "https://www.nvidia.com/gtc/"
     },
@@ -199,7 +186,7 @@ conferences = [
         "end_date": "2026-04-24",
         "abstract_open": "",
         "abstract_close": "",
-        "abstract_note": "Annual cloud computing and AI conference featuring Google Cloud innovations.",
+        "abstract_note": "",
         "type": "Conference",
         "url": "https://cloud.withgoogle.com/next"
     },
@@ -249,7 +236,7 @@ conferences = [
         "end_date": "2026-07-10",
         "abstract_open": "2025-10-23",
         "abstract_close": "2026-02-01",
-        "abstract_note": "Oral presentations: Jan 1, 2026; Poster presentations: Feb 1, 2026",
+        "abstract_note": "Oral: Jan 1, 2026; Poster: Feb 1, 2026",
         "type": "Conference",
         "url": "http://www.anaerobe.org/2026/"
     },
@@ -287,7 +274,7 @@ conferences = [
         "end_date": "2026-07-23",
         "abstract_open": "2026-02-01",
         "abstract_close": "2026-04-08",
-        "abstract_note": "Abstracts invited for oral and poster presentations; deadline April 8.",
+        "abstract_note": "",
         "type": "Conference",
         "url": "https://conferences.union.wisc.edu/microbes/"
     },
